@@ -40,5 +40,5 @@
 - [ ] Added/updated tests (if applicable)
 - [ ] Verified that CI/CD pipeline passes
 
-## 📌 Additional Notes
-<!-- Anything reviewers should pay special attention to? -->
+## Additional Notes
+Anything reviewers should pay special attention to? 
