@@ -845,7 +845,7 @@ contract AdvancedAMMRouter is ReentrancyGuard, Ownable {
 }
 
 /**
- * 🚀 ADVANCED AMM ROUTER FEATURES:
+ *  ADVANCED AMM ROUTER FEATURES:
  *
  * 1. COMPREHENSIVE SWAP SUPPORT:
  *    - ETH ↔ Token swaps with automatic WETH wrapping
@@ -877,7 +877,7 @@ contract AdvancedAMMRouter is ReentrancyGuard, Ownable {
  *    - Admin controls and emergency functions
  *    - Full ERC20 and ETH compatibility
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Swap ETH for tokens
  * router.swapExactETHForTokens{value: 1 ether}(

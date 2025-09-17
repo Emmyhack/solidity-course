@@ -5,7 +5,7 @@ pragma solidity ^0.8.19;
  * @title Common Vulnerabilities and Prevention
  * @dev Demonstrates common smart contract vulnerabilities and their fixes
  *
- * ⚠️ WARNING: This contract contains INTENTIONALLY VULNERABLE code
+ *  WARNING: This contract contains INTENTIONALLY VULNERABLE code
  * for educational purposes. DO NOT use these patterns in production!
  *
  * This contract shows:
@@ -502,7 +502,7 @@ contract MaliciousContract {
 }
 
 /**
- * 🧠 LEARNING POINTS:
+ *  LEARNING POINTS:
  *
  * 1. REENTRANCY:
  *    - Problem: External calls before state updates
@@ -528,14 +528,14 @@ contract MaliciousContract {
  *    - Problem: Predictable randomness sources
  *    - Solution: Chainlink VRF, commit-reveal
  *
- * 🛡️ SECURITY PRINCIPLES:
+ *  SECURITY PRINCIPLES:
  * - Defense in depth
  * - Fail securely
  * - Principle of least privilege
  * - Never trust external input
  * - Validate all state changes
  *
- * 🚀 TRY THIS:
+ *  TRY THIS:
  * 1. Deploy vulnerable and secure versions
  * 2. Test attack scenarios
  * 3. Measure gas costs of security measures

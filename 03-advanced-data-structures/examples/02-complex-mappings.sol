@@ -549,7 +549,7 @@ contract ComplexMappings {
 }
 
 /**
- * 🧠 LEARNING POINTS:
+ *  LEARNING POINTS:
  *
  * 1. MAPPING TYPES:
  *    - Simple: address => uint256
@@ -581,13 +581,13 @@ contract ComplexMappings {
  *    - Reverse mappings enable bidirectional lookup
  *    - Pagination handles large datasets
  *
- * ⚠️ WARNINGS:
+ *  WARNINGS:
  * - Mappings can't be iterated natively
  * - Deletion doesn't reduce gas costs
  * - Nested loops can cause out-of-gas
  * - Large structs increase costs significantly
  *
- * 🚀 TRY THIS:
+ *  TRY THIS:
  * 1. Build your own iterable mapping
  * 2. Implement complex relationship systems
  * 3. Compare gas costs of different patterns

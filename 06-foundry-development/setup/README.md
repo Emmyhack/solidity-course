@@ -2,7 +2,7 @@
 
 Complete installation and configuration guide for Foundry development environment.
 
-## 🛠 Installation
+##  Installation
 
 ### Step 1: Install Rust (if not already installed)
 
@@ -46,7 +46,7 @@ code --install-extension NomicFoundation.hardhat-solidity
 code --install-extension heyproject.vscode-foundry
 ```
 
-## 🚀 Project Initialization
+##  Project Initialization
 
 ### Create New Project
 
@@ -72,7 +72,7 @@ forge init --force .
 # This creates the basic structure without overwriting existing files
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 ### foundry.toml Configuration
 
@@ -187,7 +187,7 @@ EOF
 source .env
 ```
 
-## 📦 Dependency Management
+##  Dependency Management
 
 ### Install Dependencies
 
@@ -230,7 +230,7 @@ forge remove openzeppelin-contracts
 # This removes the git submodule and updates .gitmodules
 ```
 
-## 🔧 Basic Commands
+##  Basic Commands
 
 ### Building
 
@@ -296,7 +296,7 @@ forge fmt --check
 forge fmt src/Token.sol
 ```
 
-## 🌐 Network Configuration
+##  Network Configuration
 
 ### Anvil (Local Network)
 
@@ -330,7 +330,7 @@ cast call 0x... "balanceOf(address)" 0x... --rpc-url $ETH_RPC_URL
 cast receipt 0x... --rpc-url $ETH_RPC_URL
 ```
 
-## 🐛 Debugging Setup
+##  Debugging Setup
 
 ### VS Code Configuration
 
@@ -371,7 +371,7 @@ Create `.vscode/launch.json`:
 }
 ```
 
-## 📋 Project Structure
+##  Project Structure
 
 ### Recommended Structure
 
@@ -411,7 +411,7 @@ Create `remappings.txt`:
 ds-test/=lib/forge-std/lib/ds-test/src/
 ```
 
-## ✅ Verification Checklist
+##  Verification Checklist
 
 After setup, verify everything works:
 
@@ -443,7 +443,7 @@ forge script script/Deploy.s.sol --rpc-url http://localhost:8545 --broadcast
 cast balance 0x... --rpc-url http://localhost:8545
 ```
 
-## 🚨 Common Issues
+##  Common Issues
 
 ### Issue 1: Permission Denied
 
@@ -481,7 +481,7 @@ echo $ETH_RPC_URL
 cast block-number --rpc-url $ETH_RPC_URL
 ```
 
-## 🎯 Next Steps
+##  Next Steps
 
 Once setup is complete:
 
@@ -492,4 +492,4 @@ Once setup is complete:
 
 ---
 
-**Setup complete!** 🎉 You're ready to experience the power of Foundry development.
+**Setup complete!**  You're ready to experience the power of Foundry development.

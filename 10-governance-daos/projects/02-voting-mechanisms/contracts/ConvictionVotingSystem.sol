@@ -804,7 +804,7 @@ contract ConvictionVotingSystem is ReentrancyGuard, Pausable, Ownable {
 }
 
 /**
- * 🕰️ CONVICTION VOTING FEATURES:
+ *  CONVICTION VOTING FEATURES:
  *
  * 1. TIME-WEIGHTED DEMOCRACY:
  *    - Conviction grows over time with continuous support
@@ -830,7 +830,7 @@ contract ConvictionVotingSystem is ReentrancyGuard, Pausable, Ownable {
  *    - Spending limits and controls
  *    - Transparent fund allocation
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Stake tokens to participate
  * conviction.stakeTokens(1000e18);
@@ -852,7 +852,7 @@ contract ConvictionVotingSystem is ReentrancyGuard, Pausable, Ownable {
  * // Update conviction (can be called by anyone)
  * conviction.updateConviction(proposalId);
  *
- * 🎯 CONVICTION VOTING BENEFITS:
+ *  CONVICTION VOTING BENEFITS:
  * - Enables continuous governance without voting periods
  * - Reduces gaming through time requirements
  * - Allows gradual consensus building

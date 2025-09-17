@@ -2,7 +2,7 @@
 
 Complete installation and configuration guide for professional Hardhat development environment.
 
-## 🛠 Prerequisites
+##  Prerequisites
 
 Before installing Hardhat, ensure you have:
 
@@ -25,7 +25,7 @@ npm --version
 git --version
 ```
 
-## 🚀 Installation
+##  Installation
 
 ### Step 1: Create Project Directory
 
@@ -54,7 +54,7 @@ When running `npx hardhat`, you'll see these options:
 
 ```
 ? What do you want to do?
-❯ Create a JavaScript project
+ Create a JavaScript project
   Create a TypeScript project
   Create an empty hardhat.config.js
   Quit
@@ -100,7 +100,7 @@ code --install-extension NomicFoundation.hardhat-solidity
 code --install-extension ms-vscode.vscode-typescript-next
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Basic hardhat.config.ts
 
@@ -351,7 +351,7 @@ EOF
 }
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ### Recommended Structure
 
@@ -459,7 +459,7 @@ build/
 gas-report.txt
 ```
 
-## 🔧 Basic Commands
+##  Basic Commands
 
 ### Compilation
 
@@ -516,7 +516,7 @@ npx hardhat run scripts/deploy.ts --network mainnet
 npx hardhat verify --network goerli CONTRACT_ADDRESS "Constructor arg 1" "Constructor arg 2"
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -574,7 +574,7 @@ npx hardhat size-contracts
 npx hardhat run scripts/check-balances.ts --network localhost
 ```
 
-## ✅ Verification
+##  Verification
 
 ### Test Your Setup
 
@@ -605,7 +605,7 @@ Run the verification:
 npx hardhat test test/setup-verification.test.ts
 ```
 
-## 🚀 Next Steps
+##  Next Steps
 
 Once your Hardhat environment is set up:
 
@@ -615,7 +615,7 @@ Once your Hardhat environment is set up:
 4. **Deploy to Testnet**: Try Goerli or Sepolia
 5. **Explore Plugins**: Add more functionality with Hardhat plugins
 
-## 📚 Additional Resources
+##  Additional Resources
 
 - [Hardhat Documentation](https://hardhat.org/docs)
 - [Ethers.js Documentation](https://docs.ethers.io/)
@@ -624,4 +624,4 @@ Once your Hardhat environment is set up:
 
 ---
 
-**Setup complete!** 🎉 You're ready to build professional smart contracts with Hardhat.
+**Setup complete!**  You're ready to build professional smart contracts with Hardhat.

@@ -776,7 +776,7 @@ contract LendingProtocol is ReentrancyGuard, Pausable, Ownable {
 }
 
 /**
- * 🏦 LENDING PROTOCOL FEATURES:
+ *  LENDING PROTOCOL FEATURES:
  *
  * 1. CORE FUNCTIONALITY:
  *    - Deposit assets to earn interest
@@ -807,7 +807,7 @@ contract LendingProtocol is ReentrancyGuard, Pausable, Ownable {
  *    - TypeScript integration
  *    - Deployment scripts
  *
- * 🚀 EDUCATIONAL VALUE:
+ *  EDUCATIONAL VALUE:
  * - Real-world DeFi protocol implementation
  * - Professional development practices
  * - Comprehensive testing strategies

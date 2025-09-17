@@ -604,7 +604,7 @@ contract UserRegistry {
 }
 
 /**
- * 🧠 KEY LEARNING POINTS:
+ *  KEY LEARNING POINTS:
  *
  * 1. COMPLEX DATA STRUCTURES:
  *    - Nested mappings for user attributes
@@ -630,7 +630,7 @@ contract UserRegistry {
  *    - Privacy controls and permissions
  *    - User verification system
  *
- * ⚠️ PRODUCTION CONSIDERATIONS:
+ *  PRODUCTION CONSIDERATIONS:
  * - Add proper access controls
  * - Implement upgrade patterns
  * - Consider off-chain indexing

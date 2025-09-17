@@ -13,7 +13,7 @@ pragma solidity ^0.8.19;
 
 /**
  * @dev VULNERABLE: Classic reentrancy attack example
- * ❌ This contract is vulnerable to reentrancy attacks
+ *  This contract is vulnerable to reentrancy attacks
  */
 contract VulnerableBank {
     mapping(address => uint256) public balances;
@@ -22,22 +22,22 @@ contract VulnerableBank {
         balances[msg.sender] += msg.value;
     }
 
-    // ❌ VULNERABLE: Updates state after external call
+    //  VULNERABLE: Updates state after external call
     function withdraw(uint256 amount) external {
         require(balances[msg.sender] >= amount, "Insufficient balance");
 
-        // ❌ External call before state update
+        //  External call before state update
         (bool success, ) = msg.sender.call{value: amount}("");
         require(success, "Transfer failed");
 
-        // ❌ State update after external call
+        //  State update after external call
         balances[msg.sender] -= amount;
     }
 }
 
 /**
  * @dev SECURE: Reentrancy-safe implementation
- * ✅ This contract prevents reentrancy attacks
+ *  This contract prevents reentrancy attacks
  */
 contract SecureBank {
     mapping(address => uint256) public balances;
@@ -54,17 +54,17 @@ contract SecureBank {
         balances[msg.sender] += msg.value;
     }
 
-    // ✅ SECURE: Follows checks-effects-interactions pattern
+    //  SECURE: Follows checks-effects-interactions pattern
     function withdraw(uint256 amount) external noReentrancy {
         require(balances[msg.sender] >= amount, "Insufficient balance");
 
-        // ✅ Update state first
+        //  Update state first
         balances[msg.sender] -= amount;
 
-        // ✅ External call last
+        //  External call last
         (bool success, ) = msg.sender.call{value: amount}("");
         if (!success) {
-            // ✅ Revert state on failure
+            //  Revert state on failure
             balances[msg.sender] += amount;
             revert("Transfer failed");
         }
@@ -77,7 +77,7 @@ contract SecureBank {
 
 /**
  * @dev VULNERABLE: Integer overflow/underflow
- * ❌ This contract is vulnerable to arithmetic attacks (Solidity < 0.8.0)
+ *  This contract is vulnerable to arithmetic attacks (Solidity < 0.8.0)
  */
 contract VulnerableToken {
     mapping(address => uint256) public balances;
@@ -88,15 +88,15 @@ contract VulnerableToken {
         balances[msg.sender] = _initialSupply;
     }
 
-    // ❌ VULNERABLE: No overflow protection
+    //  VULNERABLE: No overflow protection
     function transfer(address to, uint256 amount) external {
-        // ❌ Could underflow if amount > balance
+        //  Could underflow if amount > balance
         balances[msg.sender] -= amount;
-        // ❌ Could overflow recipient balance
+        //  Could overflow recipient balance
         balances[to] += amount;
     }
 
-    // ❌ VULNERABLE: Potential overflow in mint
+    //  VULNERABLE: Potential overflow in mint
     function mint(address to, uint256 amount) external {
         balances[to] += amount;
         totalSupply += amount;
@@ -105,7 +105,7 @@ contract VulnerableToken {
 
 /**
  * @dev SECURE: Safe arithmetic operations
- * ✅ This contract prevents arithmetic vulnerabilities
+ *  This contract prevents arithmetic vulnerabilities
  */
 contract SecureToken {
     mapping(address => uint256) public balances;
@@ -119,20 +119,20 @@ contract SecureToken {
         balances[msg.sender] = _initialSupply;
     }
 
-    // ✅ SECURE: Checks for sufficient balance
+    //  SECURE: Checks for sufficient balance
     function transfer(address to, uint256 amount) external {
         if (balances[msg.sender] < amount) {
             revert InsufficientBalance(amount, balances[msg.sender]);
         }
 
-        // ✅ Safe arithmetic (Solidity 0.8.0+ has built-in overflow protection)
+        //  Safe arithmetic (Solidity 0.8.0+ has built-in overflow protection)
         balances[msg.sender] -= amount;
         balances[to] += amount;
     }
 
-    // ✅ SECURE: Overflow protection
+    //  SECURE: Overflow protection
     function mint(address to, uint256 amount) external {
-        // ✅ Check for overflow before operation
+        //  Check for overflow before operation
         if (totalSupply + amount < totalSupply) {
             revert OverflowDetected();
         }
@@ -148,7 +148,7 @@ contract SecureToken {
 
 /**
  * @dev VULNERABLE: Unchecked external calls
- * ❌ This contract doesn't handle external call failures
+ *  This contract doesn't handle external call failures
  */
 contract VulnerablePayment {
     mapping(address => uint256) public payments;
@@ -158,7 +158,7 @@ contract VulnerablePayment {
 
         payments[recipient] += amount;
 
-        // ❌ VULNERABLE: Unchecked external call
+        //  VULNERABLE: Unchecked external call
         recipient.call{value: amount}("");
 
         // Code continues even if call fails
@@ -167,7 +167,7 @@ contract VulnerablePayment {
 
 /**
  * @dev SECURE: Proper external call handling
- * ✅ This contract handles external call failures properly
+ *  This contract handles external call failures properly
  */
 contract SecurePayment {
     mapping(address => uint256) public payments;
@@ -181,10 +181,10 @@ contract SecurePayment {
 
         payments[recipient] += amount;
 
-        // ✅ SECURE: Check external call result
+        //  SECURE: Check external call result
         (bool success, ) = recipient.call{value: amount}("");
         if (!success) {
-            // ✅ Handle failure gracefully
+            //  Handle failure gracefully
             pendingWithdrawals[recipient] += amount;
             emit WithdrawalFailed(recipient, amount);
         } else {
@@ -192,7 +192,7 @@ contract SecurePayment {
         }
     }
 
-    // ✅ Allow manual withdrawal for failed payments
+    //  Allow manual withdrawal for failed payments
     function withdrawPending() external {
         uint256 amount = pendingWithdrawals[msg.sender];
         require(amount > 0, "No pending withdrawal");
@@ -213,7 +213,7 @@ contract SecurePayment {
 
 /**
  * @dev VULNERABLE: Weak access control
- * ❌ This contract has insufficient access controls
+ *  This contract has insufficient access controls
  */
 contract VulnerableContract {
     address public owner;
@@ -223,18 +223,18 @@ contract VulnerableContract {
         owner = msg.sender;
     }
 
-    // ❌ VULNERABLE: tx.origin can be manipulated
+    //  VULNERABLE: tx.origin can be manipulated
     modifier onlyOwner() {
         require(tx.origin == owner, "Not owner");
         _;
     }
 
-    // ❌ VULNERABLE: Public function without access control
+    //  VULNERABLE: Public function without access control
     function setImportantValue(uint256 value) external {
         important_value = value;
     }
 
-    // ❌ VULNERABLE: Uses tx.origin
+    //  VULNERABLE: Uses tx.origin
     function sensitiveFunction() external onlyOwner {
         // Sensitive operations
     }
@@ -242,7 +242,7 @@ contract VulnerableContract {
 
 /**
  * @dev SECURE: Proper access control
- * ✅ This contract implements secure access controls
+ *  This contract implements secure access controls
  */
 contract SecureContract {
     address public owner;
@@ -263,7 +263,7 @@ contract SecureContract {
         authorized[msg.sender] = true;
     }
 
-    // ✅ SECURE: Uses msg.sender, not tx.origin
+    //  SECURE: Uses msg.sender, not tx.origin
     modifier onlyOwner() {
         if (msg.sender != owner) {
             revert UnauthorizedAccess(msg.sender);
@@ -278,12 +278,12 @@ contract SecureContract {
         _;
     }
 
-    // ✅ SECURE: Proper access control
+    //  SECURE: Proper access control
     function setImportantValue(uint256 value) external onlyAuthorized {
         important_value = value;
     }
 
-    // ✅ SECURE: Owner-only function
+    //  SECURE: Owner-only function
     function setAuthorized(address user, bool isAuthorized) external onlyOwner {
         if (user == address(0)) {
             revert InvalidAddress(user);
@@ -292,7 +292,7 @@ contract SecureContract {
         emit AuthorizationChanged(user, isAuthorized);
     }
 
-    // ✅ SECURE: Safe ownership transfer
+    //  SECURE: Safe ownership transfer
     function transferOwnership(address newOwner) external onlyOwner {
         if (newOwner == address(0)) {
             revert InvalidAddress(newOwner);
@@ -313,14 +313,14 @@ contract SecureContract {
 
 /**
  * @dev VULNERABLE: Front-running attack
- * ❌ This contract is vulnerable to front-running
+ *  This contract is vulnerable to front-running
  */
 contract VulnerableAuction {
     address public highestBidder;
     uint256 public highestBid;
     bool public auctionEnded;
 
-    // ❌ VULNERABLE: Bid amount visible in transaction
+    //  VULNERABLE: Bid amount visible in transaction
     function bid() external payable {
         require(!auctionEnded, "Auction ended");
         require(msg.value > highestBid, "Bid too low");
@@ -337,7 +337,7 @@ contract VulnerableAuction {
 
 /**
  * @dev SECURE: Front-running resistant auction
- * ✅ This contract uses commit-reveal to prevent front-running
+ *  This contract uses commit-reveal to prevent front-running
  */
 contract SecureAuction {
     struct Bid {
@@ -362,7 +362,7 @@ contract SecureAuction {
         revealPhaseEnd = commitPhaseEnd + _revealDuration;
     }
 
-    // ✅ SECURE: Commit phase - hide bid amount
+    //  SECURE: Commit phase - hide bid amount
     function commitBid(bytes32 commitment) external payable {
         require(block.timestamp < commitPhaseEnd, "Commit phase ended");
         require(bids[msg.sender].commitment == bytes32(0), "Already committed");
@@ -376,7 +376,7 @@ contract SecureAuction {
         emit BidCommitted(msg.sender, commitment);
     }
 
-    // ✅ SECURE: Reveal phase - reveal actual bid
+    //  SECURE: Reveal phase - reveal actual bid
     function revealBid(uint256 amount, uint256 nonce) external {
         require(block.timestamp >= commitPhaseEnd, "Commit phase not ended");
         require(block.timestamp < revealPhaseEnd, "Reveal phase ended");
@@ -385,7 +385,7 @@ contract SecureAuction {
         require(!bidData.revealed, "Already revealed");
         require(bidData.commitment != bytes32(0), "No commitment found");
 
-        // ✅ Verify commitment
+        //  Verify commitment
         bytes32 hash = keccak256(abi.encodePacked(amount, nonce, msg.sender));
         require(hash == bidData.commitment, "Invalid reveal");
 
@@ -406,17 +406,17 @@ contract SecureAuction {
 
 /**
  * @dev VULNERABLE: Timestamp dependence
- * ❌ This contract is vulnerable to timestamp manipulation
+ *  This contract is vulnerable to timestamp manipulation
  */
 contract VulnerableLottery {
     uint256 public constant TICKET_PRICE = 0.1 ether;
     address[] public players;
 
-    // ❌ VULNERABLE: Relies on block.timestamp for randomness
+    //  VULNERABLE: Relies on block.timestamp for randomness
     function drawWinner() external {
         require(players.length > 0, "No players");
 
-        // ❌ Predictable randomness using timestamp
+        //  Predictable randomness using timestamp
         uint256 winnerIndex = uint256(
             keccak256(abi.encodePacked(block.timestamp))
         ) % players.length;
@@ -429,18 +429,18 @@ contract VulnerableLottery {
 
 /**
  * @dev SECURE: Secure randomness
- * ✅ This contract uses more secure randomness sources
+ *  This contract uses more secure randomness sources
  */
 contract SecureLottery {
     uint256 public constant TICKET_PRICE = 0.1 ether;
     address[] public players;
     uint256 private randNonce;
 
-    // ✅ SECURE: Multiple entropy sources
+    //  SECURE: Multiple entropy sources
     function drawWinner() external {
         require(players.length > 0, "No players");
 
-        // ✅ Combine multiple entropy sources
+        //  Combine multiple entropy sources
         uint256 randomness = uint256(
             keccak256(
                 abi.encodePacked(
@@ -467,7 +467,7 @@ contract SecureLottery {
 }
 
 /**
- * 🚨 VULNERABILITY SUMMARY:
+ *  VULNERABILITY SUMMARY:
  *
  * 1. REENTRANCY:
  *    - Always update state before external calls
@@ -499,7 +499,7 @@ contract SecureLottery {
  *    - Use multiple entropy sources
  *    - Consider oracle-based randomness
  *
- * ⚠️ REMEMBER:
+ *  REMEMBER:
  * - Security is a process, not a product
  * - Always audit your contracts
  * - Test extensively with edge cases

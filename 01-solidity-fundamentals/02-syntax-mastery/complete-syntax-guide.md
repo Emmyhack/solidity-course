@@ -1,10 +1,10 @@
 # Solidity Syntax Mastery - Every Element Explained
 
-🎯 **Goal**: Master every piece of Solidity syntax through practical examples and real-world applications.
+ **Goal**: Master every piece of Solidity syntax through practical examples and real-world applications.
 
-## 🗂️ Learning Path Overview
+##  Learning Path Overview
 
-### **📚 What You'll Master**
+### ** What You'll Master**
 
 1. **[Contract Structure](#contract-structure)** - How smart contracts are organized
 2. **[Variables & Data Types](#variables--data-types)** - Storing different kinds of data
@@ -15,22 +15,22 @@
 7. **[Inheritance](#inheritance)** - Reusing code from other contracts
 8. **[Libraries](#libraries)** - Shared utility functions
 
-### **🚀 Real-World Project**: Digital Banking System
+### ** Real-World Project**: Digital Banking System
 
 As we learn each syntax element, we'll build a complete **Digital Bank** that handles:
 
-- 💰 Account creation and management
-- 💸 Deposits and withdrawals
-- 🔄 Transfers between accounts
-- 📊 Interest calculations
-- 🛡️ Security and access controls
-- 📈 Transaction history
+-  Account creation and management
+-  Deposits and withdrawals
+-  Transfers between accounts
+-  Interest calculations
+-  Security and access controls
+-  Transaction history
 
 ---
 
-## 📋 Contract Structure
+##  Contract Structure
 
-### **🏗️ Basic Contract Template**
+### ** Basic Contract Template**
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -45,7 +45,7 @@ contract DigitalBank {
 }
 ```
 
-**🔍 SYNTAX BREAKDOWN:**
+** SYNTAX BREAKDOWN:**
 
 #### **License and Version Declaration**
 
@@ -73,9 +73,9 @@ contract DigitalBank {
 
 ---
 
-## 🗄️ Variables & Data Types
+##  Variables & Data Types
 
-### **📊 State Variables (Permanent Storage)**
+### ** State Variables (Permanent Storage)**
 
 ```solidity
 contract DigitalBank {
@@ -118,7 +118,7 @@ contract DigitalBank {
 }
 ```
 
-**🔍 DETAILED SYNTAX BREAKDOWN:**
+** DETAILED SYNTAX BREAKDOWN:**
 
 #### **Address Types**
 
@@ -171,7 +171,7 @@ struct Account {
 - **`struct`**: Groups related data together
 - **Real-World**: Like a customer record in a database
 
-### **⚡ Memory vs Storage vs Calldata**
+### ** Memory vs Storage vs Calldata**
 
 ```solidity
 function createAccount(
@@ -189,7 +189,7 @@ function createAccount(
 }
 ```
 
-**🔍 STORAGE LOCATION BREAKDOWN:**
+** STORAGE LOCATION BREAKDOWN:**
 
 - **`storage`**: Permanent blockchain storage (expensive)
 - **`memory`**: Temporary RAM-like storage (moderate cost)
@@ -197,9 +197,9 @@ function createAccount(
 
 ---
 
-## ⚙️ Functions
+##  Functions
 
-### **📝 Function Anatomy**
+### ** Function Anatomy**
 
 ```solidity
 function functionName(
@@ -209,7 +209,7 @@ function functionName(
 }
 ```
 
-### **🏦 Banking Functions with Every Syntax**
+### ** Banking Functions with Every Syntax**
 
 ```solidity
 contract DigitalBank {
@@ -267,7 +267,7 @@ contract DigitalBank {
 }
 ```
 
-**🔍 FUNCTION SYNTAX BREAKDOWN:**
+** FUNCTION SYNTAX BREAKDOWN:**
 
 #### **Visibility Modifiers**
 
@@ -324,9 +324,9 @@ function getDetails() public view returns (
 
 ---
 
-## 🛡️ Modifiers
+##  Modifiers
 
-### **🔒 Security Modifiers for Banking**
+### ** Security Modifiers for Banking**
 
 ```solidity
 contract DigitalBank {
@@ -381,7 +381,7 @@ contract DigitalBank {
 }
 ```
 
-**🔍 MODIFIER SYNTAX BREAKDOWN:**
+** MODIFIER SYNTAX BREAKDOWN:**
 
 #### **Basic Modifier Structure**
 
@@ -417,9 +417,9 @@ function complexFunction()
 
 ---
 
-## 📡 Events
+##  Events
 
-### **📊 Banking Event Logging**
+### ** Banking Event Logging**
 
 ```solidity
 contract DigitalBank {
@@ -492,7 +492,7 @@ contract DigitalBank {
 }
 ```
 
-**🔍 EVENT SYNTAX BREAKDOWN:**
+** EVENT SYNTAX BREAKDOWN:**
 
 #### **Event Declaration**
 
@@ -525,9 +525,9 @@ emit EventName(value1, value2, value3);
 
 ---
 
-## ⚠️ Error Handling
+##  Error Handling
 
-### **🚨 Banking Security with Error Handling**
+### ** Banking Security with Error Handling**
 
 ```solidity
 contract DigitalBank {
@@ -590,7 +590,7 @@ contract DigitalBank {
 }
 ```
 
-**🔍 ERROR HANDLING SYNTAX BREAKDOWN:**
+** ERROR HANDLING SYNTAX BREAKDOWN:**
 
 #### **require() Statement**
 
@@ -641,9 +641,9 @@ try externalContract.function() returns (returnType value) {
 
 ---
 
-## 🧬 Inheritance
+##  Inheritance
 
-### **🏦 Building Banking Hierarchy**
+### ** Building Banking Hierarchy**
 
 ```solidity
 // Base contract
@@ -709,7 +709,7 @@ contract PremiumSavings is SavingsAccount {
 }
 ```
 
-**🔍 INHERITANCE SYNTAX BREAKDOWN:**
+** INHERITANCE SYNTAX BREAKDOWN:**
 
 #### **Basic Inheritance**
 
@@ -753,9 +753,9 @@ contract Child is Parent1, Parent2 {
 
 ---
 
-## 📚 Libraries
+##  Libraries
 
-### **🔧 Banking Utility Library**
+### ** Banking Utility Library**
 
 ```solidity
 // Library definition
@@ -841,7 +841,7 @@ contract BankWithLibrary {
 }
 ```
 
-**🔍 LIBRARY SYNTAX BREAKDOWN:**
+** LIBRARY SYNTAX BREAKDOWN:**
 
 #### **Library Declaration**
 
@@ -875,7 +875,7 @@ using LibraryName for dataType;
 
 ---
 
-## 🎯 Complete Banking System Example
+##  Complete Banking System Example
 
 Here's how all these syntax elements work together in a real banking system:
 
@@ -1054,16 +1054,16 @@ contract DigitalBank {
 }
 ```
 
-## 🎓 Syntax Summary Checklist
+##  Syntax Summary Checklist
 
-### **✅ Contract Structure**
+### ** Contract Structure**
 
 - [ ] License declaration (`SPDX-License-Identifier`)
 - [ ] Pragma statement (`pragma solidity`)
 - [ ] Contract declaration (`contract Name`)
 - [ ] Proper organization (state vars → events → modifiers → constructor → functions)
 
-### **✅ Variables & Data Types**
+### ** Variables & Data Types**
 
 - [ ] Address types (`address`, `address payable`)
 - [ ] Numeric types (`uint256`, `int256`, `uint8`)
@@ -1074,7 +1074,7 @@ contract DigitalBank {
 - [ ] Structs (`struct Name { }`)
 - [ ] Storage locations (`storage`, `memory`, `calldata`)
 
-### **✅ Functions**
+### ** Functions**
 
 - [ ] Function declaration (`function name()`)
 - [ ] Visibility (`public`, `external`, `internal`, `private`)
@@ -1083,20 +1083,20 @@ contract DigitalBank {
 - [ ] Multiple return values
 - [ ] Named returns
 
-### **✅ Modifiers**
+### ** Modifiers**
 
 - [ ] Modifier declaration (`modifier name()`)
 - [ ] Using modifiers in functions
 - [ ] Multiple modifiers
 - [ ] Placeholder (`_`)
 
-### **✅ Events**
+### ** Events**
 
 - [ ] Event declaration (`event Name()`)
 - [ ] Indexed parameters
 - [ ] Emitting events (`emit EventName()`)
 
-### **✅ Error Handling**
+### ** Error Handling**
 
 - [ ] `require()` statements
 - [ ] Custom errors
@@ -1104,7 +1104,7 @@ contract DigitalBank {
 - [ ] `assert()` for invariants
 - [ ] `try-catch` for external calls
 
-### **✅ Inheritance**
+### ** Inheritance**
 
 - [ ] Basic inheritance (`is Parent`)
 - [ ] Virtual functions
@@ -1112,14 +1112,14 @@ contract DigitalBank {
 - [ ] Super calls
 - [ ] Multiple inheritance
 
-### **✅ Libraries**
+### ** Libraries**
 
 - [ ] Library declaration (`library Name`)
 - [ ] Using libraries (`using LibraryName for Type`)
 - [ ] Internal functions only
 - [ ] No state variables
 
-## 🚀 Next Steps
+##  Next Steps
 
 Congratulations! You now understand every piece of Solidity syntax. Ready to put it all together?
 
@@ -1131,4 +1131,4 @@ Congratulations! You now understand every piece of Solidity syntax. Ready to put
 2. **[NFT Marketplace](../03-real-projects/nft-marketplace/)** - Learn token standards
 3. **[DeFi Protocol](../03-real-projects/defi-protocol/)** - Advanced DeFi concepts
 
-Each project builds on the syntax you've mastered here! 🎯
+Each project builds on the syntax you've mastered here! 

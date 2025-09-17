@@ -2,11 +2,11 @@
 
 Create a simple voting system for proposals with time limits and access controls.
 
-## 🎯 Objective
+##  Objective
 
 Build a contract that allows users to create proposals and vote on them within specified time limits.
 
-## 📋 Requirements
+##  Requirements
 
 ### Data Structures
 
@@ -35,7 +35,7 @@ function executeProposal(uint256 proposalId) public
 function getProposal(uint256 proposalId) public view returns (Proposal memory)
 ```
 
-## ✅ Requirements Checklist
+##  Requirements Checklist
 
 - [ ] Anyone can create proposals
 - [ ] Voters can only vote once per proposal
@@ -44,7 +44,7 @@ function getProposal(uint256 proposalId) public view returns (Proposal memory)
 - [ ] Events emitted for all major actions
 - [ ] Proper time validation
 
-## 🧪 Test Scenarios
+##  Test Scenarios
 
 1. Create a proposal
 2. Vote yes and no from different accounts

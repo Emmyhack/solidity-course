@@ -483,7 +483,7 @@ contract AdvancedArrays {
 }
 
 /**
- * 🧠 LEARNING POINTS:
+ *  LEARNING POINTS:
  *
  * 1. ARRAY TYPES:
  *    - Dynamic arrays: flexible size, higher gas costs
@@ -514,13 +514,13 @@ contract AdvancedArrays {
  *    - Sorting only when necessary
  *    - Index mappings for O(1) lookups
  *
- * ⚠️ WARNINGS:
+ *  WARNINGS:
  * - Large arrays can cause out-of-gas errors
  * - Sorting is expensive - do off-chain when possible
  * - Multidimensional arrays increase complexity
  * - Always validate array bounds
  *
- * 🚀 TRY THIS:
+ *  TRY THIS:
  * 1. Test different array operations and measure gas
  * 2. Implement your own data structures
  * 3. Compare storage vs memory costs

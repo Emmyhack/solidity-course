@@ -618,7 +618,7 @@ contract FlashLoanReceiver {
 }
 
 /**
- * 🧪 TEST SUITE FEATURES:
+ *  TEST SUITE FEATURES:
  *
  * 1. COMPREHENSIVE COVERAGE:
  *    - Unit tests for all core functions
@@ -644,7 +644,7 @@ contract FlashLoanReceiver {
  *    - Helper functions for reusability
  *    - Console logging for debugging
  *
- * 🚀 USAGE:
+ *  USAGE:
  * - forge test -vv (verbose output)
  * - forge test --gas-report (gas analysis)
  * - forge test --fuzz-runs 10000 (intensive fuzzing)

@@ -2,7 +2,7 @@
 
 Learn to build scalable blockchain applications using Layer 2 solutions and cross-chain infrastructure.
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 By the end of this module, you will:
 
@@ -13,7 +13,7 @@ By the end of this module, you will:
 - Work with Layer 2 development tools and infrastructure
 - Understand cross-chain messaging and interoperability protocols
 
-## 📚 Topics Covered
+##  Topics Covered
 
 ### 1. Layer 2 Fundamentals
 - **Scaling Solutions Overview**
@@ -67,7 +67,7 @@ By the end of this module, you will:
   - Cross-chain marketplaces
   - Metadata synchronization
 
-## 🛠️ Projects
+##  Projects
 
 ### Project 1: Cross-Chain Bridge
 Build a comprehensive cross-chain bridge supporting multiple token types and chains.
@@ -117,7 +117,7 @@ Implement governance that works across multiple chains and Layer 2s.
 - `L2GovernanceHub.sol` - Layer 2 governance hub
 - `ChainRegistry.sol` - Supported chains registry
 
-## 🔧 Development Tools
+##  Development Tools
 
 ### Layer 2 Frameworks
 - **Arbitrum**: Optimistic rollup development
@@ -145,7 +145,7 @@ npm install @matterlabs/zksync-contracts @matterlabs/hardhat-zksync-solc
 npm install @chainlink/contracts @axelar-network/axelar-contracts-sdk
 ```
 
-## 📖 Key Concepts
+##  Key Concepts
 
 ### Layer 2 Scaling Trilemma
 - **Security**: Inherit Ethereum's security
@@ -164,7 +164,7 @@ npm install @chainlink/contracts @axelar-network/axelar-contracts-sdk
 - **Function Calls**: Execute functions on remote chains
 - **State Synchronization**: Keep state consistent across chains
 
-## 🎯 Best Practices
+##  Best Practices
 
 ### Layer 2 Development
 1. **Gas Optimization**: Minimize L1 data posting costs
@@ -184,7 +184,7 @@ npm install @chainlink/contracts @axelar-network/axelar-contracts-sdk
 3. **Fee Coordination**: Manage fees across chains
 4. **User Experience**: Seamless cross-chain interactions
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. **Set up development environment**
 2. **Deploy to Layer 2 testnets**
@@ -192,7 +192,7 @@ npm install @chainlink/contracts @axelar-network/axelar-contracts-sdk
 4. **Test bridge functionality**
 5. **Optimize for Layer 2 specifics**
 
-## 📊 Performance Metrics
+##  Performance Metrics
 
 ### Layer 2 Metrics
 - **Transaction Throughput**: TPS comparison
@@ -206,7 +206,7 @@ npm install @chainlink/contracts @axelar-network/axelar-contracts-sdk
 - **Validator Response**: Validator participation rates
 - **Failure Rates**: Failed transaction percentages
 
-## 🔮 Advanced Topics
+##  Advanced Topics
 
 ### Zero-Knowledge Development
 - Cairo language programming

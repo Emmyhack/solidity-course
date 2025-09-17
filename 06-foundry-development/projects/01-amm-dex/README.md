@@ -2,7 +2,7 @@
 
 A comprehensive Automated Market Maker (AMM) Decentralized Exchange implementation built with Foundry, demonstrating advanced Solidity development, testing, and deployment practices.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project showcases a production-ready AMM DEX with the following features:
 
@@ -13,7 +13,7 @@ This project showcases a production-ready AMM DEX with the following features:
 - **Security Features**: Reentrancy protection, access controls, emergency functions
 - **Gas Optimization**: Efficient operations with detailed gas analysis
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Core Components
 
@@ -31,7 +31,7 @@ This project showcases a production-ready AMM DEX with the following features:
 - **Multi-path Swapping**: Support for complex trading routes
 - **Admin Controls**: Configurable fees and emergency functions
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -77,7 +77,7 @@ forge test --fuzz-runs 10000
 forge test --match-contract Invariant
 ```
 
-## 🧪 Testing
+##  Testing
 
 This project demonstrates Foundry's advanced testing capabilities:
 
@@ -123,7 +123,7 @@ forge test --match-contract Invariant --invariant-runs 100
 forge test --match-contract GasOptimization --gas-report
 ```
 
-## 📊 Gas Analysis
+##  Gas Analysis
 
 Comprehensive gas optimization analysis is included:
 
@@ -137,7 +137,7 @@ Comprehensive gas optimization analysis is included:
 | Skim                       | ~50k      | < 50k  |
 | Sync                       | ~30k      | < 30k  |
 
-## 🌐 Deployment
+##  Deployment
 
 ### Environment Setup
 
@@ -179,7 +179,7 @@ forge script script/Deploy.s.sol:UpgradeAMM \
   --broadcast
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Foundry Configuration (`foundry.toml`)
 
@@ -213,7 +213,7 @@ fail_on_revert = false
 - **Sepolia**: Test tokens with moderate supply
 - **Mainnet**: Integration with existing tokens (WETH, USDC)
 
-## 📖 Learning Objectives
+##  Learning Objectives
 
 This project demonstrates:
 
@@ -237,7 +237,7 @@ This project demonstrates:
    - Gas optimization techniques
    - Deployment automation
 
-## 🔒 Security Considerations
+##  Security Considerations
 
 ### Security Features
 
@@ -255,7 +255,7 @@ This project demonstrates:
 - Price manipulation resistance
 - Emergency scenario handling
 
-## 🔍 Advanced Features
+##  Advanced Features
 
 ### Flash Loans
 
@@ -290,7 +290,7 @@ function _update(uint256 balance0, uint256 balance1, uint112 _reserve0, uint112 
 }
 ```
 
-## 📚 Educational Value
+##  Educational Value
 
 ### Foundry Concepts Demonstrated
 
@@ -306,7 +306,7 @@ function _update(uint256 balance0, uint256 balance1, uint112 _reserve0, uint112 
 - **Flash Loans**: Uncollateralized lending with callbacks
 - **Price Discovery**: Market-driven price determination
 
-## 🚀 Next Steps
+##  Next Steps
 
 1. **Integration Testing**: Connect with other DeFi protocols
 2. **Frontend Development**: Build React/Next.js interface
@@ -314,14 +314,14 @@ function _update(uint256 balance0, uint256 balance1, uint112 _reserve0, uint112 
 4. **Layer 2 Deployment**: Deploy to Polygon, Arbitrum, Optimism
 5. **Security Audit**: Professional security review
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please read the contributing guidelines and submit pull requests for any improvements.
 
 ---
 
-**⚠️ Disclaimer**: This is an educational project. Do not use in production without proper auditing and testing.
+** Disclaimer**: This is an educational project. Do not use in production without proper auditing and testing.

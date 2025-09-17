@@ -2,7 +2,7 @@
 
 Test your understanding of complex data structures, gas optimization, and advanced Solidity patterns.
 
-## 📋 Instructions
+##  Instructions
 
 - **Time Limit**: 45 minutes
 - **Total Points**: 100 points
@@ -467,4 +467,4 @@ contract NFTMarketplace {
 
 ---
 
-**Time to test your data structure mastery!** 🧠⚡
+**Time to test your data structure mastery!** 

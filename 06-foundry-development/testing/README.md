@@ -2,7 +2,7 @@
 
 Comprehensive guide to testing Solidity contracts with Foundry's powerful testing framework.
 
-## 📚 Table of Contents
+##  Table of Contents
 
 1. [Testing Philosophy](#testing-philosophy)
 2. [Test Structure](#test-structure)
@@ -15,7 +15,7 @@ Comprehensive guide to testing Solidity contracts with Foundry's powerful testin
 9. [Integration Testing](#integration-testing)
 10. [Best Practices](#best-practices)
 
-## 🧠 Testing Philosophy
+##  Testing Philosophy
 
 ### Why Test Smart Contracts?
 
@@ -38,7 +38,7 @@ Smart contracts are immutable once deployed and handle valuable assets. Comprehe
 Fuzzing & Property Tests (Continuous)
 ```
 
-## 🏗 Test Structure
+##  Test Structure
 
 ### Test File Organization
 
@@ -75,19 +75,19 @@ contract YourContractTest is Test {
 ### Naming Conventions
 
 ```solidity
-// ✅ Good test naming
+//  Good test naming
 function test_TransferTokens() public { }
 function test_RevertWhen_InsufficientBalance() public { }
 function testFuzz_DepositAmount(uint256 amount) public { }
 function invariant_TotalSupplyEqualsIndividualBalances() public { }
 
-// ❌ Poor test naming
+//  Poor test naming
 function test1() public { }
 function testTransfer() public { }
 function check() public { }
 ```
 
-## 🔬 Basic Unit Tests
+##  Basic Unit Tests
 
 ### Setup and Teardown
 
@@ -187,7 +187,7 @@ function test_RevertConditions() public {
 }
 ```
 
-## 🎭 Advanced Testing Techniques
+##  Advanced Testing Techniques
 
 ### Pranking (Impersonation)
 
@@ -267,7 +267,7 @@ function test_EnvironmentVariables() public {
 }
 ```
 
-## 🎲 Fuzzing & Property Testing
+##  Fuzzing & Property Testing
 
 ### Basic Fuzzing
 
@@ -352,7 +352,7 @@ function testFuzz_PropertyConservation(
 }
 ```
 
-## 🔄 Invariant Testing
+##  Invariant Testing
 
 ### Setup Invariant Tests
 
@@ -444,7 +444,7 @@ contract TokenHandler {
 }
 ```
 
-## 🌐 Mocking & Forking
+##  Mocking & Forking
 
 ### Mainnet Forking
 
@@ -527,7 +527,7 @@ function test_AdvancedMocking() public {
 }
 ```
 
-## ⛽ Gas Testing
+##  Gas Testing
 
 ### Basic Gas Testing
 
@@ -577,7 +577,7 @@ function test_GasBenchmark() public {
 }
 ```
 
-## 🔗 Integration Testing
+##  Integration Testing
 
 ### Multi-Contract Integration
 
@@ -627,7 +627,7 @@ contract DeFiIntegrationTest is Test {
 }
 ```
 
-## 📋 Best Practices
+##  Best Practices
 
 ### Test Organization
 
@@ -705,7 +705,7 @@ function test_EdgeCases() public {
 ### Performance Tips
 
 ```solidity
-// ✅ Efficient testing
+//  Efficient testing
 function test_Efficient() public {
     // Use makeAddr for test addresses (cheaper than new addresses)
     address user = makeAddr("user");
@@ -719,7 +719,7 @@ function test_Efficient() public {
     assertEq(allowance, expectedAllowance);
 }
 
-// ❌ Inefficient testing
+//  Inefficient testing
 function test_Inefficient() public {
     // Creating new addresses is expensive
     address user = address(uint160(block.timestamp));
@@ -754,4 +754,4 @@ function test_RobustErrorHandling() public {
 
 ---
 
-**Testing complete!** 🧪 Your contracts are now thoroughly tested and ready for deployment.
+**Testing complete!**  Your contracts are now thoroughly tested and ready for deployment.

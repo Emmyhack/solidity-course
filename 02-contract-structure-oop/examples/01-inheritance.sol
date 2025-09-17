@@ -391,7 +391,7 @@ contract DerivedContract is BaseContract {
 }
 
 /**
- * 🧠 LEARNING POINTS:
+ *  LEARNING POINTS:
  *
  * 1. INHERITANCE BASICS:
  *    - Use 'is' keyword to inherit
@@ -418,7 +418,7 @@ contract DerivedContract is BaseContract {
  *    - All functions are implicitly virtual
  *    - Used for standardization (like ERC standards)
  *
- * 🚀 TRY THIS:
+ *  TRY THIS:
  * 1. Deploy each contract and test inheritance
  * 2. Try overriding functions in different ways
  * 3. Create your own abstract contract

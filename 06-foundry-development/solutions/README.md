@@ -2,7 +2,7 @@
 
 This directory contains reference implementations and solutions for Module 6: Foundry Development.
 
-## 📁 Structure
+##  Structure
 
 ### Core Implementation
 
@@ -22,37 +22,37 @@ This directory contains reference implementations and solutions for Module 6: Fo
 - **Environment Configs**: Network-specific configurations
 - **Verification Scripts**: Contract verification automation
 
-## 🎯 Key Features Implemented
+##  Key Features Implemented
 
 ### AMM Core Functionality
 
-✅ **Liquidity Management**: Add/remove liquidity with LP tokens
-✅ **Token Swapping**: Efficient bidirectional swaps with fees
-✅ **Flash Loans**: Uncollateralized loans with callback mechanism
-✅ **Price Calculations**: Accurate quote and amount calculations
+ **Liquidity Management**: Add/remove liquidity with LP tokens
+ **Token Swapping**: Efficient bidirectional swaps with fees
+ **Flash Loans**: Uncollateralized loans with callback mechanism
+ **Price Calculations**: Accurate quote and amount calculations
 
 ### Security & Safety
 
-✅ **Reentrancy Protection**: CEI pattern and ReentrancyGuard
-✅ **Access Control**: Owner-only administrative functions  
-✅ **Input Validation**: Comprehensive parameter checking
-✅ **Emergency Functions**: Skim and sync for edge cases
+ **Reentrancy Protection**: CEI pattern and ReentrancyGuard
+ **Access Control**: Owner-only administrative functions  
+ **Input Validation**: Comprehensive parameter checking
+ **Emergency Functions**: Skim and sync for edge cases
 
 ### Testing Excellence
 
-✅ **Unit Tests**: Individual function validation
-✅ **Fuzz Tests**: Property-based testing with bounded inputs
-✅ **Invariant Tests**: System-wide property verification
-✅ **Gas Analysis**: Performance optimization and benchmarking
+ **Unit Tests**: Individual function validation
+ **Fuzz Tests**: Property-based testing with bounded inputs
+ **Invariant Tests**: System-wide property verification
+ **Gas Analysis**: Performance optimization and benchmarking
 
 ### Production Features
 
-✅ **Multi-Network Deployment**: Mainnet, testnet, local support
-✅ **Contract Verification**: Automated verification on block explorers
-✅ **Gas Optimization**: Efficient operations with detailed analysis
-✅ **Professional Documentation**: Comprehensive code comments
+ **Multi-Network Deployment**: Mainnet, testnet, local support
+ **Contract Verification**: Automated verification on block explorers
+ **Gas Optimization**: Efficient operations with detailed analysis
+ **Professional Documentation**: Comprehensive code comments
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # Clone and setup
@@ -74,7 +74,7 @@ forge test --gas-report
 forge script script/Deploy.s.sol:QuickDeploy --fork-url http://localhost:8545 --broadcast
 ```
 
-## 📊 Performance Metrics
+##  Performance Metrics
 
 ### Gas Usage Achievements
 
@@ -92,7 +92,7 @@ forge script script/Deploy.s.sol:QuickDeploy --fork-url http://localhost:8545 --
 - **Invariant Tests**: 256 runs, 15 depth
 - **Gas Tests**: All operations benchmarked
 
-## 🔧 Advanced Features
+##  Advanced Features
 
 ### Mathematical Precision
 
@@ -115,7 +115,7 @@ forge script script/Deploy.s.sol:QuickDeploy --fork-url http://localhost:8545 --
 - Minimum output guarantees
 - Deadline enforcement
 
-## 🧪 Testing Strategies
+##  Testing Strategies
 
 ### Property-Based Testing
 
@@ -145,7 +145,7 @@ function test_gas_swap() public {
 }
 ```
 
-## 🌐 Deployment Guide
+##  Deployment Guide
 
 ### Environment Setup
 
@@ -173,7 +173,7 @@ forge script script/Deploy.s.sol:DeployAMMDEX \
   --slow
 ```
 
-## 🔒 Security Analysis
+##  Security Analysis
 
 ### Audit Checklist
 
@@ -193,7 +193,7 @@ forge script script/Deploy.s.sol:DeployAMMDEX \
 - **Oracle Manipulation**: Internal price calculation
 - **Liquidity Attacks**: Minimum liquidity locks
 
-## 📚 Learning Outcomes
+##  Learning Outcomes
 
 After studying these solutions, you should understand:
 
@@ -218,7 +218,7 @@ After studying these solutions, you should understand:
 - Documentation and commenting standards
 - Performance optimization techniques
 
-## 🚀 Next Steps
+##  Next Steps
 
 ### Enhancement Ideas
 
@@ -237,4 +237,4 @@ After studying these solutions, you should understand:
 
 ---
 
-**🎉 Congratulations!** You've successfully completed Module 6 and built a production-ready AMM DEX with Foundry. These solutions demonstrate professional-grade Solidity development with comprehensive testing, security, and optimization. You're now ready to build complex DeFi protocols! 🚀
+** Congratulations!** You've successfully completed Module 6 and built a production-ready AMM DEX with Foundry. These solutions demonstrate professional-grade Solidity development with comprehensive testing, security, and optimization. You're now ready to build complex DeFi protocols! 

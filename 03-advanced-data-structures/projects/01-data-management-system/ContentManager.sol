@@ -727,7 +727,7 @@ contract ContentManager {
 }
 
 /**
- * 🧠 KEY LEARNING POINTS:
+ *  KEY LEARNING POINTS:
  *
  * 1. COMPLEX RELATIONSHIPS:
  *    - Posts, comments, categories, and tags interconnected
@@ -753,7 +753,7 @@ contract ContentManager {
  *    - Content reporting and flagging
  *    - Category management system
  *
- * ⚠️ PRODUCTION CONSIDERATIONS:
+ *  PRODUCTION CONSIDERATIONS:
  * - Implement proper access controls
  * - Add content moderation tools
  * - Consider gas costs for complex operations

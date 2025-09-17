@@ -2,7 +2,7 @@
 
 Understanding the core principles of smart contract security is essential for building robust, attack-resistant applications.
 
-## 🎯 Security Mindset
+##  Security Mindset
 
 ### The Security-First Approach
 
@@ -49,7 +49,7 @@ Design as if every user is an attacker:
 - Never trust external contracts
 - Expect unexpected behavior
 
-## 🛡️ Security Categories
+##  Security Categories
 
 ### 1. Code-Level Security
 
@@ -146,7 +146,7 @@ function emergencyPause() external onlyEmergencyRole {
 // Require multi-signature for critical changes
 ```
 
-## 🔍 Security Analysis Framework
+##  Security Analysis Framework
 
 ### 1. Threat Modeling
 
@@ -194,7 +194,7 @@ function emergencyPause() external onlyEmergencyRole {
 - Availability during incidents
 - Recovery capabilities
 
-## 🔒 Security Patterns
+##  Security Patterns
 
 ### 1. Checks-Effects-Interactions
 
@@ -291,7 +291,7 @@ contract WithdrawalPattern {
 }
 ```
 
-## 📊 Security Metrics
+##  Security Metrics
 
 ### Code Quality Metrics
 
@@ -314,7 +314,7 @@ contract WithdrawalPattern {
 - **Recovery Time**: <24 hours for major incidents
 - **False Positive Rate**: <5% for monitoring alerts
 
-## 🚨 Incident Response
+##  Incident Response
 
 ### 1. Detection
 
@@ -354,7 +354,7 @@ contract WithdrawalPattern {
 - User compensation if needed
 - Security enhancements
 
-## 📚 Security Resources
+##  Security Resources
 
 ### Essential Reading
 
@@ -378,4 +378,4 @@ contract WithdrawalPattern {
 
 ---
 
-**Remember**: Security is not a destination, it's a journey. Stay vigilant, stay updated, and always prioritize the safety of user funds. 🛡️
+**Remember**: Security is not a destination, it's a journey. Stay vigilant, stay updated, and always prioritize the safety of user funds. 

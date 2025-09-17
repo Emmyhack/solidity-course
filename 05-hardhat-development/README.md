@@ -2,7 +2,7 @@
 
 Master professional Solidity development with Hardhat, the most popular Ethereum development environment.
 
-## 📚 Module Overview
+##  Module Overview
 
 This comprehensive module covers Hardhat development from setup to production deployment. You'll learn to build, test, and deploy smart contracts using industry-standard tools and workflows.
 
@@ -10,7 +10,7 @@ This comprehensive module covers Hardhat development from setup to production de
 **Difficulty:** Intermediate  
 **Prerequisites:** Modules 1-4
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 By the end of this module, you will be able to:
 
@@ -23,7 +23,7 @@ By the end of this module, you will be able to:
 - Debug and optimize contract gas usage
 - Manage deployments across environments
 
-## 📚 Topics Covered
+##  Topics Covered
 
 ### 1. Hardhat Setup & Configuration
 
@@ -58,7 +58,7 @@ By the end of this module, you will be able to:
 - Event testing and filtering
 - Contract interaction scripts
 
-## 🛠 Development Environment
+##  Development Environment
 
 ### Required Tools
 
@@ -86,7 +86,7 @@ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
 npm install @openzeppelin/contracts
 ```
 
-## 📋 Module Structure
+##  Module Structure
 
 - [**Setup Guide**](./setup/) - Complete environment setup
 - [**Examples**](./examples/) - Sample projects and configurations
@@ -95,14 +95,14 @@ npm install @openzeppelin/contracts
 - [**Deployment**](./deployment/) - Production deployment guides
 - [**Solutions**](./solutions/) - Reference implementations
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Follow the [Setup Guide](./setup/README.md)
 2. Explore [Basic Project Structure](./examples/01-basic-setup/)
 3. Build the [DeFi Lending Protocol](./projects/01-lending-protocol/)
 4. Complete all testing assignments
 
-## ⏱ Estimated Time
+##  Estimated Time
 
 - **Setup & Configuration**: 2-3 hours
 - **Testing Framework**: 4-5 hours
@@ -110,7 +110,7 @@ npm install @openzeppelin/contracts
 - **Projects**: 8-10 hours
 - **Total**: 17-22 hours
 
-## 📖 Prerequisites
+##  Prerequisites
 
 - Completed Modules 1-4
 - Node.js and npm familiarity
@@ -119,4 +119,4 @@ npm install @openzeppelin/contracts
 
 ---
 
-**Ready for professional development?** Start with [Hardhat Setup](./setup/README.md) 🔧
+**Ready for professional development?** Start with [Hardhat Setup](./setup/README.md) 

@@ -990,7 +990,7 @@ contract AdvancedVotingMechanisms is
 }
 
 /**
- * 🗳️ ADVANCED VOTING MECHANISMS FEATURES:
+ *  ADVANCED VOTING MECHANISMS FEATURES:
  *
  * 1. MULTIPLE VOTING SYSTEMS:
  *    - Simple majority voting
@@ -1025,7 +1025,7 @@ contract AdvancedVotingMechanisms is
  *    - Multi-choice proposals
  *    - Instant runoff voting
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Simple voting
  * voting.vote(proposalId, VoteChoice.FOR, "Support this proposal");
@@ -1043,7 +1043,7 @@ contract AdvancedVotingMechanisms is
  * // Vote on behalf
  * voting.voteOnBehalf(delegatorAddress, proposalId, VoteChoice.FOR, "Voting as delegate");
  *
- * 🎯 VOTING PHILOSOPHY:
+ *  VOTING PHILOSOPHY:
  * - Fair representation through multiple mechanisms
  * - Protection against manipulation and attacks
  * - Incentivized participation and good governance

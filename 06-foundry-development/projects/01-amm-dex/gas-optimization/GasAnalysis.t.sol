@@ -559,7 +559,7 @@ contract FlashLoanTester {
 }
 
 /**
- * ⛽ GAS OPTIMIZATION FEATURES:
+ *  GAS OPTIMIZATION FEATURES:
  *
  * 1. COMPREHENSIVE ANALYSIS:
  *    - Individual operation gas costs
@@ -585,7 +585,7 @@ contract FlashLoanTester {
  *    - Realistic transaction patterns
  *    - Edge case gas consumption
  *
- * 📊 USAGE:
+ *  USAGE:
  * - forge test --match-contract GasOptimization --gas-report
  * - Use detailed gas reporting for optimization
  * - Monitor gas costs across contract changes

@@ -337,7 +337,7 @@ contract FunctionsAndControlFlow {
 }
 
 /**
- * 🧠 LEARNING POINTS:
+ *  LEARNING POINTS:
  *
  * 1. VISIBILITY:
  *    - public: Anyone can call
@@ -361,7 +361,7 @@ contract FunctionsAndControlFlow {
  *    - Always validate inputs first
  *    - Fail fast with clear error messages
  *
- * 🚀 TRY THIS:
+ *  TRY THIS:
  * 1. Test different function types
  * 2. Try calling external functions internally (will fail)
  * 3. Experiment with loops and gas limits

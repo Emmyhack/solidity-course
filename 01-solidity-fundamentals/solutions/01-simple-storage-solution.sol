@@ -227,7 +227,7 @@ contract SimpleStorage {
 }
 
 /**
- * 🧠 SOLUTION LEARNING POINTS:
+ *  SOLUTION LEARNING POINTS:
  *
  * 1. ACCESS CONTROL:
  *    - Owner has special privileges
@@ -256,7 +256,7 @@ contract SimpleStorage {
  *    - Consistent naming conventions
  *    - Proper error handling
  *
- * 🚀 WHAT'S NEXT:
+ *  WHAT'S NEXT:
  * - Try the bonus challenges
  * - Optimize for gas usage
  * - Add more sophisticated access control

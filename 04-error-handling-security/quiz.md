@@ -280,4 +280,4 @@ D) Combination of automated tools, manual review, and formal verification
 
 ---
 
-**Remember**: In smart contract development, being 99% secure is not good enough. Strive for perfection and always err on the side of caution. 🛡️
+**Remember**: In smart contract development, being 99% secure is not good enough. Strive for perfection and always err on the side of caution. 

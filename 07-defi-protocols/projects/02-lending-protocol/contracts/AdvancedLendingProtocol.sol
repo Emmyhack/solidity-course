@@ -1029,7 +1029,7 @@ interface IFlashLoanReceiver {
 }
 
 /**
- * 🏦 ADVANCED LENDING PROTOCOL FEATURES:
+ *  ADVANCED LENDING PROTOCOL FEATURES:
  *
  * 1. COMPREHENSIVE LENDING SYSTEM:
  *    - Multi-asset supply and borrowing
@@ -1061,7 +1061,7 @@ interface IFlashLoanReceiver {
  *    - User account data aggregation
  *    - Real-time utilization and rates
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Supply collateral
  * protocol.supply(USDC, 1000e6);

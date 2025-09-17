@@ -2,11 +2,11 @@
 
 Build a smart contract calculator with memory and history features.
 
-## 🎯 Objective
+##  Objective
 
 Create a calculator contract that performs basic arithmetic operations and maintains a history of calculations.
 
-## 📋 Requirements
+##  Requirements
 
 ### Core Functions
 
@@ -45,7 +45,7 @@ function getHistoryLength() public view returns (uint256)
 function clearHistory() public // Owner only
 ```
 
-## ✅ Requirements Checklist
+##  Requirements Checklist
 
 - [ ] All arithmetic functions work correctly
 - [ ] Division by zero is handled properly
@@ -55,7 +55,7 @@ function clearHistory() public // Owner only
 - [ ] Only owner can clear history
 - [ ] Overflow protection (use SafeMath concepts)
 
-## 🧪 Test Cases
+##  Test Cases
 
 1. Test basic arithmetic operations
 2. Test division by zero (should revert)

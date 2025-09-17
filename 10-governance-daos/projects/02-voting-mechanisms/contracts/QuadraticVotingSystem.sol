@@ -685,7 +685,7 @@ contract QuadraticVotingSystem is ReentrancyGuard, Pausable, Ownable {
 }
 
 /**
- * 🗳️ QUADRATIC VOTING FEATURES:
+ *  QUADRATIC VOTING FEATURES:
  *
  * 1. DEMOCRATIC VOICE DISTRIBUTION:
  *    - Voice = √Credits prevents wealth dominance
@@ -710,7 +710,7 @@ contract QuadraticVotingSystem is ReentrancyGuard, Pausable, Ownable {
  *    - Strategic credit distribution
  *    - Voice efficiency optimization
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Register and get credits
  * qv.registerParticipant{value: 0.01 ether}();
@@ -728,7 +728,7 @@ contract QuadraticVotingSystem is ReentrancyGuard, Pausable, Ownable {
  * uint256[] memory weights = [5000, 3000, 2000]; // 50%, 30%, 20%
  * qv.voteQuadraticAllocated(proposalId, 100, weights);
  *
- * 🎯 QUADRATIC VOTING BENEFITS:
+ *  QUADRATIC VOTING BENEFITS:
  * - Reduces influence of extreme wealth
  * - Encourages moderate, broad-based participation
  * - Allows nuanced preference expression

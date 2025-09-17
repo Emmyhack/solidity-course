@@ -711,7 +711,7 @@ interface IFlashLoanReceiver {
 }
 
 /**
- * 🏦 AMM DEX FEATURES:
+ *  AMM DEX FEATURES:
  *
  * 1. CORE FUNCTIONALITY:
  *    - Liquidity provision and removal
@@ -737,7 +737,7 @@ interface IFlashLoanReceiver {
  *    - Gas optimization ready
  *    - Extensive fuzzing capabilities
  *
- * 🚀 EDUCATIONAL VALUE:
+ *  EDUCATIONAL VALUE:
  * - Real-world AMM implementation
  * - Professional Foundry development practices
  * - Advanced testing strategies

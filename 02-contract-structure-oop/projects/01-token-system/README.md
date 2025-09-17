@@ -2,7 +2,7 @@
 
 Build a comprehensive token ecosystem demonstrating advanced OOP concepts, inheritance, and governance mechanisms.
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 Create a multi-contract system that showcases:
 
@@ -13,7 +13,7 @@ Create a multi-contract system that showcases:
 - Factory and registry patterns
 - Governance and voting mechanisms
 
-## 📋 System Overview
+##  System Overview
 
 ### Core Components
 
@@ -42,7 +42,7 @@ Create a multi-contract system that showcases:
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-## 🏗 Implementation Requirements
+##  Implementation Requirements
 
 ### Phase 1: Base Infrastructure
 
@@ -180,7 +180,7 @@ contract TokenFactory {
 }
 ```
 
-## ✅ Acceptance Criteria
+##  Acceptance Criteria
 
 ### Functional Requirements
 
@@ -211,7 +211,7 @@ contract TokenFactory {
 - [ ] Emergency pause functionality
 - [ ] Input validation on all external functions
 
-## 🧪 Testing Strategy
+##  Testing Strategy
 
 ### Unit Tests
 
@@ -234,7 +234,7 @@ contract TokenFactory {
 3. Test pause/unpause scenarios
 4. Test emergency situations
 
-## 📁 File Structure
+##  File Structure
 
 ```
 projects/02-token-system/
@@ -264,7 +264,7 @@ projects/02-token-system/
     └── deploy.md
 ```
 
-## 💡 Bonus Features
+##  Bonus Features
 
 If you complete the core requirements:
 
@@ -275,7 +275,7 @@ If you complete the core requirements:
 5. **NFT Integration**: Governance NFTs with special powers
 6. **DAO Dashboard**: Frontend for governance interaction
 
-## 🔍 Code Review Checklist
+##  Code Review Checklist
 
 - [ ] Proper inheritance hierarchy
 - [ ] Consistent modifier usage
@@ -286,14 +286,14 @@ If you complete the core requirements:
 - [ ] Comprehensive documentation
 - [ ] Edge case handling
 
-## 📚 Learning Resources
+##  Learning Resources
 
 - [OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/)
 - [Compound Governance](https://compound.finance/docs/governance)
 - [Gnosis Safe Multi-Sig](https://gnosis-safe.io/)
 - [EIP Standards](https://eips.ethereum.org/)
 
-## ⏱ Estimated Timeline
+##  Estimated Timeline
 
 - **Phase 1-2**: 3-4 hours (Base contracts and tokens)
 - **Phase 3**: 2-3 hours (Governance system)
@@ -304,7 +304,7 @@ If you complete the core requirements:
 
 ---
 
-**Ready to build a complete token ecosystem?** Start with the base contracts and work your way up! 🏗️
+**Ready to build a complete token ecosystem?** Start with the base contracts and work your way up! 
 
 This project will give you deep experience with:
 

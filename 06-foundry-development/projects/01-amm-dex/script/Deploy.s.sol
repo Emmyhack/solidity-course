@@ -362,7 +362,7 @@ contract UpgradeAMM is Script {
 }
 
 /**
- * 🚀 DEPLOYMENT SCRIPT FEATURES:
+ *  DEPLOYMENT SCRIPT FEATURES:
  *
  * 1. MULTI-NETWORK SUPPORT:
  *    - Mainnet, testnet, and local configurations
@@ -387,7 +387,7 @@ contract UpgradeAMM is Script {
  *    - Upgrade script capabilities
  *    - Documentation and comments
  *
- * 📝 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * # Local deployment with Anvil:
  * forge script script/Deploy.s.sol:QuickDeploy --fork-url http://localhost:8545 --broadcast

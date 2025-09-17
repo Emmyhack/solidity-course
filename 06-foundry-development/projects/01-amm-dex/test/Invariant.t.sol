@@ -465,7 +465,7 @@ contract AMMHandler is Test {
 }
 
 /**
- * 🔬 INVARIANT TESTING FEATURES:
+ *  INVARIANT TESTING FEATURES:
  *
  * 1. CRITICAL INVARIANTS:
  *    - Constant product formula maintenance
@@ -491,7 +491,7 @@ contract AMMHandler is Test {
  *    - TVL preservation
  *    - Price manipulation resistance
  *
- * 🚀 USAGE:
+ *  USAGE:
  * - forge test --match-contract Invariant -vv
  * - forge test --invariant-runs 1000 (intensive testing)
  * - forge test --invariant-depth 100 (deep call sequences)

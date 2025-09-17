@@ -1002,7 +1002,7 @@ contract CrossChainBridge is ReentrancyGuard, Pausable, AccessControl {
 }
 
 /**
- * 🌉 CROSS-CHAIN BRIDGE FEATURES:
+ *  CROSS-CHAIN BRIDGE FEATURES:
  *
  * 1. MULTI-TOKEN SUPPORT:
  *    - ERC20, ERC721, ERC1155 token bridging
@@ -1028,7 +1028,7 @@ contract CrossChainBridge is ReentrancyGuard, Pausable, AccessControl {
  *    - Daily volume limits
  *    - Replay attack protection
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Bridge ERC20 tokens
  * bridge.depositERC20{value: bridgeFee}(
@@ -1054,7 +1054,7 @@ contract CrossChainBridge is ReentrancyGuard, Pausable, AccessControl {
  *     500000  // gas limit
  * );
  *
- * 🎯 BRIDGE ARCHITECTURE:
+ *  BRIDGE ARCHITECTURE:
  * - Lock & mint for most tokens
  * - Burn & mint for native bridge tokens
  * - Validator consensus for security

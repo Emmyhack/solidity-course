@@ -1,10 +1,10 @@
 # What is Blockchain? - Explained for Complete Beginners
 
-🎯 **Goal**: Understand blockchain technology in simple terms before we start coding smart contracts.
+ **Goal**: Understand blockchain technology in simple terms before we start coding smart contracts.
 
-## 🤔 Think of Blockchain Like a Digital Ledger Book
+##  Think of Blockchain Like a Digital Ledger Book
 
-### **📚 Traditional Ledger Book (How Banks Work)**
+### ** Traditional Ledger Book (How Banks Work)**
 
 Imagine a bank's ledger book that records all transactions:
 
@@ -14,25 +14,25 @@ Imagine a bank's ledger book that records all transactions:
 
 **Problems with traditional ledgers:**
 
-- ❌ **Single point of control**: Only the bank can update the book
-- ❌ **Trust required**: You must trust the bank won't cheat
-- ❌ **Can be modified**: Bank could change past entries
-- ❌ **Can be lost**: If the bank burns down, records are gone
+-  **Single point of control**: Only the bank can update the book
+-  **Trust required**: You must trust the bank won't cheat
+-  **Can be modified**: Bank could change past entries
+-  **Can be lost**: If the bank burns down, records are gone
 
-### **🔗 Blockchain Ledger (How Cryptocurrency Works)**
+### ** Blockchain Ledger (How Cryptocurrency Works)**
 
 Now imagine a special ledger book with magical properties:
 
-- ✅ **Thousands of copies**: Everyone has an identical copy
-- ✅ **Permanent ink**: Once written, entries can never be changed
-- ✅ **Automatic updates**: All copies update simultaneously
-- ✅ **Majority rules**: Changes only happen if most people agree
+-  **Thousands of copies**: Everyone has an identical copy
+-  **Permanent ink**: Once written, entries can never be changed
+-  **Automatic updates**: All copies update simultaneously
+-  **Majority rules**: Changes only happen if most people agree
 
 **This magical ledger book IS blockchain!**
 
-## 🧱 Why is it Called "Blockchain"?
+##  Why is it Called "Blockchain"?
 
-### **🔗 Blocks = Pages in the Ledger**
+### ** Blocks = Pages in the Ledger**
 
 Each "block" is like a page that contains:
 
@@ -41,14 +41,14 @@ Each "block" is like a page that contains:
 - **Unique fingerprint**: A special code that identifies this page
 - **Previous page reference**: Points to the page before it
 
-### **⛓️ Chain = Pages Connected Together**
+### ** Chain = Pages Connected Together**
 
 - Each page references the previous page
 - This creates an unbreakable chain
 - If someone tries to change page 5, it would break the connection to page 6
 - Everyone would notice the tampering immediately
 
-### **📖 Visual Example**
+### ** Visual Example**
 
 ```
 Block 1: [Alice: $100, Bob: $50] → fingerprint: abc123
@@ -58,31 +58,31 @@ Block 2: [Alice sends $20 to Bob] → fingerprint: def456 → previous: abc123
 Block 3: [Alice: $80, Bob: $70] → fingerprint: ghi789 → previous: def456
 ```
 
-## 🌍 How Does This Work in the Real World?
+##  How Does This Work in the Real World?
 
-### **💻 Computer Network Instead of People**
+### ** Computer Network Instead of People**
 
 - Instead of people holding ledger books, computers hold the records
 - These computers are called "nodes"
 - Each node has a complete copy of the blockchain
 - Nodes communicate to stay synchronized
 
-### **🔐 Cryptography Ensures Security**
+### ** Cryptography Ensures Security**
 
 - **Digital signatures**: Prove transactions are authentic
 - **Hash functions**: Create unique fingerprints for each block
 - **Consensus mechanisms**: Ensure all nodes agree on new blocks
 
-### **🏛️ Decentralization = No Single Authority**
+### ** Decentralization = No Single Authority**
 
 - No government controls it
 - No company owns it
 - No single point of failure
 - Democratic decision-making
 
-## 💰 What is Ethereum? (Where Our Smart Contracts Live)
+##  What is Ethereum? (Where Our Smart Contracts Live)
 
-### **📈 Bitcoin vs Ethereum**
+### ** Bitcoin vs Ethereum**
 
 #### **₿ Bitcoin (Digital Gold)**
 
@@ -91,14 +91,14 @@ Block 3: [Alice: $80, Bob: $70] → fingerprint: ghi789 → previous: def456
 - **Capabilities**: Send/receive Bitcoin only
 - **Programming**: Very limited
 
-#### **⚡ Ethereum (Digital Computer)**
+#### ** Ethereum (Digital Computer)**
 
 - **Purpose**: Run programs (smart contracts) + handle money
 - **Analogy**: Digital computer that everyone can use
 - **Capabilities**: Run any program you can imagine
 - **Programming**: Full programming language (Solidity!)
 
-### **🖥️ Ethereum Virtual Machine (EVM)**
+### ** Ethereum Virtual Machine (EVM)**
 
 Think of EVM as a **global computer** that:
 
@@ -108,13 +108,13 @@ Think of EVM as a **global computer** that:
 - **Maintains state**: Remembers all data permanently
 - **Costs gas**: You pay small fees to use computing power
 
-### **⛽ What is Gas?**
+### ** What is Gas?**
 
 Gas is like paying for electricity to run your programs:
 
 ```
-🏠 Home Computer:        You pay your electric company
-🌐 Ethereum Computer:    You pay "gas fees" in Ether
+ Home Computer:        You pay your electric company
+ Ethereum Computer:    You pay "gas fees" in Ether
 
 Running a program on your computer: Uses electricity
 Running a smart contract: Uses "gas" (paid in ETH)
@@ -126,9 +126,9 @@ Running a smart contract: Uses "gas" (paid in ETH)
 - **Pays miners**: Compensates people who run the network
 - **Resource allocation**: More complex programs cost more gas
 
-## 🏗️ What Are Smart Contracts?
+##  What Are Smart Contracts?
 
-### **📜 Traditional Contracts**
+### ** Traditional Contracts**
 
 ```
 Legal Contract Example:
@@ -140,7 +140,7 @@ Problems:
 - Takes time and money to resolve
 ```
 
-### **🤖 Smart Contracts**
+### ** Smart Contracts**
 
 ```
 Smart Contract Example:
@@ -148,33 +148,33 @@ Smart Contract Example:
 then the contract automatically transfers laptop ownership to Alice"
 
 Benefits:
-- ✅ Automatically enforced by code
-- ✅ No lawyers needed
-- ✅ Executes immediately
-- ✅ Can't be ignored or disputed
+-  Automatically enforced by code
+-  No lawyers needed
+-  Executes immediately
+-  Can't be ignored or disputed
 ```
 
-### **🔧 Smart Contracts Are Like Digital Vending Machines**
+### ** Smart Contracts Are Like Digital Vending Machines**
 
-#### **🥤 Vending Machine Logic:**
+#### ** Vending Machine Logic:**
 
 1. **Input**: Insert $2
 2. **Validation**: Check if $2 is enough for a soda
 3. **Action**: If yes, dispense soda and return change
 4. **Output**: You get soda + any change
 
-#### **💻 Smart Contract Logic:**
+#### ** Smart Contract Logic:**
 
 1. **Input**: Send 0.1 ETH to contract
 2. **Validation**: Check if 0.1 ETH is enough for digital asset
 3. **Action**: If yes, transfer asset ownership to sender
 4. **Output**: You get the digital asset
 
-### **🌟 Real-World Smart Contract Examples (Used by Millions Today!)**
+### ** Real-World Smart Contract Examples (Used by Millions Today!)**
 
-#### **🏦 DeFi Protocols (Managing Billions of Dollars)**
+#### ** DeFi Protocols (Managing Billions of Dollars)**
 
-**💰 Uniswap** - Automated Trading Exchange
+** Uniswap** - Automated Trading Exchange
 
 ```solidity
 // Simplified trading contract (like Uniswap)
@@ -188,7 +188,7 @@ contract AutomatedExchange {
 
 **Real Impact**: Anyone can trade crypto 24/7 without banks!
 
-**🏛️ Compound Protocol** - Decentralized Lending
+** Compound Protocol** - Decentralized Lending
 
 ```solidity
 // Simplified lending contract (like Compound)
@@ -202,9 +202,9 @@ contract DecentralizedLending {
 
 **Real Impact**: People worldwide access financial services without traditional banks!
 
-#### **🎨 NFT & Digital Ownership Revolution**
+#### ** NFT & Digital Ownership Revolution**
 
-**🖼️ OpenSea** - Digital Asset Marketplace
+** OpenSea** - Digital Asset Marketplace
 
 ```solidity
 // Simplified NFT marketplace (like OpenSea)
@@ -218,7 +218,7 @@ contract NFTMarketplace {
 
 **Real Impact**: Artists earn millions from digital art, gamers own tradeable items!
 
-**🎮 Axie Infinity** - Play-to-Earn Gaming
+** Axie Infinity** - Play-to-Earn Gaming
 
 ```solidity
 // Simplified gaming contract (like Axie Infinity)
@@ -232,9 +232,9 @@ contract PlayToEarnGame {
 
 **Real Impact**: Filipinos made more playing games than working traditional jobs!
 
-#### **🏛️ DAOs - Decentralized Organizations**
+#### ** DAOs - Decentralized Organizations**
 
-**🏛️ MakerDAO** - Community-Governed Finance
+** MakerDAO** - Community-Governed Finance
 
 ```solidity
 // Simplified DAO governance (like MakerDAO)
@@ -248,9 +248,9 @@ contract DecentralizedGovernance {
 
 **Real Impact**: Communities self-govern without traditional corporate structures!
 
-#### **🔗 Cross-Chain & Layer 2 Solutions**
+#### ** Cross-Chain & Layer 2 Solutions**
 
-**🌉 Polygon Bridge** - Connecting Blockchains
+** Polygon Bridge** - Connecting Blockchains
 
 ```solidity
 // Simplified bridge contract (like Polygon)
@@ -264,9 +264,9 @@ contract CrossChainBridge {
 
 **Real Impact**: Makes blockchain usable for everyday transactions!
 
-#### **🌐 Web3 & Decentralized Internet**
+#### ** Web3 & Decentralized Internet**
 
-**📝 ENS** - Blockchain Domain Names
+** ENS** - Blockchain Domain Names
 
 ```solidity
 // Simplified name service (like ENS)
@@ -280,9 +280,9 @@ contract BlockchainDomains {
 
 **Real Impact**: Users own their internet identity instead of relying on big tech!
 
-#### **🏗️ Real Estate & Physical Assets**
+#### ** Real Estate & Physical Assets**
 
-**🏠 RealT** - Tokenized Real Estate
+** RealT** - Tokenized Real Estate
 
 ```solidity
 // Simplified property tokenization
@@ -296,9 +296,9 @@ contract TokenizedRealEstate {
 
 **Real Impact**: Anyone can invest in real estate with just $50!
 
-#### **🌱 Carbon Credits & Sustainability**
+#### ** Carbon Credits & Sustainability**
 
-**🌍 Toucan Protocol** - Climate Action
+** Toucan Protocol** - Climate Action
 
 ```solidity
 // Simplified carbon credit contract
@@ -312,7 +312,7 @@ contract CarbonCredits {
 
 **Real Impact**: Makes climate action transparent and accessible to everyone!
 
-#### **🗳️ Governance & Voting Systems**
+#### ** Governance & Voting Systems**
 
 ```solidity
 // Simplified voting contract
@@ -323,9 +323,9 @@ contract Voting {
 }
 ```
 
-## 🎯 Key Concepts to Remember
+##  Key Concepts to Remember
 
-### **🔑 Blockchain Fundamentals**
+### ** Blockchain Fundamentals**
 
 - **Immutable**: Once data is added, it can't be changed
 - **Transparent**: All transactions are publicly visible
@@ -333,7 +333,7 @@ contract Voting {
 - **Trustless**: You don't need to trust other parties
 - **Permissionless**: Anyone can participate
 
-### **⚡ Ethereum Specifics**
+### ** Ethereum Specifics**
 
 - **Programmable**: Can run complex applications
 - **Global**: Same code runs everywhere in the world
@@ -341,7 +341,7 @@ contract Voting {
 - **Deterministic**: Same input always produces same output
 - **Costly**: Operations cost gas fees
 
-### **🤖 Smart Contracts**
+### ** Smart Contracts**
 
 - **Autonomous**: Run automatically without human intervention
 - **Transparent**: Code is publicly auditable
@@ -349,16 +349,16 @@ contract Voting {
 - **Global**: Accessible from anywhere
 - **Composable**: Can interact with other contracts
 
-## 🧪 Try It Yourself: Blockchain Explorer
+##  Try It Yourself: Blockchain Explorer
 
-### **🔍 Explore Real Blockchain Data**
+### ** Explore Real Blockchain Data**
 
 1. **Go to [Etherscan.io](https://etherscan.io)**
 2. **Look at recent blocks** - These are the "pages" in our ledger
 3. **Click on a transaction** - See real money transfers
 4. **Examine a smart contract** - See deployed code
 
-### **🔎 What to Look For:**
+### ** What to Look For:**
 
 - **Block Number**: Which "page" of the ledger
 - **Transactions**: Money transfers and contract interactions
@@ -366,17 +366,17 @@ contract Voting {
 - **Timestamp**: When this happened
 - **Addresses**: Digital "bank account" numbers
 
-### **💡 Real Example to Explore:**
+### ** Real Example to Explore:**
 
 - **Search for**: `0xA0b86a33E6417C00B87DEE1493C38C98b3fE0B8C` (USDC token contract)
 - **You'll see**: A real smart contract managing billions of dollars
 - **Notice**: Thousands of transactions happening daily
 
-## 🏆 Hackathon & Competition Project Ideas
+##  Hackathon & Competition Project Ideas
 
-### **🥇 Beginner Competition Projects (Perfect for First Hackathons)**
+### ** Beginner Competition Projects (Perfect for First Hackathons)**
 
-#### **🎯 Challenge 1: Carbon Footprint Tracker**
+#### ** Challenge 1: Carbon Footprint Tracker**
 
 **Competition Theme**: Climate + Technology
 
@@ -391,7 +391,7 @@ contract PersonalCarbonTracker {
 
 **Why It Wins**: Addresses global warming + shows technical skills
 
-#### **🎯 Challenge 2: Micro-Charity Platform**
+#### ** Challenge 2: Micro-Charity Platform**
 
 **Competition Theme**: Social Impact + DeFi
 
@@ -406,7 +406,7 @@ contract MicroDonations {
 
 **Why It Wins**: Combines social good with blockchain innovation
 
- #### **🎯 Challenge 3: Student Credential Verification**
+ #### ** Challenge 3: Student Credential Verification**
 
 **Competition Theme**: Education + Identity
 
@@ -421,9 +421,9 @@ contract AcademicCredentials {
 
 **Why It Wins**: Solves real problem + has massive market potential
 
-### **🚀 Advanced Competition Projects (For Experienced Developers)**
+### ** Advanced Competition Projects (For Experienced Developers)**
 
-#### **🎯 Challenge 4: Cross-Border Remittance**
+#### ** Challenge 4: Cross-Border Remittance**
 
 **Competition Theme**: Financial Inclusion
 
@@ -438,7 +438,7 @@ contract InstantRemittance {
 
 **Why It Wins**: Massive humanitarian impact + technical complexity
 
-#### **🎯 Challenge 5: Decentralized Freelance Platform**
+#### ** Challenge 5: Decentralized Freelance Platform**
 
 **Competition Theme**: Future of Work
 
@@ -453,7 +453,7 @@ contract TrustlessFreelancing {
 
 **Why It Wins**: Disrupts $400B freelance economy + showcases DeFi skills
 
-### **💡 Competition Success Tips**
+### ** Competition Success Tips**
 
 - **Pick a problem you care about** - Passion shows in presentations
 - **Start with MVP** - Build working prototype, not perfect product
@@ -461,46 +461,46 @@ contract TrustlessFreelancing {
 - **Explain simply** - Judges often aren't technical experts
 - **Highlight impact** - Focus on who you help and how
 
-## 💼 Career Opportunities After This Course
+##  Career Opportunities After This Course
 
-### **🔥 Hot Job Markets (Average Salaries)**
+### ** Hot Job Markets (Average Salaries)**
 
-#### **💻 Smart Contract Developer**
+#### ** Smart Contract Developer**
 
 - **Average Salary**: $120,000 - $300,000
 - **Remote-Friendly**: 90% of jobs
 - **Skills Needed**: Solidity, security auditing, DeFi protocols
 - **Companies Hiring**: Uniswap, Aave, Chainlink, ConsenSys
 
-#### **🛡️ Security Auditor**
+#### ** Security Auditor**
 
 - **Average Salary**: $150,000 - $400,000
 - **Demand**: Extremely high (critical shortage)
 - **Skills Needed**: Vulnerability detection, formal verification
 - **Companies Hiring**: Trail of Bits, OpenZeppelin, Quantstamp
 
-#### **🏗️ DeFi Protocol Engineer**
+#### ** DeFi Protocol Engineer**
 
 - **Average Salary**: $180,000 - $500,000
 - **Growth**: 400% year-over-year
 - **Skills Needed**: AMM design, liquidity mining, tokenomics
 - **Companies Hiring**: MakerDAO, Compound, Synthetix
 
-#### **🎮 Web3 Game Developer**
+#### ** Web3 Game Developer**
 
 - **Average Salary**: $100,000 - $250,000
 - **Market Size**: $25B+ and growing
 - **Skills Needed**: NFT integration, play-to-earn mechanics
 - **Companies Hiring**: Axie Infinity, Sorare, Gods Unchained
 
-#### **🏛️ DAO Contributor**
+#### ** DAO Contributor**
 
 - **Average Compensation**: $80,000 - $200,000 (often in tokens)
 - **Flexibility**: Choose your own projects
 - **Skills Needed**: Governance design, community building
 - **Organizations**: Gitcoin, MakerDAO, Aave DAO
 
-### **📈 Portfolio Projects That Get You Hired**
+### ** Portfolio Projects That Get You Hired**
 
 1. **DeFi Protocol**: Build a lending/borrowing platform
 2. **NFT Project**: Create utility-focused NFT collection
@@ -508,7 +508,7 @@ contract TrustlessFreelancing {
 4. **Cross-Chain Bridge**: Connect different blockchains
 5. **Security Audit**: Find vulnerabilities in existing projects
 
-## 🚀 What's Next?
+##  What's Next?
 
 Now that you understand the foundation, you're ready to:
 
@@ -516,7 +516,7 @@ Now that you understand the foundation, you're ready to:
 2. **[Write your first smart contract](./your-first-contract.md)**
 3. **[Understand Solidity syntax](../02-syntax-mastery/complete-syntax-guide.md)**
 
-### **🎯 Quick Knowledge Check**
+### ** Quick Knowledge Check**
 
 Before moving on, make sure you can explain these concepts to a friend:
 
@@ -528,10 +528,10 @@ Before moving on, make sure you can explain these concepts to a friend:
 - [ ] Name 3 real-world applications that use smart contracts today
 - [ ] Explain one way blockchain could solve a problem in your community
 
-### **🏁 Ready for Your First Contract?**
+### ** Ready for Your First Contract?**
 
 **Feeling confident?** Jump to [Your First Smart Contract](./your-first-contract.md) and write your first piece of blockchain code!
 
 **Want more foundation?** Continue to [Ethereum Deep Dive](./ethereum-explained.md) for technical details about how Ethereum works.
 
-**Ready to compete?** Start thinking about which competition project excites you most - you'll build it by the end of this course! 🏆
+**Ready to compete?** Start thinking about which competition project excites you most - you'll build it by the end of this course! 

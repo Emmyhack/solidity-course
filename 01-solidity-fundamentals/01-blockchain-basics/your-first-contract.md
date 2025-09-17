@@ -1,8 +1,8 @@
 # Your First Smart Contract - From Zero to Blockchain Developer
 
-🎯 **Goal**: Write, understand, and deploy your very first smart contract that could actually be used in the real world.
+ **Goal**: Write, understand, and deploy your very first smart contract that could actually be used in the real world.
 
-## 🌟 What We're Building: A Digital Reputation System
+##  What We're Building: A Digital Reputation System
 
 Instead of a simple "Hello World," we're building something **actually useful** - a reputation system like the ones used by:
 
@@ -13,14 +13,14 @@ Instead of a simple "Hello World," we're building something **actually useful** 
 
 **Why this matters**: Reputation systems power the entire sharing economy ($400B+ market). Understanding how to build trustless reputation systems is a **highly valuable skill** for modern applications.
 
-### **🔥 Real-World Applications**
+### ** Real-World Applications**
 
 - **Decentralized marketplaces**: Replace eBay's centralized rating system
 - **Professional networks**: LinkedIn-style endorsements that can't be faked
 - **Community platforms**: Reddit-style karma that's transparent and portable
 - **Service industries**: Uber-style ratings without platform lock-in
 
-## 🛠️ Setting Up Remix IDE (Your Professional Development Environment)
+##  Setting Up Remix IDE (Your Professional Development Environment)
 
 ### **Step 1: Access Your Free Cloud IDE**
 
@@ -28,7 +28,7 @@ Instead of a simple "Hello World," we're building something **actually useful** 
 2. **Wait for loading**: This is a full development environment running in your browser
 3. **Bookmark this page**: You'll use it throughout your blockchain career
 
-**💡 Pro Tip**: Remix is used by professional developers at major blockchain companies. Learning it well gives you immediately transferable skills.
+** Pro Tip**: Remix is used by professional developers at major blockchain companies. Learning it well gives you immediately transferable skills.
 
 ### **Step 2: Create Your Project Structure**
 
@@ -45,14 +45,14 @@ Instead of a simple "Hello World," we're building something **actually useful** 
 
 ### **Step 3: Understand Your Workspace**
 
-- **📁 Left Panel**: File explorer (like VS Code or IntelliJ)
-- **📝 Center Panel**: Code editor with syntax highlighting
-- **🔧 Right Panel**: Compilation and deployment tools
-- **📊 Bottom Panel**: Console for debugging and testing
+- ** Left Panel**: File explorer (like VS Code or IntelliJ)
+- ** Center Panel**: Code editor with syntax highlighting
+- ** Right Panel**: Compilation and deployment tools
+- ** Bottom Panel**: Console for debugging and testing
 
-## 📝 Writing Your Reputation System - Every Line Explained
+##  Writing Your Reputation System - Every Line Explained
 
-### **🔧 Step 1: Contract Header (Legal & Technical Requirements)**
+### ** Step 1: Contract Header (Legal & Technical Requirements)**
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -66,7 +66,7 @@ pragma solidity ^0.8.19;
  */
 ```
 
-**🔍 SYNTAX BREAKDOWN:**
+** SYNTAX BREAKDOWN:**
 
 #### **Line 1: Legal License Declaration**
 
@@ -111,7 +111,7 @@ pragma solidity ^0.8.19;
 - **`@author`** = Who created this contract
 - **Real-World**: Like the description on a mobile app in the App Store
 
-### **🏗️ Step 2: Contract Declaration & Core Data Structures**
+### ** Step 2: Contract Declaration & Core Data Structures**
 
 ```solidity
 contract ReputationSystem {
@@ -119,7 +119,7 @@ contract ReputationSystem {
 }
 ```
 
-**🔍 SYNTAX BREAKDOWN:**
+** SYNTAX BREAKDOWN:**
 
 #### **Contract Declaration**
 
@@ -134,7 +134,7 @@ contract ReputationSystem {
 - **`{` and `}`** = Contract body delimiters
 - **Real-World**: Like creating a new class called "ReputationSystem" in object-oriented programming
 
-### **🗂️ Step 3: State Variables (Permanent Storage)**
+### ** Step 3: State Variables (Permanent Storage)**
 
 ```solidity
 contract HelloWorld {
@@ -144,7 +144,7 @@ contract HelloWorld {
 }
 ```
 
-**🔍 SYNTAX BREAKDOWN:**
+** SYNTAX BREAKDOWN:**
 
 #### **`string public greeting;`**
 
@@ -152,23 +152,23 @@ contract HelloWorld {
 - **`public`** = Anyone can read this value (creates automatic getter function)
 - **`greeting`** = Variable name (you choose this)
 - **`;`** = End of statement
-- **🌍 Real-World Context**: Like a public bulletin board where anyone can read the message
+- ** Real-World Context**: Like a public bulletin board where anyone can read the message
 
 #### **`address public owner;`**
 
 - **`address`** = Special data type for Ethereum addresses (like 0x742d35Cc6C...)
 - **`public`** = Anyone can see who owns this contract
 - **`owner`** = Variable to store the owner's address
-- **🌍 Real-World Context**: Like putting the homeowner's name on a house
+- ** Real-World Context**: Like putting the homeowner's name on a house
 
 #### **`uint256 public lastUpdated;`**
 
 - **`uint256`** = Unsigned integer (positive whole numbers only, very large range)
 - **`public`** = Anyone can see when this was last updated
 - **`lastUpdated`** = Variable to store timestamp
-- **🌍 Real-World Context**: Like a "last modified" date on a document
+- ** Real-World Context**: Like a "last modified" date on a document
 
-### **🚀 Step 4: Constructor (Runs Once at Creation)**
+### ** Step 4: Constructor (Runs Once at Creation)**
 
 ```solidity
 constructor(string memory _initialGreeting) {
@@ -178,7 +178,7 @@ constructor(string memory _initialGreeting) {
 }
 ```
 
-**🔍 SYNTAX BREAKDOWN:**
+** SYNTAX BREAKDOWN:**
 
 #### **`constructor(string memory _initialGreeting) {`**
 
@@ -188,7 +188,7 @@ constructor(string memory _initialGreeting) {
   - **`memory`** = Temporary storage (exists only during function execution)
   - **`_initialGreeting`** = Parameter name (underscore prefix is convention)
 - **`{`** = Start of constructor body
-- **🌍 Real-World Context**: Like filling out a form when you open a bank account
+- ** Real-World Context**: Like filling out a form when you open a bank account
 
 #### **`greeting = _initialGreeting;`**
 
@@ -196,21 +196,21 @@ constructor(string memory _initialGreeting) {
 - **`=`** = Assignment operator (store value)
 - **`_initialGreeting`** = The input parameter
 - **`;`** = End of statement
-- **🌍 Real-World Context**: Like writing your initial message on the bulletin board
+- ** Real-World Context**: Like writing your initial message on the bulletin board
 
 #### **`owner = msg.sender;`**
 
 - **`owner`** = Our state variable for the owner's address
 - **`msg.sender`** = Built-in variable containing the address of whoever called this function
-- **🌍 Real-World Context**: Like automatically recording who deployed the contract as the owner
+- ** Real-World Context**: Like automatically recording who deployed the contract as the owner
 
 #### **`lastUpdated = block.timestamp;`**
 
 - **`lastUpdated`** = Our state variable for timestamp
 - **`block.timestamp`** = Built-in variable with current time (seconds since January 1, 1970)
-- **🌍 Real-World Context**: Like automatically stamping the current date and time
+- ** Real-World Context**: Like automatically stamping the current date and time
 
-### **📖 Step 5: View Function (Read Data)**
+### ** Step 5: View Function (Read Data)**
 
 ```solidity
 function getGreeting() public view returns (string memory) {
@@ -218,7 +218,7 @@ function getGreeting() public view returns (string memory) {
 }
 ```
 
-**🔍 SYNTAX BREAKDOWN:**
+** SYNTAX BREAKDOWN:**
 
 #### **`function getGreeting() public view returns (string memory) {`**
 
@@ -229,15 +229,15 @@ function getGreeting() public view returns (string memory) {
 - **`view`** = This function only reads data, doesn't change anything
 - **`returns (string memory)`** = This function gives back text data
 - **`{`** = Start of function body
-- **🌍 Real-World Context**: Like a "check balance" button on an ATM (only shows info)
+- ** Real-World Context**: Like a "check balance" button on an ATM (only shows info)
 
 #### **`return greeting;`**
 
 - **`return`** = Give back a value to whoever called this function
 - **`greeting`** = The value to return (our stored message)
-- **🌍 Real-World Context**: Like the ATM screen showing your balance
+- ** Real-World Context**: Like the ATM screen showing your balance
 
-### **✏️ Step 6: Modifier Function (Change Data)**
+### ** Step 6: Modifier Function (Change Data)**
 
 ```solidity
 function setGreeting(string memory _newGreeting) public {
@@ -247,7 +247,7 @@ function setGreeting(string memory _newGreeting) public {
 }
 ```
 
-**🔍 SYNTAX BREAKDOWN:**
+** SYNTAX BREAKDOWN:**
 
 #### **`function setGreeting(string memory _newGreeting) public {`**
 
@@ -256,7 +256,7 @@ function setGreeting(string memory _newGreeting) public {
 - **`(string memory _newGreeting)`** = This function needs text input
 - **`public`** = Anyone can try to call this (but we'll add restrictions)
 - **No `view`** = This function can change data
-- **🌍 Real-World Context**: Like a "update message" button
+- ** Real-World Context**: Like a "update message" button
 
 #### **`require(msg.sender == owner, "Only owner can change greeting");`**
 
@@ -264,19 +264,19 @@ function setGreeting(string memory _newGreeting) public {
 - **`msg.sender == owner`** = Check if caller is the owner
 - **`==`** = Comparison operator (is equal to)
 - **`"Only owner..."`** = Error message if condition fails
-- **🌍 Real-World Context**: Like checking ID before allowing entry to a restricted area
+- ** Real-World Context**: Like checking ID before allowing entry to a restricted area
 
 #### **`greeting = _newGreeting;`**
 
 - **Store the new greeting in permanent storage**
-- **🌍 Real-World Context**: Like erasing the old message and writing a new one
+- ** Real-World Context**: Like erasing the old message and writing a new one
 
 #### **`lastUpdated = block.timestamp;`**
 
 - **Record when this change happened**
-- **🌍 Real-World Context**: Like updating the "last modified" timestamp
+- ** Real-World Context**: Like updating the "last modified" timestamp
 
-## 🔥 Complete Contract Code
+##  Complete Contract Code
 
 Here's your complete first smart contract:
 
@@ -320,14 +320,14 @@ contract HelloWorld {
 }
 ```
 
-## 🧪 Testing Your Contract in Remix
+##  Testing Your Contract in Remix
 
 ### **Step 1: Compile the Contract**
 
 1. **Click**: "Solidity Compiler" tab (left sidebar)
 2. **Verify**: Compiler version is 0.8.19 or newer
 3. **Click**: "Compile HelloWorld.sol" button
-4. **Success**: You should see a green checkmark ✅
+4. **Success**: You should see a green checkmark 
 
 ### **Step 2: Deploy the Contract**
 
@@ -358,9 +358,9 @@ contract HelloWorld {
    - Click "setGreeting" button
    - Click `greeting` again - should show new message!
 
-## 🎯 Understanding What Just Happened
+##  Understanding What Just Happened
 
-### **🔬 Behind the Scenes**
+### ** Behind the Scenes**
 
 When you deployed your contract:
 
@@ -370,7 +370,7 @@ When you deployed your contract:
 4. **Your contract got an address** (like a postal address)
 5. **State variables were stored** permanently in simulated blockchain storage
 
-### **💡 Real-World Equivalent**
+### ** Real-World Equivalent**
 
 Think of your contract like **opening a new business**:
 
@@ -380,16 +380,16 @@ Think of your contract like **opening a new business**:
 - **Functions** = Services the store offers (check inventory, make purchases, etc.)
 - **Address** = The store's physical address where customers can find it
 
-### **🔐 Security Features You Implemented**
+### ** Security Features You Implemented**
 
 - **Owner-only updates**: Only the contract deployer can change the greeting
 - **Public transparency**: Anyone can read the current state
 - **Timestamp tracking**: Permanent record of when changes occurred
 - **Input validation**: Contract checks permissions before allowing changes
 
-## 🚀 What You've Learned
+##  What You've Learned
 
-### **📚 Solidity Syntax Mastered**
+### ** Solidity Syntax Mastered**
 
 - **`pragma`** statements for version control
 - **`contract`** declarations to create smart contracts
@@ -401,23 +401,23 @@ Think of your contract like **opening a new business**:
 - **`require()`** for input validation and security
 - **Built-in variables**: `msg.sender`, `block.timestamp`
 
-### **🏗️ Architectural Patterns Learned**
+### ** Architectural Patterns Learned**
 
 - **Ownership model**: Track who controls the contract
 - **Access control**: Restrict certain functions to specific users
 - **State management**: How to read and modify contract data
 - **Event logging**: Track when things happen (through timestamps)
 
-### **🛡️ Security Concepts Introduced**
+### ** Security Concepts Introduced**
 
 - **Authentication**: Verify who is calling functions
 - **Authorization**: Allow only authorized users to perform actions
 - **Data integrity**: Ensure data can only be changed through proper channels
 - **Transparency**: Make contract state publicly readable
 
-## 🎯 Next Steps: Level Up Your Contract
+##  Next Steps: Level Up Your Contract
 
-### **🔥 Challenge Exercises**
+### ** Challenge Exercises**
 
 #### **Easy: Add More Features**
 
@@ -449,22 +449,22 @@ mapping(address => bool) public owners;
 require(owners[msg.sender], "Only owners can change greeting");
 ```
 
-### **📖 Concepts to Explore Next**
+### ** Concepts to Explore Next**
 
 1. **[Contract Structure Deep Dive](../02-syntax-mastery/contract-structure.md)** - Learn about more complex contract organization
 2. **[Variables and Types](../02-syntax-mastery/variables-and-types.md)** - Master all Solidity data types
 3. **[Functions in Detail](../02-syntax-mastery/functions-explained.md)** - Advanced function patterns
 4. **[Your First Real Project](../03-real-projects/digital-bank/)** - Build a complete banking system
 
-## 🏆 Congratulations!
+##  Congratulations!
 
 You've just:
 
-- ✅ **Written your first smart contract** from scratch
-- ✅ **Understood every line of code** and why it's there
-- ✅ **Deployed to a blockchain** (simulated, but real process!)
-- ✅ **Tested all functionality** and verified it works
-- ✅ **Learned fundamental patterns** used in million-dollar protocols
+-  **Written your first smart contract** from scratch
+-  **Understood every line of code** and why it's there
+-  **Deployed to a blockchain** (simulated, but real process!)
+-  **Tested all functionality** and verified it works
+-  **Learned fundamental patterns** used in million-dollar protocols
 
 **This tiny contract contains the DNA of every major DeFi protocol!** The patterns you just learned scale up to applications like:
 
@@ -472,4 +472,4 @@ You've just:
 - **Compound**: Similar access control and function structure
 - **OpenSea**: Similar public/private function patterns
 
-**Ready for your next challenge?** Let's build something more complex: [Digital Bank System](../03-real-projects/digital-bank/) where you'll handle real money! 💰
+**Ready for your next challenge?** Let's build something more complex: [Digital Bank System](../03-real-projects/digital-bank/) where you'll handle real money! 

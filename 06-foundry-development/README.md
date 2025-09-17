@@ -1,8 +1,8 @@
-# Module 6: Foundry Development 🛠️
+# Module 6: Foundry Development 
 
 Welcome to the comprehensive Foundry development module! This module provides an in-depth exploration of Foundry, the most advanced Solidity development toolkit, through the implementation of a production-ready AMM DEX project.
 
-## 📚 Learning Objectives
+##  Learning Objectives
 
 By completing this module, you will master:
 
@@ -27,7 +27,7 @@ By completing this module, you will master:
 - **Configuration Management**: Network-specific deployments
 - **Performance Optimization**: Gas-efficient smart contracts
 
-## 🎯 Module Structure
+##  Module Structure
 
 ### 1. Foundry Overview and Setup
 
@@ -57,7 +57,7 @@ By completing this module, you will master:
 - **Verification**: Contract verification on block explorers
 - **Upgrades**: Managing contract upgrades
 
-## 🏗️ Project: AMM DEX Implementation
+##  Project: AMM DEX Implementation
 
 Our main project is a comprehensive Automated Market Maker Decentralized Exchange that demonstrates:
 
@@ -75,7 +75,7 @@ Our main project is a comprehensive Automated Market Maker Decentralized Exchang
 - **Emergency Functions**: Skim and sync for edge cases
 - **Admin Controls**: Owner-managed parameters
 
-## 🧪 Testing Excellence
+##  Testing Excellence
 
 ### Test Suite Overview
 
@@ -128,7 +128,7 @@ forge test --match-contract Invariant
    }
    ```
 
-## 🚀 Deployment Mastery
+##  Deployment Mastery
 
 ### Multi-Network Configuration
 
@@ -156,7 +156,7 @@ forge script script/Deploy.s.sol:DeployAMMDEX --rpc-url $SEPOLIA_RPC_URL --broad
 forge script script/Deploy.s.sol:DeployAMMDEX --rpc-url $MAINNET_RPC_URL --broadcast --verify --slow
 ```
 
-## 📊 Gas Optimization
+##  Gas Optimization
 
 ### Optimization Techniques Demonstrated
 
@@ -174,7 +174,7 @@ forge script script/Deploy.s.sol:DeployAMMDEX --rpc-url $MAINNET_RPC_URL --broad
 | Swap Tokens      | < 120k     | ~110k      |
 | Flash Loan       | < 100k     | ~90k       |
 
-## 🔒 Security Best Practices
+##  Security Best Practices
 
 ### Security Features Implemented
 
@@ -195,7 +195,7 @@ function test_flash_loan_security() public {
 }
 ```
 
-## 📖 Educational Exercises
+##  Educational Exercises
 
 ### Exercise 1: Basic Setup
 
@@ -225,7 +225,7 @@ function test_flash_loan_security() public {
 3. Create price oracle integration
 4. Build emergency pause mechanisms
 
-## 🔍 Real-World Applications
+##  Real-World Applications
 
 ### Production Considerations
 
@@ -241,7 +241,7 @@ function test_flash_loan_security() public {
 3. **Slippage Management**: Price impact calculations
 4. **Liquidity Incentives**: LP reward mechanisms
 
-## 🛠️ Foundry Command Reference
+##  Foundry Command Reference
 
 ### Essential Commands
 
@@ -283,7 +283,7 @@ forge doc --build
 slither .
 ```
 
-## 💡 Best Practices
+##  Best Practices
 
 ### Code Organization
 
@@ -299,7 +299,7 @@ slither .
 3. **Code Review**: Systematic review processes
 4. **Documentation**: Keep docs updated with code changes
 
-## 🔮 Advanced Topics
+##  Advanced Topics
 
 ### Fuzzing Strategies
 
@@ -315,7 +315,7 @@ slither .
 - **State Exploration**: Deep interaction sequences
 - **Failure Analysis**: Understanding invariant violations
 
-## 🎓 Module Assessment
+##  Module Assessment
 
 ### Practical Assignments
 
@@ -331,18 +331,18 @@ slither .
 3. **Security Understanding**: Common vulnerabilities and mitigations
 4. **Production Readiness**: Professional development practices
 
-## 🌟 Key Takeaways
+##  Key Takeaways
 
 After completing this module, you will have:
 
-✅ **Mastered Foundry**: Complete proficiency with the toolkit
-✅ **Built Production DeFi**: Real-world AMM implementation
-✅ **Advanced Testing Skills**: Unit, fuzz, and invariant testing
-✅ **Gas Optimization**: Efficient smart contract development
-✅ **Security Expertise**: Professional security practices
-✅ **Deployment Automation**: Multi-network deployment mastery
+ **Mastered Foundry**: Complete proficiency with the toolkit
+ **Built Production DeFi**: Real-world AMM implementation
+ **Advanced Testing Skills**: Unit, fuzz, and invariant testing
+ **Gas Optimization**: Efficient smart contract development
+ **Security Expertise**: Professional security practices
+ **Deployment Automation**: Multi-network deployment mastery
 
-## 🚀 Next Steps
+##  Next Steps
 
 ### Career Development
 
@@ -360,4 +360,4 @@ After completing this module, you will have:
 
 ---
 
-**Welcome to the cutting edge of Solidity development! This module will transform you into a Foundry expert capable of building production-ready DeFi protocols. Let's build the future of finance! 🚀**
+**Welcome to the cutting edge of Solidity development! This module will transform you into a Foundry expert capable of building production-ready DeFi protocols. Let's build the future of finance! **

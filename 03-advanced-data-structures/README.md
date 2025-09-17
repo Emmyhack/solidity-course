@@ -2,7 +2,7 @@
 
 Master complex data handling in Solidity with arrays, mappings, structs, enums, and advanced storage patterns.
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 By the end of this module, you will:
 
@@ -15,7 +15,7 @@ By the end of this module, you will:
 - Build efficient data access patterns for large datasets
 - Handle memory management and storage optimization
 
-## 📚 Topics Covered
+##  Topics Covered
 
 ### 1. Advanced Array Operations
 
@@ -71,7 +71,7 @@ By the end of this module, you will:
 - IPFS integration patterns
 - Data migration strategies
 
-## 🛠 Development Environment
+##  Development Environment
 
 Continue using Remix IDE or set up local development:
 
@@ -80,7 +80,7 @@ Continue using Remix IDE or set up local development:
 - Gas analysis tools
 - Storage layout analyzers
 
-## 📋 Module Structure
+##  Module Structure
 
 - [**Examples**](./examples/) - Advanced data structure implementations
 - [**Projects**](./projects/) - Real-world data management systems
@@ -89,7 +89,7 @@ Continue using Remix IDE or set up local development:
 - [**Solutions**](./solutions/) - Optimized reference implementations
 - [**Quiz**](./quiz.md) - Advanced concepts assessment
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Study [Advanced Arrays](./examples/01-advanced-arrays.sol)
 2. Explore [Complex Mappings](./examples/02-complex-mappings.sol)
@@ -97,7 +97,7 @@ Continue using Remix IDE or set up local development:
 4. Complete optimization assignments
 5. Take the comprehensive quiz
 
-## ⏱ Estimated Time
+##  Estimated Time
 
 - **Reading & Examples**: 5-6 hours
 - **Projects**: 8-10 hours
@@ -105,21 +105,21 @@ Continue using Remix IDE or set up local development:
 - **Gas Optimization**: 3-4 hours
 - **Total**: 22-28 hours
 
-## 📖 Prerequisites
+##  Prerequisites
 
 - Completed Modules 1-2
 - Understanding of basic data types
 - Knowledge of storage vs memory
 - Basic gas concepts
 
-## 🔧 Tools for Analysis
+##  Tools for Analysis
 
 - **Remix Gas Analyzer**: Built-in gas analysis
 - **Hardhat Gas Reporter**: Detailed gas reporting
 - **Solidity Storage Layout**: Understanding storage slots
 - **Foundry Gas Snapshots**: Gas comparison tools
 
-## 📊 Performance Metrics
+##  Performance Metrics
 
 Track these metrics throughout the module:
 
@@ -131,4 +131,4 @@ Track these metrics throughout the module:
 
 ---
 
-**Ready for advanced data mastery?** Start with [Advanced Arrays](./examples/01-advanced-arrays.sol) 📊
+**Ready for advanced data mastery?** Start with [Advanced Arrays](./examples/01-advanced-arrays.sol) 

@@ -2,7 +2,7 @@
 
 A comprehensive data management system demonstrating advanced data structures, efficient storage patterns, and complex data relationships in Solidity.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project showcases:
 
@@ -13,7 +13,7 @@ This project showcases:
 - **Pagination**: Efficient handling of large datasets
 - **Gas optimization**: Storage layout optimization and access patterns
 
-## 🏗 Architecture
+##  Architecture
 
 The system consists of modular contracts:
 
@@ -24,7 +24,7 @@ The system consists of modular contracts:
 5. **AnalyticsEngine.sol** - Data aggregation and metrics
 6. **DataMigration.sol** - Data migration and versioning patterns
 
-## 🚀 Features
+##  Features
 
 ### User Management
 
@@ -54,7 +54,7 @@ The system consists of modular contracts:
 - Trend analysis
 - Custom dashboard data
 
-## 📊 Data Structures Used
+##  Data Structures Used
 
 - **Iterable Mappings**: For user and content enumeration
 - **Nested Mappings**: For complex relationships (user -> category -> posts)
@@ -63,7 +63,7 @@ The system consists of modular contracts:
 - **Packed Structs**: For gas-optimized storage
 - **Dynamic Arrays**: For flexible collections
 
-## 🎮 Getting Started
+##  Getting Started
 
 1. Deploy contracts in order: UserRegistry → ContentManager → CategorySystem → RelationshipManager → AnalyticsEngine
 2. Register users and create initial content
@@ -71,7 +71,7 @@ The system consists of modular contracts:
 4. Test analytics and reporting features
 5. Experiment with data migration patterns
 
-## 🧪 Testing Scenarios
+##  Testing Scenarios
 
 - Register multiple users and test pagination
 - Create complex content hierarchies
@@ -79,7 +79,7 @@ The system consists of modular contracts:
 - Test gas costs for different operations
 - Validate data consistency across contracts
 
-## 💡 Learning Objectives
+##  Learning Objectives
 
 After completing this project, you'll understand:
 
@@ -89,7 +89,7 @@ After completing this project, you'll understand:
 - Contract modularity and data sharing
 - Migration and upgrade patterns
 
-## ⚠️ Important Notes
+##  Important Notes
 
 - Some operations are gas-intensive by design for learning purposes
 - In production, consider off-chain indexing for complex queries
@@ -98,4 +98,4 @@ After completing this project, you'll understand:
 
 ---
 
-**Ready to build a real-world data management system?** Start with UserRegistry.sol! 🗄️
+**Ready to build a real-world data management system?** Start with UserRegistry.sol! 

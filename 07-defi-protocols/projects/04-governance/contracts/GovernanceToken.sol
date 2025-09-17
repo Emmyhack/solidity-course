@@ -852,7 +852,7 @@ library SafeCast {
 }
 
 /**
- * 🏛️ GOVERNANCE TOKEN FEATURES:
+ *  GOVERNANCE TOKEN FEATURES:
  *
  * 1. VOTING & DELEGATION SYSTEM:
  *    - ERC20Votes-compatible voting power
@@ -890,7 +890,7 @@ library SafeCast {
  *    - Weighted rewards based on proposal importance
  *    - Community engagement bonuses
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Stake tokens for 6 months (enhanced voting power)
  * govToken.stake(amount, 180 days);
@@ -912,7 +912,7 @@ library SafeCast {
  * govToken.claimFeeShare();
  * govToken.claimVotingRewards();
  *
- * 🎯 GOVERNANCE MECHANICS:
+ *  GOVERNANCE MECHANICS:
  * - Voting power = balance + staked amount + lock bonus
  * - Lock bonus: up to 2x for 1-year locks
  * - Staking rewards: 0.1% APY base rate

@@ -1,10 +1,10 @@
 # Module 1: Solidity Fundamentals - Your First Steps into Blockchain Programming
 
-🎉 **Welcome to your blockchain development journey!** This module is designed for complete beginners who have never written a smart contract before. We'll explain every single piece of syntax and build real, working applications.
+**Welcome to your blockchain development journey!** This module is designed for complete beginners who have never written a smart contract before. We'll explain every single piece of syntax and build real, working applications.
 
-## 🧠 What You'll Master in This Module
+## What You'll Master in This Module
 
-### 💡 **Complete Syntax Understanding**
+### **Complete Syntax Understanding**
 
 You'll learn **every Solidity element** used in this module with real-world explanations:
 
@@ -17,9 +17,9 @@ You'll learn **every Solidity element** used in this module with real-world expl
 - Mappings → Digital record keeping
 - And much more!
 
-### 🏗️ **Real-World Projects You'll Build**
+### **Real-World Projects You'll Build**
 
-#### **Project 1: Digital Bank System** 💰
+#### **Project 1: Digital Bank System**
 
 Build a complete digital bank where users can:
 
@@ -28,7 +28,7 @@ Build a complete digital bank where users can:
 - Check balances (learn `view` functions and mappings)
 - Transfer between accounts (learn function parameters and logic)
 
-#### **Project 2: Personal Diary on Blockchain** 📝
+#### **Project 2: Personal Diary on Blockchain**
 
 Create a permanent, unchangeable diary system:
 
@@ -37,7 +37,7 @@ Create a permanent, unchangeable diary system:
 - Make entries public or private (learn access control)
 - Count total entries (learn counters and state changes)
 
-#### **Project 3: Simple Voting System** 🗳️
+#### **Project 3: Simple Voting System**
 
 Build a transparent voting application:
 
@@ -46,20 +46,20 @@ Build a transparent voting application:
 - Count votes (learn loops and aggregation)
 - Prevent double voting (learn state tracking)
 
-### 🎯 **Learning Approach: Syntax → Context → Practice**
+### **Learning Approach: Syntax → Context → Practice**
 
 Every concept follows this pattern:
 
-1. **📚 SYNTAX**: What does this code mean?
-2. **🌍 CONTEXT**: How is this used in real applications?
-3. **🛠️ PRACTICE**: Build something with it immediately
+1. ** SYNTAX**: What does this code mean?
+2. ** CONTEXT**: How is this used in real applications?
+3. ** PRACTICE**: Build something with it immediately
 
 ## � Module Structure - Designed for Complete Beginners
 
 ### **Phase 1: Understanding the Basics (3-4 hours)**
 
 ```
-📂 01-blockchain-basics/
+ 01-blockchain-basics/
 ├── what-is-blockchain.md       # Blockchain explained simply
 ├── ethereum-explained.md       # Ethereum and smart contracts
 ├── gas-and-transactions.md     # How transactions work
@@ -69,7 +69,7 @@ Every concept follows this pattern:
 ### **Phase 2: Solidity Syntax Deep Dive (4-5 hours)**
 
 ```
-📂 02-syntax-mastery/
+ 02-syntax-mastery/
 ├── contract-structure.md       # Every part of a contract explained
 ├── variables-and-types.md      # All data types with examples
 ├── functions-explained.md      # Functions, parameters, returns
@@ -80,7 +80,7 @@ Every concept follows this pattern:
 ### **Phase 3: Building Real Applications (5-6 hours)**
 
 ```
-📂 03-real-projects/
+ 03-real-projects/
 ├── digital-bank/              # Complete banking system
 ├── blockchain-diary/          # Personal diary DApp
 ├── voting-system/             # Democratic voting
@@ -90,14 +90,14 @@ Every concept follows this pattern:
 ### **Phase 4: Testing and Deployment (2-3 hours)**
 
 ```
-📂 04-deployment/
+ 04-deployment/
 ├── remix-tutorial.md          # Using Remix IDE step-by-step
 ├── testnet-deployment.md      # Deploy to real blockchain
 ├── contract-interaction.md    # Using your deployed contracts
 └── troubleshooting.md         # Common issues and fixes
 ```
 
-## 🚀 Getting Started - Your Step-by-Step Journey
+## Getting Started - Your Step-by-Step Journey
 
 ### **Step 1: Set Up Your Environment (5 minutes)**
 
@@ -131,7 +131,7 @@ contract MyFirstContract {
 - **Digital Bank**: Handle money deposits and withdrawals (75 lines)
 - **Blockchain Diary**: Store permanent messages (50 lines)
 
-#### **🔴 ADVANCED (Days 5-6): Complex Logic**
+#### ** ADVANCED (Days 5-6): Complex Logic**
 
 - **Voting System**: Democratic decision making (100+ lines)
 - **Mini Social Network**: Posts, likes, and user profiles (150+ lines)
@@ -142,9 +142,9 @@ contract MyFirstContract {
 - **Testnet Deployment**: Put your contracts on real blockchain (free!)
 - **Interaction Practice**: Use your deployed contracts like a user would
 
-## 📚 Complete Syntax Reference - Every Element Explained
+## Complete Syntax Reference - Every Element Explained
 
-### **🔤 Basic Contract Structure**
+### ** Basic Contract Structure**
 
 ```solidity
 // SYNTAX ELEMENT: pragma statement
@@ -156,9 +156,9 @@ contract MyContract {      // ← Creates a new smart contract
 }
 ```
 
-**🌍 Real-World Context**: Just like a legal contract defines rules, a smart contract defines rules in code. The `pragma` is like saying "this contract follows 2023 legal standards" and `contract` is like the title page.
+** Real-World Context**: Just like a legal contract defines rules, a smart contract defines rules in code. The `pragma` is like saying "this contract follows 2023 legal standards" and `contract` is like the title page.
 
-### **📊 Variables and Data Types**
+### ** Variables and Data Types**
 
 ```solidity
 contract DataTypesExample {
@@ -180,7 +180,7 @@ contract DataTypesExample {
 }
 ```
 
-**🌍 Real-World Context**: These are like different types of information in a database:
+** Real-World Context**: These are like different types of information in a database:
 
 - `uint256` → Bank account balance (always positive)
 - `int256` → Temperature (can be below zero)
@@ -188,7 +188,7 @@ contract DataTypesExample {
 - `string` → Person's name
 - `address` → Digital wallet address (like an email address but for money)
 
-### **⚙️ Functions - Actions Your Contract Can Perform**
+### ** Functions - Actions Your Contract Can Perform**
 
 ```solidity
 contract FunctionExamples {
@@ -220,12 +220,12 @@ contract FunctionExamples {
 }
 ```
 
-**🌍 Real-World Context**: Functions are like buttons on an ATM:
+** Real-World Context**: Functions are like buttons on an ATM:
 
 - `getBalance()` → "Check Balance" button (just shows info)
 - `addMoney()` → "Deposit" button (changes your account)
 
-### **🔐 Access Control - Who Can Do What**
+### ** Access Control - Who Can Do What**
 
 ```solidity
 contract AccessControlExample {
@@ -266,13 +266,13 @@ contract AccessControlExample {
 }
 ```
 
-**🌍 Real-World Context**: This is like security in a real building:
+** Real-World Context**: This is like security in a real building:
 
 - `public` → Front lobby (everyone can enter)
 - `private` → Private office (only this person can enter)
 - `onlyOwner` → Executive suite (only the CEO can enter)
 
-### **💰 Handling Money (Ether) in Smart Contracts**
+### ** Handling Money (Ether) in Smart Contracts**
 
 ```solidity
 contract MoneyHandling {
@@ -307,14 +307,14 @@ contract MoneyHandling {
 }
 ```
 
-**🌍 Real-World Context**: This works exactly like a bank:
+** Real-World Context**: This works exactly like a bank:
 
 - `deposit()` → Put money into your account
 - `withdraw()` → Take money out of your account
 - `balances` → Bank's record of everyone's account balances
 - `require()` → Bank checking you have enough money before allowing withdrawal
 
-### **📝 Events - Logging Important Happenings**
+### ** Events - Logging Important Happenings**
 
 ```solidity
 contract EventExample {
@@ -342,57 +342,57 @@ contract EventExample {
 }
 ```
 
-**🌍 Real-World Context**: Events are like a bank's transaction log:
+** Real-World Context**: Events are like a bank's transaction log:
 
 - Every deposit creates a permanent record
 - You can look up all past transactions
 - The record shows who, how much, and when
 - This creates transparency and auditability
 
-## 🎯 Learning Path - Follow This Exact Order
+## Learning Path - Follow This Exact Order
 
-### **📅 Day 1: Blockchain Fundamentals**
+### ** Day 1: Blockchain Fundamentals**
 
 1. **Read**: [What is Blockchain?](./01-blockchain-basics/what-is-blockchain.md)
 2. **Understand**: How Ethereum works
 3. **Write**: Your first "Hello World" contract
 4. **Deploy**: Put it on testnet and see it work!
 
-### **📅 Day 2: Basic Syntax Mastery**
+### ** Day 2: Basic Syntax Mastery**
 
 1. **Learn**: All basic data types with examples
 2. **Practice**: Write functions that store and retrieve data
 3. **Build**: Simple storage contract that remembers information
 
-### **📅 Day 3: Real Application - Digital Bank**
+### ** Day 3: Real Application - Digital Bank**
 
 1. **Plan**: Design a basic banking system
 2. **Code**: Implement deposits, withdrawals, and balance checking
 3. **Test**: Make sure money handling works correctly
 4. **Deploy**: Create a working bank on testnet
 
-### **📅 Day 4: Advanced Features - Blockchain Diary**
+### ** Day 4: Advanced Features - Blockchain Diary**
 
 1. **Learn**: String handling and events
 2. **Build**: Personal diary that stores messages permanently
 3. **Add**: Timestamps and privacy features
 
-### **📅 Day 5: Complex Logic - Voting System**
+### ** Day 5: Complex Logic - Voting System**
 
 1. **Design**: Democratic voting mechanism
 2. **Implement**: Voter registration and vote casting
 3. **Secure**: Prevent cheating and double voting
 
-### **📅 Day 6: Integration and Testing**
+### ** Day 6: Integration and Testing**
 
 1. **Test**: All your contracts thoroughly
 2. **Debug**: Fix any issues you find
 3. **Document**: Write clear instructions for using your contracts
 4. **Showcase**: Deploy everything and create a portfolio
 
-## ⏱ Time Investment - Realistic Expectations
+## Time Investment - Realistic Expectations
 
-### **📊 Detailed Time Breakdown**
+### ** Detailed Time Breakdown**
 
 #### **Phase 1: Foundation (Days 1-2) - 6-8 hours total**
 
@@ -414,34 +414,34 @@ contract EventExample {
 - **Implementation**: 3-4 hours coding complex features
 - **Testing and deployment**: 2 hours final verification
 
-### **🎯 Success Milestones**
+### ** Success Milestones**
 
 #### **By Day 2, you'll be able to:**
 
-- ✅ Explain what a blockchain is to a friend
-- ✅ Write basic smart contracts from scratch
-- ✅ Deploy contracts to testnet
-- ✅ Understand every line of code you write
+- Explain what a blockchain is to a friend
+- Write basic smart contracts from scratch
+- Deploy contracts to testnet
+- Understand every line of code you write
 
 #### **By Day 4, you'll be able to:**
 
-- ✅ Build applications that handle real money
-- ✅ Implement complex business logic
-- ✅ Design user-friendly interfaces
-- ✅ Test contracts thoroughly
+- Build applications that handle real money
+- Implement complex business logic
+- Design user-friendly interfaces
+- Test contracts thoroughly
 
 #### **By Day 6, you'll be able to:**
 
-- ✅ Create production-ready smart contracts
-- ✅ Debug and fix issues independently
-- ✅ Explain smart contracts to others
-- ✅ Start building more complex applications
+- Create production-ready smart contracts
+- Debug and fix issues independently
+- Explain smart contracts to others
+- Start building more complex applications
 
-## 🎓 Module Completion Checklist
+## Module Completion Checklist
 
-### **📋 Knowledge Checkpoints**
+### ** Knowledge Checkpoints**
 
-#### **✅ Syntax Mastery (Must achieve 90%+ understanding)**
+#### ** Syntax Mastery (Must achieve 90%+ understanding)**
 
 - [ ] Can explain what `pragma solidity` does
 - [ ] Understands difference between `uint256` and `int256`
@@ -452,7 +452,7 @@ contract EventExample {
 - [ ] Knows how to emit and use events
 - [ ] Understands `msg.sender` and `msg.value`
 
-#### **✅ Practical Skills (Must complete all projects)**
+#### ** Practical Skills (Must complete all projects)**
 
 - [ ] Built and deployed Hello World contract
 - [ ] Created working digital bank system
@@ -461,14 +461,14 @@ contract EventExample {
 - [ ] Successfully tested all contracts
 - [ ] Deployed to testnet and verified functionality
 
-#### **✅ Problem-Solving Abilities**
+#### ** Problem-Solving Abilities**
 
 - [ ] Can debug simple contract errors
 - [ ] Understands gas costs and optimization basics
 - [ ] Can explain contract behavior to others
 - [ ] Ready to tackle more complex projects
 
-### **🏆 Certification Requirements**
+### ** Certification Requirements**
 
 - **Quiz Score**: 90%+ on module quiz
 - **Project Portfolio**: All 3 projects completed and deployed
@@ -477,15 +477,15 @@ contract EventExample {
 
 ---
 
-## 🚀 Ready to Start Your Blockchain Journey?
+## Ready to Start Your Blockchain Journey?
 
 **You're about to learn one of the most valuable skills in technology!** Smart contract developers are in extremely high demand, and this module gives you the solid foundation you need.
 
-### **👉 Next Steps:**
+### ** Next Steps:**
 
 1. **Bookmark this page** - You'll refer back to it often
 2. **Open [Remix IDE](https://remix.ethereum.org)** - Your coding environment
 3. **Start with [Blockchain Basics](./01-blockchain-basics/what-is-blockchain.md)** - Understand what you're building on
 4. **Join our [Discord community](https://discord.gg/solidity-course)** - Get help when you need it
 
-**Remember**: Every expert was once a beginner. Take your time, ask questions, and celebrate every small victory. You've got this! 🌟
+**Remember**: Every expert was once a beginner. Take your time, ask questions, and celebrate every small victory. You've got this!

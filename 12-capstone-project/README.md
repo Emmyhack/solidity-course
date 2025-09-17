@@ -2,7 +2,7 @@
 
 Build a complete, production-ready decentralized application that demonstrates mastery of all Solidity concepts learned throughout the course.
 
-## 🎯 Project Overview
+##  Project Overview
 
 Your capstone project will be a **Multi-Chain DeFi Ecosystem** that includes:
 
@@ -13,7 +13,7 @@ Your capstone project will be a **Multi-Chain DeFi Ecosystem** that includes:
 5. **Security Audit**: Self-audit with formal verification
 6. **Documentation**: Complete technical documentation and user guides
 
-## 🏗 System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -54,7 +54,7 @@ Your capstone project will be a **Multi-Chain DeFi Ecosystem** that includes:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## 🎯 Project Options
+##  Project Options
 
 Choose ONE of these capstone projects based on your interests:
 
@@ -107,7 +107,7 @@ Choose ONE of these capstone projects based on your interests:
 - Requires instructor approval
 - Should solve a real-world problem
 
-## 📋 Technical Requirements
+##  Technical Requirements
 
 ### Smart Contract Requirements
 
@@ -154,7 +154,7 @@ Choose ONE of these capstone projects based on your interests:
 - [ ] **Architecture Diagram**: Visual system overview
 - [ ] **API Documentation**: All external interfaces documented
 
-## 🛠 Development Stack
+##  Development Stack
 
 ### Smart Contracts
 
@@ -188,7 +188,7 @@ Choose ONE of these capstone projects based on your interests:
 - **MythX**: Security scanning
 - **Echidna**: Property-based testing
 
-## 📅 Project Timeline (4 weeks)
+##  Project Timeline (4 weeks)
 
 ### Week 1: Planning & Architecture
 
@@ -214,7 +214,7 @@ Choose ONE of these capstone projects based on your interests:
 - [ ] **Day 24-25**: Complete documentation
 - [ ] **Day 26-28**: Final testing and presentation preparation
 
-## ✅ Evaluation Criteria
+##  Evaluation Criteria
 
 ### Technical Excellence (40%)
 
@@ -248,7 +248,7 @@ Choose ONE of these capstone projects based on your interests:
 - Q&A handling
 - Professional presentation
 
-## 🎓 Submission Requirements
+##  Submission Requirements
 
 ### Deliverables
 
@@ -272,7 +272,7 @@ capstone-project/
 └── presentation/ (Demo materials)
 ```
 
-## 🏆 Success Criteria
+##  Success Criteria
 
 ### Minimum Viable Product (MVP)
 
@@ -291,7 +291,7 @@ capstone-project/
 - [ ] 95%+ test coverage
 - [ ] Zero critical security issues
 
-## 💡 Innovation Opportunities
+##  Innovation Opportunities
 
 Stand out by implementing:
 
@@ -301,7 +301,7 @@ Stand out by implementing:
 - **Cutting-Edge Tech**: Latest protocols and standards
 - **Real-World Impact**: Solve actual problems users face
 
-## 🤝 Support & Resources
+##  Support & Resources
 
 ### Getting Help
 
@@ -317,7 +317,7 @@ Stand out by implementing:
 - **Deployment Tools**: Automated deployment scripts
 - **Testing Framework**: Pre-built testing utilities
 
-## 🚀 Beyond the Course
+##  Beyond the Course
 
 Your capstone project can be:
 
@@ -328,6 +328,6 @@ Your capstone project can be:
 
 ---
 
-**Ready to build something amazing?** Choose your project and start architecting the future of DeFi! 🌟
+**Ready to build something amazing?** Choose your project and start architecting the future of DeFi! 
 
 This is where everything you've learned comes together into a masterpiece that showcases your expertise as a Solidity developer.

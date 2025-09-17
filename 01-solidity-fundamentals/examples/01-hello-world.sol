@@ -59,7 +59,7 @@ contract HelloWorld {
 }
 
 /**
- * 🧠 LEARNING POINTS:
+ *  LEARNING POINTS:
  *
  * 1. SPDX License: Required at top of every contract
  * 2. Pragma: Specifies Solidity compiler version
@@ -70,7 +70,7 @@ contract HelloWorld {
  * 7. Events: Cheap way to log important changes
  * 8. msg.sender: Built-in variable for transaction sender
  *
- * 🚀 TRY THIS:
+ *  TRY THIS:
  * 1. Deploy this contract in Remix
  * 2. Call updateMessage() with different strings
  * 3. Check the events tab to see MessageUpdated logs

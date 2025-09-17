@@ -802,7 +802,7 @@ contract AdvancedDAOGovernance is
 }
 
 /**
- * 🏛️ ADVANCED DAO GOVERNANCE FEATURES:
+ *  ADVANCED DAO GOVERNANCE FEATURES:
  *
  * 1. MULTI-TIER PROPOSAL SYSTEM:
  *    - Standard: Regular protocol changes (10% quorum, 51% threshold)
@@ -839,7 +839,7 @@ contract AdvancedDAOGovernance is
  *    - Comprehensive voting statistics
  *    - Historical governance data
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Create emergency proposal
  * dao.proposeEmergency(targets, values, calldatas, description, justification);
@@ -856,7 +856,7 @@ contract AdvancedDAOGovernance is
  * // Claim participation rewards
  * dao.claimParticipationRewards();
  *
- * 🎯 GOVERNANCE PHILOSOPHY:
+ *  GOVERNANCE PHILOSOPHY:
  * - Multi-tier system balances speed vs. security
  * - Incentives encourage active participation
  * - Emergency controls protect against critical threats

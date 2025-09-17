@@ -217,7 +217,7 @@ contract DataTypesDemo {
 }
 
 /**
- * 🧠 LEARNING POINTS:
+ *  LEARNING POINTS:
  *
  * 1. VALUE TYPES: Stored directly, copied when assigned
  *    - bool, uint, int, address, bytes1-32
@@ -235,7 +235,7 @@ contract DataTypesDemo {
  *
  * 6. STRUCTS: Custom types, group related data
  *
- * 🚀 TRY THIS:
+ *  TRY THIS:
  * 1. Deploy and explore each function
  * 2. Try different data type combinations
  * 3. Notice gas costs for storage vs memory operations

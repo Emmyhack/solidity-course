@@ -2,11 +2,11 @@
 
 Build optimized data structures for different use cases and compare their gas efficiency.
 
-## 🎯 Objective
+##  Objective
 
 Create and optimize data structures for real-world scenarios, focusing on gas efficiency and access patterns.
 
-## 📝 Tasks
+##  Tasks
 
 ### Task 1: User Management System (30 points)
 
@@ -76,7 +76,7 @@ Create an `AnalyticsDashboard` that aggregates data from previous contracts:
 - Efficient data retrieval
 - Historical data management
 
-## 🔧 Implementation Guidelines
+##  Implementation Guidelines
 
 ### Gas Optimization Techniques
 
@@ -99,7 +99,7 @@ Create an `AnalyticsDashboard` that aggregates data from previous contracts:
 - Edge case handling
 - Performance benchmarks
 
-## 📊 Evaluation Criteria
+##  Evaluation Criteria
 
 1. **Functionality (40%)**
 
@@ -127,7 +127,7 @@ Create an `AnalyticsDashboard` that aggregates data from previous contracts:
    - Novel data structure implementations
    - Thoughtful UX considerations
 
-## 🚀 Bonus Challenges
+##  Bonus Challenges
 
 ### Bonus 1: Migration System (10 points)
 
@@ -156,7 +156,7 @@ Design data structures that work across different EVM chains:
 - Unified data access layer
 - Cross-chain user identity
 
-## 📋 Submission Requirements
+##  Submission Requirements
 
 ### Code Structure
 
@@ -193,21 +193,21 @@ Prepare a demo that shows:
 4. Gas efficiency comparisons
 5. Performance under load
 
-## ⏰ Timeline
+##  Timeline
 
 - **Week 1**: Complete Tasks 1-2 (User and Inventory Management)
 - **Week 2**: Complete Tasks 3-4 (Voting and Analytics)
 - **Week 3**: Testing, optimization, and documentation
 - **Week 4**: Bonus challenges and demo preparation
 
-## 💡 Helpful Resources
+##  Helpful Resources
 
 - [Solidity Gas Optimization Guide](../gas-analysis/optimization-guide.md)
 - [Data Structure Patterns](../solutions/patterns.md)
 - [Testing Best Practices](../solutions/testing-guide.md)
 - [Migration Strategies](../solutions/migration-patterns.md)
 
-## 🤝 Collaboration Guidelines
+##  Collaboration Guidelines
 
 - Individual assignment, but discussion is encouraged
 - Code review sessions available on request
@@ -216,4 +216,4 @@ Prepare a demo that shows:
 
 ---
 
-**Ready to build efficient data systems?** Start with the UserManager contract and focus on gas optimization from the beginning! ⚡
+**Ready to build efficient data systems?** Start with the UserManager contract and focus on gas optimization from the beginning! 

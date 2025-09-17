@@ -2,32 +2,32 @@
 
 A comprehensive guide to optimizing gas usage when working with complex data structures in Solidity.
 
-## 🎯 Overview
+##  Overview
 
 Gas optimization for data structures involves understanding storage layout, access patterns, and the trade-offs between different approaches. This guide provides practical techniques and real-world examples.
 
-## 🏗 Storage Layout Fundamentals
+##  Storage Layout Fundamentals
 
 ### Storage Slots and Packing
 
 Each storage slot is 32 bytes (256 bits). Understanding how Solidity packs data is crucial for optimization.
 
 ```solidity
-// ❌ Inefficient: Uses 3 storage slots
+//  Inefficient: Uses 3 storage slots
 struct BadExample {
     uint128 value1;  // Slot 0 (128 bits used, 128 bits wasted)
     bool flag;       // Slot 1 (8 bits used, 248 bits wasted)
     uint128 value2;  // Slot 2 (128 bits used, 128 bits wasted)
 }
 
-// ✅ Efficient: Uses 2 storage slots
+//  Efficient: Uses 2 storage slots
 struct GoodExample {
     uint128 value1;  // Slot 0 (first 128 bits)
     uint128 value2;  // Slot 0 (last 128 bits)
     bool flag;       // Slot 1 (8 bits used)
 }
 
-// ✅ Even better: Uses 1 storage slot for small values
+//  Even better: Uses 1 storage slot for small values
 struct OptimalExample {
     uint64 value1;   // Slot 0 (bits 0-63)
     uint64 value2;   // Slot 0 (bits 64-127)
@@ -49,7 +49,7 @@ struct OptimalExample {
 | Memory allocation | 3 + quadratic | Becomes expensive for large data     |
 | Calldata read     | 16            | Reading function parameter           |
 
-## 📊 Data Structure Optimization Techniques
+##  Data Structure Optimization Techniques
 
 ### 1. Packed Structs
 
@@ -98,14 +98,14 @@ contract OptimizedUserProfile {
 
 ```solidity
 contract OptimizedArrays {
-    // ❌ Expensive: Push one by one
+    //  Expensive: Push one by one
     function addNumbersSlow(uint256[] memory _numbers) external {
         for (uint256 i = 0; i < _numbers.length; i++) {
             numbers.push(_numbers[i]);
         }
     }
 
-    // ✅ Better: Batch operations
+    //  Better: Batch operations
     uint256[] public numbers;
 
     function addNumbersFast(uint256[] calldata _numbers) external {
@@ -117,7 +117,7 @@ contract OptimizedArrays {
         }
     }
 
-    // ✅ Most efficient: Assembly optimization for simple cases
+    //  Most efficient: Assembly optimization for simple cases
     function addNumbersAssembly(uint256[] calldata _numbers) external {
         assembly {
             // Load the storage slot for numbers array length
@@ -142,12 +142,12 @@ contract OptimizedArrays {
 
 ```solidity
 contract OptimizedMappings {
-    // ✅ Use appropriate key types
+    //  Use appropriate key types
     mapping(bytes32 => uint256) public hashToValue;  // 32 bytes key
     mapping(uint256 => address) public idToAddress;   // 32 bytes key
     mapping(address => bool) public isWhitelisted;    // 20 bytes key (auto-padded)
 
-    // ✅ Packed mapping values
+    //  Packed mapping values
     struct PackedData {
         uint128 value1;
         uint128 value2;
@@ -155,10 +155,10 @@ contract OptimizedMappings {
     }
     mapping(address => PackedData) public userData;
 
-    // ✅ Nested mappings for complex relationships
+    //  Nested mappings for complex relationships
     mapping(address => mapping(uint256 => bool)) public userTokens;
 
-    // ✅ Efficient existence checking
+    //  Efficient existence checking
     mapping(address => uint256) public userIndex; // 1-based index
     address[] public users;
 
@@ -198,14 +198,14 @@ contract MemoryStorageOptimization {
 
     Item[] public items;
 
-    // ❌ Expensive: Multiple storage reads
+    //  Expensive: Multiple storage reads
     function processItemsSlow(uint256[] memory _indices) external view returns (uint256 total) {
         for (uint256 i = 0; i < _indices.length; i++) {
             total += items[_indices[i]].value; // Storage read each time
         }
     }
 
-    // ✅ Efficient: Load to memory once
+    //  Efficient: Load to memory once
     function processItemsFast(uint256[] memory _indices) external view returns (uint256 total) {
         for (uint256 i = 0; i < _indices.length; i++) {
             Item memory item = items[_indices[i]]; // Single storage read
@@ -213,7 +213,7 @@ contract MemoryStorageOptimization {
         }
     }
 
-    // ✅ Most efficient: Batch processing
+    //  Most efficient: Batch processing
     function processItemsBatch(uint256 _start, uint256 _end) external view returns (uint256 total) {
         for (uint256 i = _start; i <= _end; i++) {
             total += items[i].value;
@@ -222,7 +222,7 @@ contract MemoryStorageOptimization {
 }
 ```
 
-## 🔍 Advanced Optimization Techniques
+##  Advanced Optimization Techniques
 
 ### 1. Bit Manipulation for Flags
 
@@ -259,14 +259,14 @@ contract BitFlags {
 
 ```solidity
 contract StringOptimization {
-    // ❌ Expensive: Long strings in storage
+    //  Expensive: Long strings in storage
     mapping(uint256 => string) public longDescriptions;
 
-    // ✅ Better: Hash-based storage with off-chain lookup
+    //  Better: Hash-based storage with off-chain lookup
     mapping(uint256 => bytes32) public descriptionHashes;
     mapping(bytes32 => string) public hashToString;
 
-    // ✅ Even better: Use events for strings
+    //  Even better: Use events for strings
     event DescriptionSet(uint256 indexed id, string description, bytes32 hash);
 
     function setDescriptionOptimized(uint256 _id, string calldata _description) external {
@@ -296,7 +296,7 @@ contract EfficientPagination {
     User[] public users;
     mapping(address => uint256) public userIndex;
 
-    // ✅ Efficient pagination with limit
+    //  Efficient pagination with limit
     function getUsersPage(
         uint256 _start,
         uint256 _limit
@@ -326,7 +326,7 @@ contract EfficientPagination {
         hasMore = end < total;
     }
 
-    // ✅ Cursor-based pagination for large datasets
+    //  Cursor-based pagination for large datasets
     uint256 public constant PAGE_SIZE = 50;
 
     function getUsersCursor(
@@ -351,7 +351,7 @@ contract EfficientPagination {
 }
 ```
 
-## 📊 Gas Analysis Examples
+##  Gas Analysis Examples
 
 ### Real-world Gas Comparisons
 
@@ -373,7 +373,7 @@ contract EfficientPagination {
 - [ ] **Event Usage**: Use events for data that doesn't need on-chain storage
 - [ ] **Assembly Optimization**: Use inline assembly for critical paths
 
-## 🧪 Testing Gas Efficiency
+##  Testing Gas Efficiency
 
 ```javascript
 // Example test for gas optimization
@@ -394,7 +394,7 @@ describe("Gas Optimization Tests", function () {
 });
 ```
 
-## 🔗 Additional Resources
+##  Additional Resources
 
 - [Solidity Storage Layout Documentation](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html)
 - [Gas Optimization Patterns](https://github.com/dragonfly-xyz/useful-solidity-patterns)
@@ -403,4 +403,4 @@ describe("Gas Optimization Tests", function () {
 
 ---
 
-**Remember**: Always measure actual gas usage and test thoroughly. Optimization should never compromise security or functionality! ⚡
+**Remember**: Always measure actual gas usage and test thoroughly. Optimization should never compromise security or functionality! 

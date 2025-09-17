@@ -989,7 +989,7 @@ contract TreasuryDAO is
 }
 
 /**
- * 🏛️ TREASURY DAO FEATURES:
+ *  TREASURY DAO FEATURES:
  *
  * 1. MULTI-ASSET TREASURY MANAGEMENT:
  *    - ERC20, ERC721, and native currency support
@@ -1033,7 +1033,7 @@ contract TreasuryDAO is
  *    - Contract pause functionality
  *    - Emergency fund access
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Create grant proposal
  * dao.proposeGrant(recipient, amount, token, title, description, milestones, payments, deadline);
@@ -1050,7 +1050,7 @@ contract TreasuryDAO is
  * // Delegate with parameters
  * dao.delegateWithParams(delegate, weight, expiration);
  *
- * 🎯 TREASURY MANAGEMENT PHILOSOPHY:
+ *  TREASURY MANAGEMENT PHILOSOPHY:
  * - Transparency in all financial operations
  * - Community-driven allocation decisions
  * - Risk management through diversification

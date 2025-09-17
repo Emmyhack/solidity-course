@@ -425,7 +425,7 @@ contract ModifiersAndAccessControl {
 }
 
 /**
- * 🧠 LEARNING POINTS:
+ *  LEARNING POINTS:
  *
  * 1. MODIFIER STRUCTURE:
  *    - Code before _; executes before function
@@ -452,7 +452,7 @@ contract ModifiersAndAccessControl {
  *    - Emergency pause for crisis management
  *    - EOA-only restrictions for sensitive functions
  *
- * 🚀 TRY THIS:
+ *  TRY THIS:
  * 1. Create custom modifiers for your use case
  * 2. Combine multiple modifiers on functions
  * 3. Test time-based restrictions

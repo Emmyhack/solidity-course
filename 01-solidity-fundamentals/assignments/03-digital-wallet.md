@@ -2,11 +2,11 @@
 
 Create a multi-user digital wallet with allowances and transaction limits.
 
-## 🎯 Objective
+##  Objective
 
 Build a wallet contract that manages balances, allowances, and implements daily spending limits.
 
-## 📋 Requirements
+##  Requirements
 
 ### Core Features
 
@@ -35,7 +35,7 @@ function getRemainingDailyLimit(address user) public view returns (uint256)
 - Multi-signature requirements for large amounts
 - Interest calculation on stored funds
 
-## ✅ Requirements Checklist
+##  Requirements Checklist
 
 - [ ] Users can deposit and withdraw Ether
 - [ ] Transfer between users works
@@ -45,7 +45,7 @@ function getRemainingDailyLimit(address user) public view returns (uint256)
 - [ ] Emergency pause stops all operations
 - [ ] Events track all financial operations
 
-## 🧪 Test Scenarios
+##  Test Scenarios
 
 1. Deposit Ether to contract
 2. Transfer between users

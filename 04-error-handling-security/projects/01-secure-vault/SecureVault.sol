@@ -674,7 +674,7 @@ contract SecureVault is ReentrancyGuard, Pausable, AccessControl {
 }
 
 /**
- * 🛡️ SECURITY FEATURES IMPLEMENTED:
+ *  SECURITY FEATURES IMPLEMENTED:
  *
  * 1. REENTRANCY PROTECTION:
  *    - Uses OpenZeppelin's ReentrancyGuard
@@ -722,14 +722,14 @@ contract SecureVault is ReentrancyGuard, Pausable, AccessControl {
  *     - Comprehensive event logging
  *     - Security event tracking
  *
- * ⚠️ SECURITY CONSIDERATIONS:
+ *  SECURITY CONSIDERATIONS:
  * - All external calls use checks-effects-interactions pattern
  * - State changes before external calls
  * - Proper error handling and rollback
  * - Gas limit considerations for external calls
  * - Front-running protection via commit-reveal if needed
  *
- * 🚀 USAGE PATTERNS:
+ *  USAGE PATTERNS:
  * 1. Create vault with appropriate security level
  * 2. Deposit funds with automatic validation
  * 3. Request withdrawals with timelock

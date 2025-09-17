@@ -12,7 +12,7 @@ Build a storage contract that demonstrates:
 - Input validation with require statements
 - Basic contract interaction patterns
 
-## 📋 Requirements
+##  Requirements
 
 ### Core Features
 
@@ -52,7 +52,7 @@ event UserAuthorized(address user, address authorizedBy);
 event UserDeauthorized(address user, address deauthorizedBy);
 ```
 
-## 🏗 Implementation Steps
+##  Implementation Steps
 
 ### Step 1: Contract Structure
 
@@ -88,7 +88,7 @@ event UserDeauthorized(address user, address deauthorizedBy);
 3. Verify events are emitted properly
 4. Test edge cases and error conditions
 
-## 📁 File Structure
+##  File Structure
 
 Create these files in the `projects/01-simple-storage/` directory:
 
@@ -100,7 +100,7 @@ Create these files in the `projects/01-simple-storage/` directory:
 └── deployment-notes.md (deployment steps)
 ```
 
-## ✅ Acceptance Criteria
+##  Acceptance Criteria
 
 Your contract should:
 
@@ -113,7 +113,7 @@ Your contract should:
 - [ ] Have meaningful error messages
 - [ ] Follow Solidity best practices
 
-## 🧪 Testing Checklist
+##  Testing Checklist
 
 Test these scenarios:
 
@@ -128,7 +128,7 @@ Test these scenarios:
 - [ ] Try authorizing user as non-owner (should fail)
 - [ ] Check all events are emitted correctly
 
-## 💡 Bonus Challenges
+##  Bonus Challenges
 
 If you complete the basic requirements, try these:
 
@@ -138,7 +138,7 @@ If you complete the basic requirements, try these:
 4. Add data history - store previous values with timestamps
 5. Add a pause mechanism that stops all storage operations
 
-## 🔍 Code Review Points
+##  Code Review Points
 
 When reviewing your code, check:
 
@@ -149,7 +149,7 @@ When reviewing your code, check:
 - Are there any potential security issues?
 - Is gas usage optimized where possible?
 
-## 📚 Learning Resources
+##  Learning Resources
 
 - [Solidity by Example - Storage](https://solidity-by-example.org/)
 - [OpenZeppelin Access Control](https://docs.openzeppelin.com/contracts/4.x/access-control)
@@ -157,6 +157,6 @@ When reviewing your code, check:
 
 ---
 
-**Ready to code?** Start implementing `SimpleStorage.sol` and don't forget to test thoroughly! 🚀
+**Ready to code?** Start implementing `SimpleStorage.sol` and don't forget to test thoroughly! 
 
 Need help? Check the [solution](../solutions/01-simple-storage-solution.sol) only after attempting the project yourself.

@@ -2,7 +2,7 @@
 
 Master the art of property-based testing and fuzzing with Foundry's advanced testing capabilities.
 
-## 📚 Table of Contents
+##  Table of Contents
 
 1. [Introduction to Fuzzing](#introduction-to-fuzzing)
 2. [Basic Fuzzing](#basic-fuzzing)
@@ -13,7 +13,7 @@ Master the art of property-based testing and fuzzing with Foundry's advanced tes
 7. [Common Patterns](#common-patterns)
 8. [Best Practices](#best-practices)
 
-## 🎲 Introduction to Fuzzing
+##  Introduction to Fuzzing
 
 ### What is Fuzzing?
 
@@ -40,7 +40,7 @@ function invariant_TotalSupplyConstant() public { }
 function testProperty_Commutative(uint256 a, uint256 b) public { }
 ```
 
-## 🎯 Basic Fuzzing
+##  Basic Fuzzing
 
 ### Your First Fuzz Test
 
@@ -107,7 +107,7 @@ function testFuzz_WithBounding(uint256 amount, address user) public {
 }
 ```
 
-## 🔬 Property-Based Testing
+##  Property-Based Testing
 
 ### Mathematical Properties
 
@@ -231,7 +231,7 @@ contract TokenPropertiesTest is Test {
 }
 ```
 
-## 🔄 Invariant Testing
+##  Invariant Testing
 
 ### Setting Up Invariant Tests
 
@@ -431,7 +431,7 @@ contract AdvancedInvariantTest is Test {
 }
 ```
 
-## ⚙️ Advanced Fuzzing Techniques
+##  Advanced Fuzzing Techniques
 
 ### Structured Fuzzing
 
@@ -511,7 +511,7 @@ function testFuzz_MetamorphicSorting(uint256[] memory array) public {
 }
 ```
 
-## ⚙️ Fuzzing Configuration
+##  Fuzzing Configuration
 
 ### foundry.toml Configuration
 
@@ -576,7 +576,7 @@ function targetArtifactSelectors() public returns (FuzzSelector[] memory) {
 }
 ```
 
-## 🎨 Common Patterns
+##  Common Patterns
 
 ### The Fuzzing Lifecycle
 
@@ -669,12 +669,12 @@ function testFuzz_ErrorBoundaries(uint256 amount, address user) public {
 }
 ```
 
-## 📋 Best Practices
+##  Best Practices
 
 ### 1. Input Validation Strategy
 
 ```solidity
-// ✅ Good: Comprehensive input validation
+//  Good: Comprehensive input validation
 function testFuzz_GoodInputValidation(
     address user,
     uint256 amount,
@@ -692,7 +692,7 @@ function testFuzz_GoodInputValidation(
     // Your test logic
 }
 
-// ❌ Bad: Insufficient input validation
+//  Bad: Insufficient input validation
 function testFuzz_BadInputValidation(address user, uint256 amount) public {
     myContract.deposit(user, amount); // May fail with invalid inputs
 }
@@ -701,7 +701,7 @@ function testFuzz_BadInputValidation(address user, uint256 amount) public {
 ### 2. Property Selection
 
 ```solidity
-// ✅ Good: Test fundamental properties
+//  Good: Test fundamental properties
 function testProperty_FundamentalProperty(uint256 input) public {
     // Test properties that must always hold
     // - Conservation laws
@@ -709,7 +709,7 @@ function testProperty_FundamentalProperty(uint256 input) public {
     // - Business logic constraints
 }
 
-// ❌ Bad: Test implementation details
+//  Bad: Test implementation details
 function testProperty_ImplementationDetail(uint256 input) public {
     // Don't test how something is done, test what it should do
 }
@@ -718,7 +718,7 @@ function testProperty_ImplementationDetail(uint256 input) public {
 ### 3. Shrinking-Friendly Tests
 
 ```solidity
-// ✅ Good: Will shrink to minimal failing case
+//  Good: Will shrink to minimal failing case
 function testFuzz_ShrinkingFriendly(uint256 amount) public {
     amount = bound(amount, 1, 1000);
 
@@ -726,7 +726,7 @@ function testFuzz_ShrinkingFriendly(uint256 amount) public {
     assertTrue(myContract.isValidAmount(amount));
 }
 
-// ❌ Bad: Complex conditions make shrinking difficult
+//  Bad: Complex conditions make shrinking difficult
 function testFuzz_ComplexShrinking(uint256 a, uint256 b, uint256 c, bool flag) public {
     // Too many interdependent conditions
     if (flag && a > b && b > c && c > 0) {
@@ -738,7 +738,7 @@ function testFuzz_ComplexShrinking(uint256 a, uint256 b, uint256 c, bool flag) p
 ### 4. Performance Optimization
 
 ```solidity
-// ✅ Good: Efficient fuzzing
+//  Good: Efficient fuzzing
 function testFuzz_Efficient(uint256 input) public {
     input = bound(input, 1, 1000); // Bound early
 
@@ -749,7 +749,7 @@ function testFuzz_Efficient(uint256 input) public {
     assertEq(result, expected);
 }
 
-// ❌ Bad: Inefficient fuzzing
+//  Bad: Inefficient fuzzing
 function testFuzz_Inefficient(uint256 input) public {
     vm.assume(input > 0 && input < 1000); // assume is slower than bound
 
@@ -807,4 +807,4 @@ contract MyContractFuzzTest is Test {
 
 ---
 
-**Fuzzing mastered!** 🎲 Your contracts are now battle-tested against millions of possible inputs.
+**Fuzzing mastered!**  Your contracts are now battle-tested against millions of possible inputs.

@@ -541,7 +541,7 @@ contract ErrorHandlingMechanisms {
 }
 
 /**
- * 🧠 LEARNING POINTS:
+ *  LEARNING POINTS:
  *
  * 1. ERROR HANDLING MECHANISMS:
  *    - require(): Input validation, external conditions
@@ -574,14 +574,14 @@ contract ErrorHandlingMechanisms {
  *    - Log errors for debugging
  *    - Validate early and often
  *
- * ⚠️ SECURITY NOTES:
+ *  SECURITY NOTES:
  * - Don't expose sensitive information in errors
  * - Validate all external inputs
  * - Handle external call failures gracefully
  * - Use assert only for invariants
  * - Consider gas costs of error handling
  *
- * 🚀 TRY THIS:
+ *  TRY THIS:
  * 1. Test each error mechanism
  * 2. Compare gas costs of different approaches
  * 3. Implement your own error recovery

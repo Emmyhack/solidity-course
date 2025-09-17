@@ -1010,7 +1010,7 @@ contract AdvancedYieldFarm is ReentrancyGuard, Pausable, Ownable {
 }
 
 /**
- * 🌾 ADVANCED YIELD FARMING FEATURES:
+ *  ADVANCED YIELD FARMING FEATURES:
  *
  * 1. MULTI-POOL FARMING SYSTEM:
  *    - Multiple pools with different staking/reward tokens
@@ -1042,7 +1042,7 @@ contract AdvancedYieldFarm is ReentrancyGuard, Pausable, Ownable {
  *    - Comprehensive user position tracking
  *    - Batch operations for gas efficiency
  *
- * 📊 USAGE EXAMPLES:
+ *  USAGE EXAMPLES:
  *
  * // Deposit with 6-month lock for 2x multiplier
  * farm.deposit(poolId, amount, 180 days);
@@ -1059,7 +1059,7 @@ contract AdvancedYieldFarm is ReentrancyGuard, Pausable, Ownable {
  * // Emergency withdraw (with penalty)
  * farm.emergencyWithdraw(poolId);
  *
- * 🎯 YIELD OPTIMIZATION STRATEGIES:
+ *  YIELD OPTIMIZATION STRATEGIES:
  * - Combine lock multipliers + governance boosts for maximum yield
  * - Use auto-compounding vaults for passive income
  * - Diversify across multiple pools for risk management

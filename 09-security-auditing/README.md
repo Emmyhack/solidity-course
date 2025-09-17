@@ -2,7 +2,7 @@
 
 Master smart contract security through real exploit analysis, comprehensive auditing techniques, and production-grade security implementations.
 
-## 📚 Module Overview
+##  Module Overview
 
 This module provides comprehensive coverage of smart contract security, from understanding common vulnerabilities to conducting professional audits. You'll learn through real exploit case studies and build secure, production-ready contracts.
 
@@ -10,7 +10,7 @@ This module provides comprehensive coverage of smart contract security, from und
 **Difficulty:** Expert  
 **Prerequisites:** Modules 1-8
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 By the end of this module, you will be able to:
 
@@ -25,7 +25,7 @@ By the end of this module, you will be able to:
 - Handle secure upgrades and emergency procedures
 - Understand MEV (Maximal Extractable Value) attacks and prevention
 
-## 📖 Module Structure
+##  Module Structure
 
 ### 9.1 Common Vulnerabilities (12-15 hours)
 
@@ -57,7 +57,7 @@ By the end of this module, you will be able to:
 - **Practice:** Build MEV-resistant protocols
 - **Files:** `mev-protection/`, protection mechanisms
 
-## 📁 Module Files
+##  Module Files
 
 ```
 09-security-auditing/
@@ -107,7 +107,7 @@ By the end of this module, you will be able to:
     └── solutions/              # Assignment solutions
 ```
 
-## 🚨 Critical Vulnerabilities
+##  Critical Vulnerabilities
 
 ### 1. Reentrancy Attacks
 
@@ -433,7 +433,7 @@ contract ProtectedAMM {
 }
 ```
 
-## 🛡️ Advanced Security Patterns
+##  Advanced Security Patterns
 
 ### 1. Circuit Breaker Pattern
 
@@ -679,7 +679,7 @@ contract MultiSigWallet {
 }
 ```
 
-## 🔍 Professional Auditing Process
+##  Professional Auditing Process
 
 ### 1. Automated Analysis Tools
 
@@ -729,7 +729,7 @@ prettier --write contracts/   # Code formatting
 - [ ] MEV protection mechanisms
 - [ ] Fee calculation correctness
 
-## 📊 Security Metrics & KPIs
+##  Security Metrics & KPIs
 
 ### Code Quality Metrics
 

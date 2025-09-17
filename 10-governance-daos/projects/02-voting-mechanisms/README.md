@@ -2,7 +2,7 @@
 
 This project demonstrates sophisticated voting systems beyond simple majority rule, including quadratic voting, conviction voting, ranked-choice voting, and advanced anti-manipulation measures.
 
-## 🗳️ Voting Systems Overview
+##  Voting Systems Overview
 
 ### 1. Simple Majority Voting
 - Basic yes/no or multiple choice voting
@@ -34,7 +34,7 @@ This project demonstrates sophisticated voting systems beyond simple majority ru
 - Anti-manipulation through minimum holding periods
 - Sybil resistance
 
-## 📋 Features
+##  Features
 
 ### Advanced Voting Mechanisms Contract
 - **Multiple Voting Types**: Support for all major voting mechanisms
@@ -55,7 +55,7 @@ This project demonstrates sophisticated voting systems beyond simple majority ru
 - **Treasury Integration**: Direct funding upon threshold reach
 - **Flexible Support**: Change support levels at any time
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -81,7 +81,7 @@ npx hardhat compile
 npx hardhat test
 ```
 
-## 📖 Usage Examples
+##  Usage Examples
 
 ### Basic Voting
 
@@ -187,7 +187,7 @@ voting.voteOnBehalf(
 );
 ```
 
-## 🎯 Key Concepts
+##  Key Concepts
 
 ### Quadratic Voting Benefits
 - **Democratic Voice**: √Credits prevents wealth dominance
@@ -207,7 +207,7 @@ voting.voteOnBehalf(
 - **Voting Power Caps**: Maximum influence per user
 - **Reputation System**: Participation-based weighting
 
-## 🔧 Configuration
+##  Configuration
 
 ### Voting Parameters
 
@@ -243,7 +243,7 @@ uint256 roundId = qv.startQVRound(
 );
 ```
 
-## 🧪 Testing
+##  Testing
 
 Run the test suite:
 
@@ -258,7 +258,7 @@ npx hardhat test test/AdvancedVoting.test.js
 REPORT_GAS=true npx hardhat test
 ```
 
-## 📊 Voting Comparison
+##  Voting Comparison
 
 | Mechanism | Best For | Pros | Cons |
 |-----------|----------|------|------|
@@ -268,7 +268,7 @@ REPORT_GAS=true npx hardhat test
 | Conviction | Funding decisions | Time preference | Slower decisions |
 | Weighted | Stake-based | Aligned incentives | Potential centralization |
 
-## 🔮 Advanced Features
+##  Advanced Features
 
 ### Anonymous Voting Preparation
 ```solidity
@@ -292,14 +292,14 @@ voting.setMultiSigRequirement(3, 5); // 3 of 5 signatures
 voting.setExecutionDelay(2 days);
 ```
 
-## 📚 Additional Resources
+##  Additional Resources
 
 - [Quadratic Voting Research](https://www.microsoft.com/en-us/research/project/quadratic-voting/)
 - [Conviction Voting Documentation](https://github.com/1Hive/conviction-voting-app)
 - [OpenZeppelin Governor](https://docs.openzeppelin.com/contracts/4.x/governance)
 - [Aragon Voting](https://aragon.org/voting)
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -307,7 +307,7 @@ voting.setExecutionDelay(2 days);
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 

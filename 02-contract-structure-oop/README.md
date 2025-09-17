@@ -2,7 +2,7 @@
 
 Learn advanced contract architecture, inheritance, and object-oriented programming patterns in Solidity.
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 By the end of this module, you will:
 
@@ -14,7 +14,7 @@ By the end of this module, you will:
 - Apply object-oriented design patterns
 - Build modular and maintainable contracts
 
-## 📚 Topics Covered
+##  Topics Covered
 
 ### 1. Contract Inheritance
 
@@ -55,7 +55,7 @@ By the end of this module, you will:
 - Pausable contracts
 - Ownable patterns
 
-## 🛠 Development Tools
+##  Development Tools
 
 Continue using Remix IDE, but also start exploring:
 
@@ -63,7 +63,7 @@ Continue using Remix IDE, but also start exploring:
 - Hardhat (preview for Module 5)
 - Gas optimization techniques
 
-## 📋 Module Structure
+##  Module Structure
 
 - [**Examples**](./examples/) - Contract architecture patterns
 - [**Projects**](./projects/) - Build a complete DApp system
@@ -71,27 +71,27 @@ Continue using Remix IDE, but also start exploring:
 - [**Solutions**](./solutions/) - Reference implementations
 - [**Quiz**](./quiz.md) - Advanced concepts test
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Review [Contract Inheritance example](./examples/01-inheritance.sol)
 2. Build the [Token System Project](./projects/01-token-system/)
 3. Complete all assignments
 4. Take the module quiz
 
-## ⏱ Estimated Time
+##  Estimated Time
 
 - **Reading & Examples**: 4-5 hours
 - **Projects**: 6-8 hours
 - **Assignments**: 4-5 hours
 - **Total**: 14-18 hours
 
-## 📖 Prerequisites
+##  Prerequisites
 
 - Completed Module 1: Solidity Fundamentals
 - Understanding of basic OOP concepts
 - Familiarity with contract deployment
 
-## 📖 Additional Resources
+##  Additional Resources
 
 - [Solidity Inheritance Documentation](https://docs.soliditylang.org/en/latest/contracts.html#inheritance)
 - [OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/)
@@ -99,4 +99,4 @@ Continue using Remix IDE, but also start exploring:
 
 ---
 
-**Ready to build advanced contracts?** Start with [Examples → Inheritance](./examples/01-inheritance.sol) 🏗️
+**Ready to build advanced contracts?** Start with [Examples → Inheritance](./examples/01-inheritance.sol) 

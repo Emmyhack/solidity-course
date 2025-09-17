@@ -1,22 +1,22 @@
 # Digital Bank Project - Your First Real DApp
 
-🎯 **Project Goal**: Build a complete digital banking system that handles real money, implements security features, and provides a full banking experience.
+ **Project Goal**: Build a complete digital banking system that handles real money, implements security features, and provides a full banking experience.
 
-## 🌟 What You'll Build
+##  What You'll Build
 
 A fully functional digital bank with:
 
-- 💰 **Account Management**: Create and manage customer accounts
-- 💸 **Deposits & Withdrawals**: Handle real Ether transactions
-- 🔄 **Transfers**: Send money between accounts instantly
-- 📊 **Interest System**: Automatic interest calculations and payments
-- 🛡️ **Security Features**: Multi-level access controls and validation
-- 📈 **Analytics**: Transaction history and banking statistics
-- 👥 **Admin Panel**: Bank owner management tools
+-  **Account Management**: Create and manage customer accounts
+-  **Deposits & Withdrawals**: Handle real Ether transactions
+-  **Transfers**: Send money between accounts instantly
+-  **Interest System**: Automatic interest calculations and payments
+-  **Security Features**: Multi-level access controls and validation
+-  **Analytics**: Transaction history and banking statistics
+-  **Admin Panel**: Bank owner management tools
 
-## 🚀 Real-World Skills You'll Master
+##  Real-World Skills You'll Master
 
-### **💡 Business Logic**
+### ** Business Logic**
 
 - Account lifecycle management
 - Interest rate calculations
@@ -24,7 +24,7 @@ A fully functional digital bank with:
 - Audit trail maintenance
 - Risk management
 
-### **🔧 Technical Skills**
+### ** Technical Skills**
 
 - Smart contract architecture
 - Gas optimization techniques
@@ -32,7 +32,7 @@ A fully functional digital bank with:
 - Event-driven programming
 - Error handling patterns
 
-### **🏗️ System Design**
+### ** System Design**
 
 - Modular contract design
 - Data structure optimization
@@ -40,7 +40,7 @@ A fully functional digital bank with:
 - Upgrade mechanisms
 - Testing strategies
 
-## 📋 Project Phases
+##  Project Phases
 
 ### **Phase 1: Core Banking System**
 
@@ -70,7 +70,7 @@ A fully functional digital bank with:
 - [ ] Frontend integration
 - [ ] Deployment strategies
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 By completing this project, you'll understand:
 
@@ -81,7 +81,7 @@ By completing this project, you'll understand:
 - **Testing**: Ensuring your contracts work correctly
 - **Deployment**: Getting your contracts live on blockchain
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 digital-bank/
@@ -105,7 +105,7 @@ digital-bank/
     └── deployment-guide.md      # Deployment instructions
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### **Option 1: Remix IDE (Recommended for Beginners)**
 
@@ -120,7 +120,7 @@ digital-bank/
 3. Clone the project structure
 4. Run local blockchain for testing
 
-## 📚 Tutorial Path
+##  Tutorial Path
 
 ### **🟢 Beginner Path**
 
@@ -136,46 +136,46 @@ digital-bank/
 7. **[Event System](./07-event-system.md)** - Logging and monitoring
 8. **[Error Handling](./08-error-handling.md)** - Robust error management
 
-### **🔴 Advanced Path**
+### ** Advanced Path**
 
 9. **[Gas Optimization](./09-gas-optimization.md)** - Make it cost-effective
 10. **[Upgrade Patterns](./10-upgrade-patterns.md)** - Future-proof your contract
 11. **[Frontend Integration](./11-frontend-integration.md)** - Build a web interface
 12. **[Production Deployment](./12-production-deployment.md)** - Go live on mainnet
 
-## 🎯 Success Metrics
+##  Success Metrics
 
 By the end of this project, you should be able to:
 
-- ✅ **Deploy** a fully functional banking smart contract
-- ✅ **Handle** real Ether transactions safely
-- ✅ **Implement** comprehensive security measures
-- ✅ **Test** your contract thoroughly
-- ✅ **Optimize** for gas efficiency
-- ✅ **Integrate** with a frontend application
-- ✅ **Explain** every line of code you wrote
+-  **Deploy** a fully functional banking smart contract
+-  **Handle** real Ether transactions safely
+-  **Implement** comprehensive security measures
+-  **Test** your contract thoroughly
+-  **Optimize** for gas efficiency
+-  **Integrate** with a frontend application
+-  **Explain** every line of code you wrote
 
-## 🏆 Project Challenges
+##  Project Challenges
 
-### **🥉 Bronze Level**: Basic Banking
+### ** Bronze Level**: Basic Banking
 
 - Create accounts and handle simple transactions
 - Implement basic security checks
 - Deploy on testnet
 
-### **🥈 Silver Level**: Advanced Banking
+### ** Silver Level**: Advanced Banking
 
 - Add interest calculations
 - Implement comprehensive event logging
 - Create a simple frontend
 
-### **🥇 Gold Level**: Production Banking
+### ** Gold Level**: Production Banking
 
 - Optimize for gas efficiency
 - Implement upgrade mechanisms
 - Deploy on mainnet with proper security audit
 
-## 🌍 Real-World Context
+##  Real-World Context
 
 This project teaches the same concepts used in:
 
@@ -186,18 +186,18 @@ This project teaches the same concepts used in:
 
 The patterns you learn here scale directly to DeFi protocols managing billions of dollars!
 
-## 🔥 Ready to Start?
+##  Ready to Start?
 
 Choose your experience level and dive in:
 
-**👶 New to Programming?** Start with [Contract Foundation](./01-contract-foundation.md)
+** New to Programming?** Start with [Contract Foundation](./01-contract-foundation.md)
 
-**💻 Have Programming Experience?** Jump to [Account Management](./02-account-management.md)
+** Have Programming Experience?** Jump to [Account Management](./02-account-management.md)
 
-**🚀 Experienced Developer?** Skip to [Advanced Features](./05-advanced-features.md)
+** Experienced Developer?** Skip to [Advanced Features](./05-advanced-features.md)
 
 ---
 
-**⚡ Pro Tip**: Even if you're experienced, we recommend starting from the beginning. This project teaches specific blockchain patterns that might be new to you!
+** Pro Tip**: Even if you're experienced, we recommend starting from the beginning. This project teaches specific blockchain patterns that might be new to you!
 
-Let's build your first production-ready DApp! 🚀
+Let's build your first production-ready DApp! 

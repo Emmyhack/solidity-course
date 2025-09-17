@@ -2,11 +2,11 @@
 
 A comprehensive implementation of a ultra-secure vault system demonstrating advanced security patterns and defensive programming techniques.
 
-## 🎯 Project Overview
+##  Project Overview
 
 The Secure Vault is a production-ready smart contract that implements multiple layers of security to protect user funds. It serves as a practical example of how to build resilient, attack-resistant smart contracts.
 
-## 🛡️ Security Features
+##  Security Features
 
 ### 1. Multi-Layer Access Control
 
@@ -46,7 +46,7 @@ The Secure Vault is a production-ready smart contract that implements multiple l
 - **Emergency Withdrawals**: Last-resort fund recovery
 - **Circuit Breakers**: Automatic protection triggers
 
-## 📋 Contract Architecture
+##  Contract Architecture
 
 ```
 SecureVault
@@ -74,7 +74,7 @@ SecureVault
     └── Audit Trail
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -124,7 +124,7 @@ uint256 requestId = secureVault.requestWithdrawal(vaultId, 1 ether);
 secureVault.executeWithdrawal(requestId);
 ```
 
-## 🔍 Security Testing
+##  Security Testing
 
 ### Test Categories
 
@@ -177,7 +177,7 @@ npm run test:gas
 npm run coverage
 ```
 
-## 🛠 Development Guide
+##  Development Guide
 
 ### Adding New Security Features
 
@@ -215,7 +215,7 @@ npm run coverage
 - [ ] Tests cover edge cases
 - [ ] Documentation updated
 
-## 📊 Gas Optimization
+##  Gas Optimization
 
 The contract uses several gas optimization techniques:
 
@@ -225,7 +225,7 @@ The contract uses several gas optimization techniques:
 4. **Storage Access**: Cached expensive reads
 5. **Event Optimization**: Indexed parameters for filtering
 
-## 🔧 Configuration
+##  Configuration
 
 ### Security Levels
 
@@ -253,7 +253,7 @@ uint256 public constant RATE_LIMIT_DURATION = 1 hours;
 uint256 public constant MAX_VAULTS_PER_USER = 10;
 ```
 
-## 🚨 Security Warnings
+##  Security Warnings
 
 1. **Private Key Security**: Keep private keys secure and never share them
 2. **Contract Upgrades**: This contract is not upgradeable by design for security
@@ -261,13 +261,13 @@ uint256 public constant MAX_VAULTS_PER_USER = 10;
 4. **Gas Limits**: Be aware of gas limits for large operations
 5. **Front-running**: Consider MEV protection for sensitive operations
 
-## 📚 Educational Resources
+##  Educational Resources
 
 - [Smart Contract Security Best Practices](https://consensys.github.io/smart-contract-best-practices/)
 - [OpenZeppelin Security Guidelines](https://docs.openzeppelin.com/contracts/4.x/security)
 - [SWC Registry](https://swcregistry.io/) - Smart Contract Weakness Classification
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -275,14 +275,14 @@ uint256 public constant MAX_VAULTS_PER_USER = 10;
 4. Add comprehensive tests
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This contract is for educational purposes. While it implements multiple security layers, always conduct thorough audits before using in production with real funds.
 
 ---
 
-**Build secure, build smart, build with confidence.** 🛡️
+**Build secure, build smart, build with confidence.** 

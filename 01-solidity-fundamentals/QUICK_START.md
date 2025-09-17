@@ -1,8 +1,8 @@
-# 🚀 Quick Deployment & Testing Guide
+#  Quick Deployment & Testing Guide
 
 This guide helps you deploy and test the Solidity contracts you've just learned about.
 
-## 📁 Available Contracts
+##  Available Contracts
 
 ### 1. **DigitalBank.sol** - Production-Ready DeFi Banking Protocol
 
@@ -25,7 +25,7 @@ This guide helps you deploy and test the Solidity contracts you've just learned 
 - **Learning focus**: Master all data types, functions, modifiers, events
 - **Complexity**: Beginner-friendly (organized by topic with explanations)
 
-## 🛠️ Deployment Options
+##  Deployment Options
 
 ### Option 1: Remix IDE (Recommended for Beginners)
 
@@ -42,7 +42,7 @@ This guide helps you deploy and test the Solidity contracts you've just learned 
    - Go to "Solidity Compiler" tab
    - Select version `0.8.19` or higher
    - Click "Compile [ContractName].sol"
-   - ✅ Should show green checkmark
+   -  Should show green checkmark
 
 4. **Deploy**:
    - Go to "Deploy & Run Transactions" tab
@@ -62,9 +62,9 @@ This guide helps you deploy and test the Solidity contracts you've just learned 
    - MetaMask will connect automatically
    - Deploy contracts with real test transactions
 
-## 📋 Contract-Specific Deployment Instructions
+##  Contract-Specific Deployment Instructions
 
-### 🏦 DigitalBank.sol Deployment
+###  DigitalBank.sol Deployment
 
 **Constructor Parameters** (you need to provide these):
 
@@ -90,9 +90,9 @@ address _emergencyAdmin           // Emergency admin (can be same as deployer)
    - `_protocolTreasury`: Your address
    - `_emergencyAdmin`: Your address
 3. Click "Deploy"
-4. ✅ Contract address will appear below
+4.  Contract address will appear below
 
-### 👥 ReputationSystem.sol Deployment
+###  ReputationSystem.sol Deployment
 
 **Constructor Parameters**:
 
@@ -105,9 +105,9 @@ address _reputationOracle          // Oracle address (can be your address for te
 1. In Remix, find ReputationSystem contract
 2. Enter `_reputationOracle`: Your address
 3. Click "Deploy"
-4. ✅ Contract deployed!
+4.  Contract deployed!
 
-### 📚 SolidityFundamentals.sol Deployment
+###  SolidityFundamentals.sol Deployment
 
 **Constructor Parameters**:
 
@@ -120,9 +120,9 @@ uint256 _immutableValue            // Any number (e.g., 12345)
 1. In Remix, find SolidityFundamentals contract
 2. Enter `_immutableValue`: 12345
 3. Click "Deploy"
-4. ✅ Ready to test all syntax examples!
+4.  Ready to test all syntax examples!
 
-## 🧪 Testing Your Deployed Contracts
+##  Testing Your Deployed Contracts
 
 ### Testing DigitalBank.sol
 
@@ -268,9 +268,9 @@ This contract has many demo functions. Try these key ones:
    Expected: Updates internal arrays
    ```
 
-## 🎯 Success Checklist
+##  Success Checklist
 
-### ✅ DigitalBank Success Indicators:
+###  DigitalBank Success Indicators:
 
 - [ ] Contract deploys without errors
 - [ ] You can register as a customer
@@ -279,7 +279,7 @@ This contract has many demo functions. Try these key ones:
 - [ ] Protocol metrics show correct data
 - [ ] Events are emitted for all operations
 
-### ✅ ReputationSystem Success Indicators:
+###  ReputationSystem Success Indicators:
 
 - [ ] Contract deploys successfully
 - [ ] User registration works
@@ -287,14 +287,14 @@ This contract has many demo functions. Try these key ones:
 - [ ] Reputation scores update correctly
 - [ ] Protocol statistics are accurate
 
-### ✅ SolidityFundamentals Success Indicators:
+###  SolidityFundamentals Success Indicators:
 
 - [ ] All syntax examples compile
 - [ ] Functions return expected values
 - [ ] Can interact with all data types
 - [ ] Events and errors work properly
 
-## 🐛 Common Issues & Solutions
+##  Common Issues & Solutions
 
 ### Issue: "Gas estimation failed"
 
@@ -316,25 +316,25 @@ This contract has many demo functions. Try these key ones:
 
 **Solution**: Reset MetaMask account in Settings > Advanced > Reset Account
 
-## 🚀 Next Steps
+##  Next Steps
 
 Once you've successfully deployed and tested these contracts:
 
-1. **🔧 Modify the Code**: Try changing parameters, adding features
-2. **🌐 Deploy on Mainnet**: Use real ETH (start small!)
-3. **🏗️ Build a Frontend**: Create a web interface with React + Web3
-4. **📊 Add Analytics**: Track real usage data
-5. **🏆 Enter Hackathons**: Use these as starting points for competitions
+1. ** Modify the Code**: Try changing parameters, adding features
+2. ** Deploy on Mainnet**: Use real ETH (start small!)
+3. ** Build a Frontend**: Create a web interface with React + Web3
+4. ** Add Analytics**: Track real usage data
+5. ** Enter Hackathons**: Use these as starting points for competitions
 
-## 🎉 Congratulations!
+##  Congratulations!
 
 You've now deployed production-ready smart contracts that demonstrate:
 
-- ✅ **DeFi Banking**: Interest calculation, risk management, TVL tracking
-- ✅ **Reputation Systems**: Complex mappings, anti-sybil protection
-- ✅ **Solidity Mastery**: Every syntax element with real examples
+-  **DeFi Banking**: Interest calculation, risk management, TVL tracking
+-  **Reputation Systems**: Complex mappings, anti-sybil protection
+-  **Solidity Mastery**: Every syntax element with real examples
 
-**You're now ready to build billion-dollar DeFi protocols! 🎯**
+**You're now ready to build billion-dollar DeFi protocols! **
 
 Continue learning with advanced topics:
 
@@ -346,7 +346,7 @@ Continue learning with advanced topics:
 
 ---
 
-## 📞 Need Help?
+##  Need Help?
 
 If you encounter issues:
 
@@ -356,4 +356,4 @@ If you encounter issues:
 4. Try on Remix VM first before testnet
 5. Read the contract comments for guidance
 
-**Happy Building! 🚀**
+**Happy Building! **
