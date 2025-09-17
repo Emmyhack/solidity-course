@@ -5,35 +5,30 @@ This project demonstrates sophisticated voting systems beyond simple majority ru
 ## 🗳️ Voting Systems Overview
 
 ### 1. Simple Majority Voting
-
 - Basic yes/no or multiple choice voting
 - One token = one vote (or weighted by stake)
 - Fixed voting periods
 - Quorum and threshold requirements
 
 ### 2. Quadratic Voting
-
 - Voice = √Credits spent
 - Prevents wealth dominance through diminishing returns
 - Encourages broad participation
 - Multiple rounds with credit allocation
 
 ### 3. Ranked-Choice Voting (IRV)
-
 - Voters rank options in order of preference
 - Instant runoff eliminates least popular options
 - Finds true majority preference
 - Reduces strategic voting
 
 ### 4. Conviction Voting
-
 - Support grows over time without fixed periods
 - Continuous democracy with time-weighted preferences
 - Dynamic thresholds based on proposal size
 - Prevents last-minute manipulation
 
 ### 5. Weighted Voting
-
 - Voting power based on stake, reputation, or other factors
 - Multiple weighting mechanisms
 - Anti-manipulation through minimum holding periods
@@ -42,7 +37,6 @@ This project demonstrates sophisticated voting systems beyond simple majority ru
 ## 📋 Features
 
 ### Advanced Voting Mechanisms Contract
-
 - **Multiple Voting Types**: Support for all major voting mechanisms
 - **Anti-Manipulation**: Sybil detection, holding periods, maximum voting power
 - **Delegation System**: Flexible delegation with weights and expiration
@@ -50,14 +44,12 @@ This project demonstrates sophisticated voting systems beyond simple majority ru
 - **Anonymous Voting**: Preparation for zk-SNARK integration
 
 ### Quadratic Voting System
-
 - **Credit Management**: Flexible credit allocation and purchasing
 - **Voting Rounds**: Time-bounded rounds with credit limits
 - **Voice Calculation**: Democratic √Credits formula
 - **Multiple Strategies**: Direct voting and weighted allocation
 
 ### Conviction Voting System
-
 - **Time-Weighted Support**: Conviction grows with sustained support
 - **Dynamic Thresholds**: Scales with requested funding amount
 - **Treasury Integration**: Direct funding upon threshold reach
@@ -75,19 +67,16 @@ npm install --save-dev hardhat @openzeppelin/contracts
 
 1. Clone the repository
 2. Install dependencies:
-
 ```bash
 npm install
 ```
 
 3. Compile contracts:
-
 ```bash
 npx hardhat compile
 ```
 
 4. Run tests:
-
 ```bash
 npx hardhat test
 ```
@@ -201,21 +190,18 @@ voting.voteOnBehalf(
 ## 🎯 Key Concepts
 
 ### Quadratic Voting Benefits
-
 - **Democratic Voice**: √Credits prevents wealth dominance
 - **Diminishing Returns**: Encourages broad participation
 - **Nuanced Expression**: Multiple options with varying intensity
 - **Strategic Allocation**: Voters optimize credit distribution
 
 ### Conviction Voting Benefits
-
 - **Continuous Democracy**: No fixed voting periods
 - **Time Preference**: Rewards sustained support
 - **Manipulation Resistance**: Time-weighting prevents gaming
 - **Organic Consensus**: Gradual community agreement
 
 ### Anti-Manipulation Features
-
 - **Holding Periods**: Minimum token holding time
 - **Sybil Detection**: Multiple detection mechanisms
 - **Voting Power Caps**: Maximum influence per user
@@ -274,18 +260,17 @@ REPORT_GAS=true npx hardhat test
 
 ## 📊 Voting Comparison
 
-| Mechanism       | Best For             | Pros               | Cons                      |
-| --------------- | -------------------- | ------------------ | ------------------------- |
-| Simple Majority | Basic decisions      | Easy to understand | Wealth dominance          |
-| Quadratic       | Preference intensity | Democratic voice   | Complex calculation       |
-| Ranked-Choice   | Multiple options     | True majority      | Implementation complexity |
-| Conviction      | Funding decisions    | Time preference    | Slower decisions          |
-| Weighted        | Stake-based          | Aligned incentives | Potential centralization  |
+| Mechanism | Best For | Pros | Cons |
+|-----------|----------|------|------|
+| Simple Majority | Basic decisions | Easy to understand | Wealth dominance |
+| Quadratic | Preference intensity | Democratic voice | Complex calculation |
+| Ranked-Choice | Multiple options | True majority | Implementation complexity |
+| Conviction | Funding decisions | Time preference | Slower decisions |
+| Weighted | Stake-based | Aligned incentives | Potential centralization |
 
 ## 🔮 Advanced Features
 
 ### Anonymous Voting Preparation
-
 ```solidity
 // Commit-reveal scheme
 bytes32 commitment = keccak256(abi.encodePacked(choice, nonce, voter));
@@ -296,14 +281,12 @@ voting.revealVote(proposalId, choice, nonce);
 ```
 
 ### Multi-Signature Integration
-
 ```solidity
 // Require multiple signatures for proposal execution
 voting.setMultiSigRequirement(3, 5); // 3 of 5 signatures
 ```
 
 ### Time-Locked Execution
-
 ```solidity
 // Delay execution after passing
 voting.setExecutionDelay(2 days);
@@ -330,4 +313,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-_Advanced voting mechanisms for sophisticated democratic governance in DAOs and blockchain protocols._
+*Advanced voting mechanisms for sophisticated democratic governance in DAOs and blockchain protocols.*

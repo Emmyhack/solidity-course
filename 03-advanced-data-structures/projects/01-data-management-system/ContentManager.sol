@@ -377,7 +377,7 @@ contract ContentManager {
 
         if (_parentCommentId > 0) {
             require(
-                _commentId < nextCommentId,
+                _parentCommentId < nextCommentId,
                 "Parent comment does not exist"
             );
             require(

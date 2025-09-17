@@ -265,17 +265,17 @@ contract AdvancedArrays {
         for (uint256 j = _low; j < _high; j++) {
             if (numbers[j] <= pivot) {
                 // Swap elements
-                uint256 temp = numbers[i];
+                uint256 tempSwap = numbers[i];
                 numbers[i] = numbers[j];
-                numbers[j] = temp;
+                numbers[j] = tempSwap;
                 i++;
             }
         }
 
         // Place pivot in correct position
-        uint256 temp = numbers[i];
+        uint256 tempPivot = numbers[i];
         numbers[i] = numbers[_high];
-        numbers[_high] = temp;
+        numbers[_high] = tempPivot;
 
         return i;
     }

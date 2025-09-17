@@ -189,6 +189,7 @@ contract SolidityFundamentals {
     mapping(address => User) public users; // User registry
     LendingPool[] public pools; // Array of pools
     mapping(uint256 => Proposal) public proposals; // Governance proposals
+    uint256 public proposalCount; // Track number of proposals
 
     // === ENUM TYPES ===
 
@@ -246,17 +247,17 @@ contract SolidityFundamentals {
 
     function globalVariablesExample()
         public
-        view
+        payable
         returns (
             address sender, // msg.sender - who called the function
             uint256 value, // msg.value - ETH sent with transaction
-            bytes memory data, // msg.data - transaction data
+            bytes memory msgData, // msg.data - transaction data
             bytes4 sig, // msg.sig - function signature
             uint256 gasLeft, // gasleft() - remaining gas
             uint256 timestamp, // block.timestamp - current block time
             uint256 blockNumber, // block.number - current block number
             address coinbase, // block.coinbase - current miner
-            uint256 difficulty, // block.difficulty - current difficulty
+            uint256 prevrandao, // block.prevrandao - random number from beacon chain
             uint256 gasLimit, // block.gaslimit - current gas limit
             bytes32 blockHash, // blockhash(block.number-1) - previous block hash
             uint256 chainId, // block.chainid - current chain ID
@@ -266,17 +267,17 @@ contract SolidityFundamentals {
         return (
             msg.sender,
             msg.value,
-            msg.data,
+            bytes(msg.data),
             msg.sig,
             gasleft(),
             block.timestamp,
             block.number,
             block.coinbase,
-            block.difficulty,
+            block.prevrandao,
             block.gaslimit,
             blockhash(block.number - 1),
             block.chainid,
-            tx.origin
+            uint256(uint160(tx.origin))
         );
     }
 
@@ -346,8 +347,8 @@ contract SolidityFundamentals {
     // Memory parameters (for complex types)
     function memoryExample(
         string memory _name,
-        uint256[] memory _numbers,
-        User memory _user
+        uint256[] memory /* _numbers */,
+        User memory /* _user */
     ) public pure returns (string memory) {
         return _name; // Parameters are copied to memory
     }
@@ -355,7 +356,7 @@ contract SolidityFundamentals {
     // Calldata parameters (read-only, gas efficient)
     function calldataExample(
         string calldata _name,
-        uint256[] calldata _numbers
+        uint256[] calldata /* _numbers */
     ) public pure returns (string memory) {
         return _name; // Parameters are read-only references
     }
@@ -373,11 +374,11 @@ contract SolidityFundamentals {
         return 42;
     }
 
-    // Multiple return values
+    // Multiple return values 
     function multipleReturns()
         public
         pure
-        returns (uint256 number, string memory text, bool flag)
+        returns (uint256 value, string memory text, bool flag)
     {
         return (42, "Hello", true);
     }
@@ -559,10 +560,9 @@ contract SolidityFundamentals {
         emit Transfer(msg.sender, _to, _amount);
         return true;
     }
-
     // Governance voting function
     function vote(uint256 _proposalId, bool _support) public {
-        require(_proposalId < proposals.length, "Invalid proposal");
+        require(_proposalId < proposalCount, "Invalid proposal");
         require(!proposals[_proposalId].hasVoted[msg.sender], "Already voted");
 
         proposals[_proposalId].hasVoted[msg.sender] = true;
@@ -655,14 +655,11 @@ contract SolidityFundamentals {
         allNumbers.push(42);
         allUsers.push(msg.sender);
 
-        // Get array length
-        uint256 numbersLength = allNumbers.length;
-        uint256 usersLength = allUsers.length;
-
         // Access array element
         if (allNumbers.length > 0) {
-            uint256 firstNumber = allNumbers[0];
-            uint256 lastNumber = allNumbers[allNumbers.length - 1];
+            // Example: accessing first and last elements
+            allNumbers[0]; // First element
+            allNumbers[allNumbers.length - 1]; // Last element
         }
 
         // Remove from array (pop removes last element)

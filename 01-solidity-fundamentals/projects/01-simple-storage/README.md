@@ -2,7 +2,7 @@
 
 Create a smart contract that manages stored data with access controls and events.
 
-## 🎯 Project Objectives
+## Project Objectives
 
 Build a storage contract that demonstrates:
 

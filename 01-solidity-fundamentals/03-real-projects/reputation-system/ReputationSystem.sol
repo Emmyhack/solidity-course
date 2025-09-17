@@ -295,7 +295,6 @@ contract ReputationSystem {
     // ===== USER REGISTRATION =====
 
     /**
-     * @title Register New User
      * @dev Registers a new user in the reputation system
      * @param _username Unique username for the user
      * @param _profileURI IPFS hash containing profile metadata
@@ -356,7 +355,7 @@ contract ReputationSystem {
     // ===== RATING SYSTEM =====
 
     /**
-     * @title Give Rating
+     * @notice Allows a user to rate another user with ETH stake
      * @dev Allows a user to rate another user with ETH stake
      * @param _ratee Address of user being rated
      * @param _stars Star rating (1-5)
@@ -612,7 +611,7 @@ contract ReputationSystem {
     // ===== VIEW FUNCTIONS =====
 
     /**
-     * @title Get User Reputation
+     * @notice Get User Reputation
      * @dev Returns comprehensive reputation data for a user
      * @param _user User address to query
      * @return profile Complete user profile
@@ -633,7 +632,7 @@ contract ReputationSystem {
     }
 
     /**
-     * @title Get User Ratings
+     * @notice Get User Ratings
      * @dev Returns all ratings received by a user
      * @param _user User address to query
      * @return receivedRatings Array of ratings received
@@ -666,7 +665,7 @@ contract ReputationSystem {
     }
 
     /**
-     * @title Get Protocol Statistics
+     * @notice Get Protocol Statistics
      * @dev Returns overall protocol metrics
      */
     function getProtocolStats()
@@ -726,7 +725,7 @@ contract ReputationSystem {
     // ===== ADMIN FUNCTIONS =====
 
     /**
-     * @title Emergency Pause
+     * @notice Emergency Pause
      * @dev Pauses the entire system in case of emergency
      */
     function emergencyPause() external onlyOwner {
@@ -734,7 +733,7 @@ contract ReputationSystem {
     }
 
     /**
-     * @title Resume System
+     * @notice Resume System
      * @dev Resumes system operations after pause
      */
     function resumeSystem() external onlyOwner {
@@ -742,7 +741,7 @@ contract ReputationSystem {
     }
 
     /**
-     * @title Add Moderator
+     * @notice Add Moderator
      * @dev Adds a new moderator to the system
      * @param _moderator Address to grant moderator privileges
      */
@@ -751,7 +750,7 @@ contract ReputationSystem {
     }
 
     /**
-     * @title Remove Moderator
+     * @notice Remove Moderator
      * @dev Removes moderator privileges from an address
      * @param _moderator Address to remove moderator privileges from
      */

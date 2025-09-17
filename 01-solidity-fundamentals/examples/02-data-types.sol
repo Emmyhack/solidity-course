@@ -36,7 +36,7 @@ contract DataTypesDemo {
     // Bytes (fixed-size)
     bytes1 public singleByte = 0x42;
     bytes32 public hash =
-        0x123456789abcdef123456789abcdef123456789abcdef123456789abcdef12;
+        0x123456789abcdef123456789abcdef123456789abcdef123456789abcdef;
 
     // ======================
     // REFERENCE TYPES
@@ -144,7 +144,7 @@ contract DataTypesDemo {
         uint256 large = uint256(small); // Safe upcast
 
         // Address conversions
-        address addr = 0x742d35Cc6634C0532925a3b8D8B4f5b9C0e4a8e1;
+        address addr = 0x742d35Cc6634c0532925A3B8D8b4f5B9c0e4a8E1;
         uint256 addrAsNumber = uint256(uint160(addr));
 
         // Bytes conversions
@@ -201,14 +201,14 @@ contract DataTypesDemo {
         )
     {
         bool defaultBool;
-        uint256 defaultUint;
+        uint256 defaultUintValue;
         int256 defaultInt;
         address defaultAddress;
         bytes32 defaultBytes;
 
         return (
             defaultBool,
-            defaultUint,
+            defaultUintValue,
             defaultInt,
             defaultAddress,
             defaultBytes

@@ -407,8 +407,8 @@ contract DigitalBank {
     // ===== CONSTRUCTOR (Protocol Initialization) =====
 
     /**
-     * @title DigitalBank Constructor
-     * @dev Initializes a new DeFi banking protocol with comprehensive security and governance
+     * @notice Initializes a new DeFi banking protocol with comprehensive security and governance
+     * @dev Sets up the protocol with initial parameters, creates default risk profiles, and establishes governance structure
      * @param _bankName Protocol display name (e.g., "CryptoBank DeFi")
      * @param _bankSymbol Short identifier (e.g., "CBD")
      * @param _minimumDeposit Minimum deposit in wei (accessibility threshold)
@@ -550,7 +550,7 @@ contract DigitalBank {
     // ===== CUSTOMER ONBOARDING (KYC/AML COMPLIANT) =====
 
     /**
-     * @title Customer Registration
+     * @notice Registers a new customer with comprehensive risk assessment
      * @dev Registers a new customer with comprehensive risk assessment
      * @param _customerName Full legal name for KYC compliance
      * @param _email Contact email for notifications
@@ -652,7 +652,7 @@ contract DigitalBank {
     // ===== DEPOSIT OPERATIONS (Compound-Style Liquidity) =====
 
     /**
-     * @title Deposit Funds
+     * @notice Deposit Funds
      * @dev Deposits ETH into customer account with interest calculation
      * @param _memo Optional transaction memo for record keeping
      *
@@ -692,7 +692,7 @@ contract DigitalBank {
     // ===== WITHDRAWAL OPERATIONS (Secure Fund Transfer) =====
 
     /**
-     * @title Withdraw Funds
+     * @notice Withdraw Funds
      * @dev Withdraws ETH from customer account with comprehensive validation
      * @param _amount Amount to withdraw in wei
      * @param _memo Optional transaction memo
@@ -893,7 +893,7 @@ contract DigitalBank {
     ) internal view returns (RiskAssessment memory) {
         uint256 baseScore = 50; // Medium risk baseline
         uint256 dailyLimit = MAX_DEPOSIT / 2; // 50% of max deposit
-        bool requiresApproval = false;
+        bool needsApproval = false;
 
         // Adjust based on account type
         if (_accountType == 0) {
@@ -908,7 +908,7 @@ contract DigitalBank {
             // Corporate
             baseScore = 30; // Lowest risk
             dailyLimit = MAX_DEPOSIT * 2; // Higher limit
-            requiresApproval = true; // Corporate requires approval for large amounts
+            needsApproval = true; // Corporate requires approval for large amounts
         }
 
         return
@@ -917,7 +917,7 @@ contract DigitalBank {
                 isHighRisk: baseScore > 70,
                 lastAssessment: block.timestamp,
                 dailyTransactionLimit: dailyLimit,
-                requiresManualApproval: requiresApproval,
+                requiresManualApproval: needsApproval,
                 assessmentHistory: string(
                     abi.encodePacked(
                         "Initial: ",
@@ -964,7 +964,7 @@ contract DigitalBank {
     // ===== VIEW FUNCTIONS & PROTOCOL ANALYTICS =====
 
     /**
-     * @title Get Customer Profile
+     * @notice Get Customer Profile
      * @dev Returns complete customer information with privacy controls
      * @param _customerAddress Customer's wallet address
      * @return profile Complete customer profile data
@@ -985,7 +985,7 @@ contract DigitalBank {
     }
 
     /**
-     * @title Get Account Balance
+     * @notice Get Account Balance
      * @dev Returns current balance with optional interest calculation
      * @param _customerAddress Customer to check
      * @return currentBalance Current account balance
@@ -1018,16 +1018,23 @@ contract DigitalBank {
     }
 
     /**
-     * @title Get Protocol Metrics
+     * @notice Get Protocol Metrics
      * @dev Returns comprehensive protocol performance data
-     * @return metrics Complete protocol metrics structure
+     * @return totalTVL Total value locked in the protocol
+     * @return totalCustomersCount Total number of registered customers
+     * @return totalDeposits Cumulative deposits across all customers
+     * @return totalWithdrawals Cumulative withdrawals across all customers
+     * @return totalInterestPaid Total interest paid to customers
+     * @return protocolRevenue Revenue generated for the protocol treasury
+     * @return averageBalance Average balance across all customers
+     * @return transactionCount Total number of transactions processed
      */
     function getProtocolMetrics()
         external
         view
         returns (
             uint256 totalTVL,
-            uint256 totalCustomers,
+            uint256 totalCustomersCount,
             uint256 totalDeposits,
             uint256 totalWithdrawals,
             uint256 totalInterestPaid,
@@ -1037,7 +1044,7 @@ contract DigitalBank {
         )
     {
         totalTVL = totalValueLocked;
-        totalCustomers = protocolMetrics.uniqueCustomers;
+        totalCustomersCount = protocolMetrics.uniqueCustomers;
         totalDeposits = protocolMetrics.totalDeposits;
         totalWithdrawals = protocolMetrics.totalWithdrawals;
         totalInterestPaid = protocolMetrics.totalInterestPaid;
@@ -1045,15 +1052,15 @@ contract DigitalBank {
         transactionCount = protocolMetrics.transactionCount;
 
         // Calculate average balance
-        if (totalCustomers > 0) {
-            averageBalance = totalValueLocked / totalCustomers;
+        if (totalCustomersCount > 0) {
+            averageBalance = totalValueLocked / totalCustomersCount;
         } else {
             averageBalance = 0;
         }
 
         return (
             totalTVL,
-            totalCustomers,
+            totalCustomersCount,
             totalDeposits,
             totalWithdrawals,
             totalInterestPaid,
@@ -1064,7 +1071,7 @@ contract DigitalBank {
     }
 
     /**
-     * @title Check Customer Status
+     * @notice Check Customer Status
      * @dev Quick check if address is registered customer
      * @param _customerAddress Address to check
      * @return isRegistered True if registered
@@ -1087,9 +1094,17 @@ contract DigitalBank {
     }
 
     /**
-     * @title Get Protocol Configuration
+     * @notice Get Protocol Configuration
      * @dev Returns current protocol settings and parameters
-     * @return config Complete protocol configuration
+     * @return bankName The protocol's display name
+     * @return bankSymbol The protocol's short identifier
+     * @return minDeposit Minimum deposit amount in wei
+     * @return maxDeposit Maximum deposit amount in wei
+     * @return interestRate Current base interest rate
+     * @return isPaused Whether the protocol is currently paused
+     * @return protocolOwner Address of the protocol owner
+     * @return protocolManager Address of the protocol manager
+     * @return establishedDate Timestamp when protocol was established
      */
     function getProtocolConfig()
         external
@@ -1122,7 +1137,7 @@ contract DigitalBank {
     // ===== ADMIN FUNCTIONS =====
 
     /**
-     * @title Emergency Pause
+     * @notice Emergency Pause
      * @dev Pauses all protocol operations in emergency
      */
     function emergencyPause() external {
@@ -1140,7 +1155,7 @@ contract DigitalBank {
     }
 
     /**
-     * @title Emergency Unpause
+     * @notice Emergency Unpause
      * @dev Unpauses protocol operations
      */
     function emergencyUnpause() external onlyOwner {
@@ -1154,7 +1169,7 @@ contract DigitalBank {
     }
 
     /**
-     * @title Update Interest Rate
+     * @notice Update Interest Rate
      * @dev Updates the base interest rate for all customers
      * @param _newRate New interest rate (1-50)
      */
@@ -1176,7 +1191,7 @@ contract DigitalBank {
     }
 
     /**
-     * @title Transfer Ownership
+     * @notice Transfer Ownership
      * @dev Transfers protocol ownership to new address
      * @param _newOwner New owner address
      */

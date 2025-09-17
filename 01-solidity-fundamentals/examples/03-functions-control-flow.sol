@@ -77,21 +77,21 @@ contract FunctionsAndControlFlow {
     // ======================
 
     /**
-     * @dev VIEW: Reads state but doesn't modify it (free to call)
+      VIEW: Reads state but doesn't modify it (free to call)
      */
     function viewFunction() public view returns (uint256) {
         return counter;
     }
 
     /**
-     * @dev PURE: Doesn't read or modify state (free to call)
+      PURE: Doesn't read or modify state (free to call)
      */
     function pureFunction(uint256 a, uint256 b) public pure returns (uint256) {
         return a + b;
     }
 
     /**
-     * @dev PAYABLE: Can receive Ether
+      PAYABLE: Can receive Ether
      */
     function payableFunction() public payable {
         balances[msg.sender] += msg.value;

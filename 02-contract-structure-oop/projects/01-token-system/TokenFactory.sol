@@ -29,9 +29,7 @@ contract TokenFactory is AccessControl {
         Token newToken = new Token(
             name,
             symbol,
-            decimals,
-            initialSupply,
-            msg.sender
+            initialSupply
         );
         tokens.push(address(newToken));
         emit TokenCreated(

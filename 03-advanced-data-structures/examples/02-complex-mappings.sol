@@ -432,11 +432,11 @@ contract ComplexMappings {
      * @dev Remove token from owner's array
      */
     function _removeTokenFromOwner(address _owner, uint256 _tokenId) internal {
-        uint256[] storage tokens = ownerToTokens[_owner];
-        for (uint256 i = 0; i < tokens.length; i++) {
-            if (tokens[i] == _tokenId) {
-                tokens[i] = tokens[tokens.length - 1];
-                tokens.pop();
+        uint256[] storage ownerTokens = ownerToTokens[_owner];
+        for (uint256 i = 0; i < ownerTokens.length; i++) {
+            if (ownerTokens[i] == _tokenId) {
+                ownerTokens[i] = ownerTokens[ownerTokens.length - 1];
+                ownerTokens.pop();
                 break;
             }
         }
@@ -449,11 +449,11 @@ contract ComplexMappings {
         address _user,
         uint256 _tokenId
     ) internal {
-        uint256[] storage tokens = users[_user].ownedTokens;
-        for (uint256 i = 0; i < tokens.length; i++) {
-            if (tokens[i] == _tokenId) {
-                tokens[i] = tokens[tokens.length - 1];
-                tokens.pop();
+        uint256[] storage ownedTokens = users[_user].ownedTokens;
+        for (uint256 i = 0; i < ownedTokens.length; i++) {
+            if (ownedTokens[i] == _tokenId) {
+                ownedTokens[i] = ownedTokens[ownedTokens.length - 1];
+                ownedTokens.pop();
                 break;
             }
         }
